@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(motion)
+project(motion VERSION 1.0)
 
 include_directories(inc)
 
