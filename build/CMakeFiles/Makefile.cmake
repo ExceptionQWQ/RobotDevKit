@@ -20,6 +20,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.19/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.19/Modules/Compiler/Clang.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.19/Modules/Compiler/GNU.cmake"
+  "/Applications/CMake.app/Contents/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake"
+  "/Applications/CMake.app/Contents/share/cmake-3.19/Modules/FindPackageMessage.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.19/Modules/Platform/Apple-AppleClang-C.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.19/Modules/Platform/Apple-AppleClang-CXX.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.19/Modules/Platform/Apple-Clang-C.cmake"
@@ -33,6 +35,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.19.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.19.3/CMakeSystem.cmake"
   "../core/CMakeLists.txt"
+  "../sim/CMakeLists.txt"
+  "../sim/mechanical_arm/CMakeLists.txt"
+  "/usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVConfig.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake"
+  "/usr/local/lib/cmake/opencv4/OpenCVModules.cmake"
   )
 
 # The corresponding makefile is:
@@ -45,9 +53,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "core/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sim/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sim/mechanical_arm/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "core/CMakeFiles/RDK_Core.dir/DependInfo.cmake"
+  "sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/DependInfo.cmake"
   )

@@ -1,5 +1,0 @@
-/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib/libRDK_Core.a
-/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/include/rdk_core.h
-/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/include/pid.h
-/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/include/motor.h
-/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/include/motion.h

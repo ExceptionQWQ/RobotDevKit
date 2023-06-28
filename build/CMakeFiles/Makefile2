@@ -73,16 +73,19 @@ CMAKE_BINARY_DIR = /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build
 
 # The main recursive "all" target.
 all: core/all
+all: sim/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: core/preinstall
+preinstall: sim/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: core/clean
+clean: sim/clean
 
 .PHONY : clean
 
@@ -103,6 +106,42 @@ core/preinstall:
 core/clean: core/CMakeFiles/RDK_Core.dir/clean
 
 .PHONY : core/clean
+
+#=============================================================================
+# Directory level rules for directory sim
+
+# Recursive "all" directory target.
+sim/all: sim/mechanical_arm/all
+
+.PHONY : sim/all
+
+# Recursive "preinstall" directory target.
+sim/preinstall: sim/mechanical_arm/preinstall
+
+.PHONY : sim/preinstall
+
+# Recursive "clean" directory target.
+sim/clean: sim/mechanical_arm/clean
+
+.PHONY : sim/clean
+
+#=============================================================================
+# Directory level rules for directory sim/mechanical_arm
+
+# Recursive "all" directory target.
+sim/mechanical_arm/all: sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/all
+
+.PHONY : sim/mechanical_arm/all
+
+# Recursive "preinstall" directory target.
+sim/mechanical_arm/preinstall:
+
+.PHONY : sim/mechanical_arm/preinstall
+
+# Recursive "clean" directory target.
+sim/mechanical_arm/clean: sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/clean
+
+.PHONY : sim/mechanical_arm/clean
 
 #=============================================================================
 # Target rules for target core/CMakeFiles/RDK_Core.dir
@@ -130,6 +169,33 @@ RDK_Core: core/CMakeFiles/RDK_Core.dir/rule
 core/CMakeFiles/RDK_Core.dir/clean:
 	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/clean
 .PHONY : core/CMakeFiles/RDK_Core.dir/clean
+
+#=============================================================================
+# Target rules for target sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir
+
+# All Build rule for target.
+sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/all:
+	$(MAKE) $(MAKESILENT) -f sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build.make sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/depend
+	$(MAKE) $(MAKESILENT) -f sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build.make sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles --progress-num=5,6 "Built target mechanical_arm_sim"
+.PHONY : sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/all
+
+# Build rule for subdir invocation for target.
+sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles 0
+.PHONY : sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/rule
+
+# Convenience name for target.
+mechanical_arm_sim: sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/rule
+
+.PHONY : mechanical_arm_sim
+
+# clean rule for target.
+sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/clean:
+	$(MAKE) $(MAKESILENT) -f sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build.make sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/clean
+.PHONY : sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

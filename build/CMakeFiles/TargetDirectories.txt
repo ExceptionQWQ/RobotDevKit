@@ -11,3 +11,16 @@
 /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/CMakeFiles/rebuild_cache.dir
 /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/CMakeFiles/edit_cache.dir
 /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/CMakeFiles/RDK_Core.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/CMakeFiles/install/local.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/CMakeFiles/install/strip.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/CMakeFiles/install.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/CMakeFiles/list_install_components.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/CMakeFiles/rebuild_cache.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/CMakeFiles/edit_cache.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/mechanical_arm/CMakeFiles/install/local.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/mechanical_arm/CMakeFiles/install/strip.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/mechanical_arm/CMakeFiles/install.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/mechanical_arm/CMakeFiles/list_install_components.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/mechanical_arm/CMakeFiles/rebuild_cache.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/mechanical_arm/CMakeFiles/edit_cache.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir

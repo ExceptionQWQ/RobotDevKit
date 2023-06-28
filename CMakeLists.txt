@@ -6,7 +6,7 @@ project(RDK)
 
 
 add_subdirectory(core)
-
+add_subdirectory(sim)
 
 install(TARGETS RDK_Core DESTINATION ${PROJECT_SOURCE_DIR}/lib)
 install(FILES core/inc/rdk_core.h DESTINATION ${PROJECT_SOURCE_DIR}/include)

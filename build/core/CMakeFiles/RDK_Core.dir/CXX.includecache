@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../core/inc/motion.h
+motor.h
+../core/inc/motor.h
+utility
+-
+cmath
+-
+
 ../core/inc/motor.h
 pid.h
 ../core/inc/pid.h
@@ -16,7 +24,15 @@ utility
 utility
 -
 
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motion.cpp
+motion.h
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motion.h
+
 /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motor.cpp
 motor.h
 /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motor.h
+
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/pid.cpp
+pid.h
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/pid.h
 

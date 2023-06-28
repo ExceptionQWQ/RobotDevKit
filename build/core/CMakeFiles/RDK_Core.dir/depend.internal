@@ -3,6 +3,7 @@
 
 core/CMakeFiles/RDK_Core.dir/src/motion.cpp.o
  ../core/inc/motion.h
+ ../core/inc/motor.h
  ../core/inc/pid.h
  /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motion.cpp
 core/CMakeFiles/RDK_Core.dir/src/motor.cpp.o

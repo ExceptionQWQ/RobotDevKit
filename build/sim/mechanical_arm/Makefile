@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/sim/mechanical_arm//CMakeFiles/progress.marks
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim/mechanical_arm/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim/mechanical_arm/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,44 +162,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim/mechanical_arm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim/mechanical_arm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named RDK_Core
+# Convenience name for target.
+sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/rule:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/rule
+.PHONY : sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/rule
 
-# Build rule for target.
-RDK_Core: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RDK_Core
-.PHONY : RDK_Core
+# Convenience name for target.
+mechanical_arm_sim: sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/rule
 
-# fast build rule for target.
-RDK_Core/fast:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/build
-.PHONY : RDK_Core/fast
-
-#=============================================================================
-# Target rules for targets named mechanical_arm_sim
-
-# Build rule for target.
-mechanical_arm_sim: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mechanical_arm_sim
 .PHONY : mechanical_arm_sim
 
 # fast build rule for target.
 mechanical_arm_sim/fast:
-	$(MAKE) $(MAKESILENT) -f sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build.make sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build.make sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build
 .PHONY : mechanical_arm_sim/fast
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build.make sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build.make sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/build.make sim/mechanical_arm/CMakeFiles/mechanical_arm_sim.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -213,8 +229,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... RDK_Core"
 	@echo "... mechanical_arm_sim"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
@@ -226,6 +244,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
