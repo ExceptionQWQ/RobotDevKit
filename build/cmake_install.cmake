@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib" TYPE STATIC_LIBRARY FILES "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/pid/libpid.a")
+file(INSTALL DESTINATION "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib" TYPE STATIC_LIBRARY FILES "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/libpid.a")
   if(EXISTS "$ENV{DESTDIR}/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib/libpid.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib/libpid.a")
     execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib/libpid.a")
@@ -62,7 +62,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/include" TYPE FILE FILES "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/pid/inc/pid.h")
+file(INSTALL DESTINATION "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/include" TYPE FILE FILES "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/inc/pid.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -74,7 +74,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib" TYPE STATIC_LIBRARY FILES "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/motion/libmotion.a")
+file(INSTALL DESTINATION "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib" TYPE STATIC_LIBRARY FILES "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/libmotion.a")
   if(EXISTS "$ENV{DESTDIR}/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib/libmotion.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib/libmotion.a")
     execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/lib/libmotion.a")
@@ -90,13 +90,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/include" TYPE FILE FILES "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/motion/inc/motion.h")
+file(INSTALL DESTINATION "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/include" TYPE FILE FILES "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/inc/motion.h")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/pid/cmake_install.cmake")
-  include("/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/motion/cmake_install.cmake")
+  include("/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/cmake_install.cmake")
 
 endif()
 

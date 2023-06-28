@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../core/inc/motion.h
+iostream
+-
+pid.h
+../core/inc/pid.h
+
+../core/inc/pid.h
+utility
+-
+
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motion.cpp
+motion.h
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motion.h
+

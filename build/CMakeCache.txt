@@ -229,19 +229,13 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 RDK_BINARY_DIR:STATIC=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build
 
 //Value Computed by CMake
+RDK_Core_BINARY_DIR:STATIC=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core
+
+//Value Computed by CMake
+RDK_Core_SOURCE_DIR:STATIC=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core
+
+//Value Computed by CMake
 RDK_SOURCE_DIR:STATIC=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit
-
-//Value Computed by CMake
-motion_BINARY_DIR:STATIC=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/motion
-
-//Value Computed by CMake
-motion_SOURCE_DIR:STATIC=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/motion
-
-//Value Computed by CMake
-pid_BINARY_DIR:STATIC=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/pid
-
-//Value Computed by CMake
-pid_SOURCE_DIR:STATIC=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/pid
 
 
 ########################
@@ -340,7 +334,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

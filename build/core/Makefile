@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core//CMakeFiles/progress.marks
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,44 +162,102 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named motion
+# Convenience name for target.
+core/CMakeFiles/motion.dir/rule:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/motion.dir/rule
+.PHONY : core/CMakeFiles/motion.dir/rule
 
-# Build rule for target.
-motion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motion
+# Convenience name for target.
+motion: core/CMakeFiles/motion.dir/rule
+
 .PHONY : motion
 
 # fast build rule for target.
 motion/fast:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/build
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/build
 .PHONY : motion/fast
 
-#=============================================================================
-# Target rules for targets named pid
+# Convenience name for target.
+core/CMakeFiles/pid.dir/rule:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/pid.dir/rule
+.PHONY : core/CMakeFiles/pid.dir/rule
 
-# Build rule for target.
-pid: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pid
+# Convenience name for target.
+pid: core/CMakeFiles/pid.dir/rule
+
 .PHONY : pid
 
 # fast build rule for target.
 pid/fast:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/build
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/build
 .PHONY : pid/fast
+
+src/motion.o: src/motion.cpp.o
+
+.PHONY : src/motion.o
+
+# target to build an object file
+src/motion.cpp.o:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/src/motion.cpp.o
+.PHONY : src/motion.cpp.o
+
+src/motion.i: src/motion.cpp.i
+
+.PHONY : src/motion.i
+
+# target to preprocess a source file
+src/motion.cpp.i:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/src/motion.cpp.i
+.PHONY : src/motion.cpp.i
+
+src/motion.s: src/motion.cpp.s
+
+.PHONY : src/motion.s
+
+# target to generate assembly for a file
+src/motion.cpp.s:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/src/motion.cpp.s
+.PHONY : src/motion.cpp.s
+
+src/pid.o: src/pid.cpp.o
+
+.PHONY : src/pid.o
+
+# target to build an object file
+src/pid.cpp.o:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/src/pid.cpp.o
+.PHONY : src/pid.cpp.o
+
+src/pid.i: src/pid.cpp.i
+
+.PHONY : src/pid.i
+
+# target to preprocess a source file
+src/pid.cpp.i:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/src/pid.cpp.i
+.PHONY : src/pid.cpp.i
+
+src/pid.s: src/pid.cpp.s
+
+.PHONY : src/pid.s
+
+# target to generate assembly for a file
+src/pid.cpp.s:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/src/pid.cpp.s
+.PHONY : src/pid.cpp.s
 
 # Help Target
 help:
@@ -215,6 +273,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... motion"
 	@echo "... pid"
+	@echo "... src/motion.o"
+	@echo "... src/motion.i"
+	@echo "... src/motion.s"
+	@echo "... src/pid.o"
+	@echo "... src/pid.i"
+	@echo "... src/pid.s"
 .PHONY : help
 
 
@@ -226,6 +290,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
