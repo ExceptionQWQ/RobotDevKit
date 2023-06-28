@@ -81,6 +81,7 @@ void EncodingMotor::SetCallback(MotorCallback motorCallback)
 int EncodingMotor::AddPulse(int pulse)
 {
     pid.SetInput(pulse);
+    if (reverse) pulse = -pulse;
     return this->pulse += pulse;
 }
 

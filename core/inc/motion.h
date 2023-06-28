@@ -41,6 +41,9 @@ private:
     double motor2Speed = 0;
     double motor3Speed = 0;
     double motor4Speed = 0;
+    double kp = 0;
+    double ki = 0;
+    double kd = 0;
 public:
     MecanumMotion();
     ~MecanumMotion();
@@ -53,6 +56,8 @@ public:
     void AddYSpeed(double speed);
     void AddZSpeed(double speed);
     void CommitSpeed();
+    void SetPosPID(double p, double i, double d);
+    void Move(double speed, double xDis, double yDis);
 };
 
 

@@ -74,7 +74,24 @@ void MecanumMotion::CommitSpeed()
 	if (motor4) motor4->SetSpeed(motor4Speed);
 }
 
+void MecanumMotion::SetPosPID(double p, double i, double d)
+{
+	this->kp = p;
+	this->ki = i;
+	this->kd = d;
+}
 
+/*
+ * @brief 2维平面内上下左右移动
+ * @attention 调用此方法会一直阻塞到移动结束！
+ * @param speed 移动速度
+ * @param xDis x轴移动距离
+ * @param yDis y轴移动距离
+ */
+void MecanumMotion::Move(double speed, double xDis, double yDis)
+{
+	
+}
 
 
 
