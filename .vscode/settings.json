@@ -65,5 +65,6 @@
         "random": "cpp",
         "utility": "cpp",
         "stop_token": "cpp"
-    }
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }

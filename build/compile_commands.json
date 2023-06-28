@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core",
+  "command": "/usr/bin/clang++  -I/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/inc -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++11 -o CMakeFiles/RDK_Core.dir/src/pid.cpp.o -c /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/pid.cpp",
+  "file": "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/pid.cpp"
+},
+{
+  "directory": "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core",
+  "command": "/usr/bin/clang++  -I/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/inc -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++11 -o CMakeFiles/RDK_Core.dir/src/motor.cpp.o -c /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motor.cpp",
+  "file": "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motor.cpp"
+},
+{
+  "directory": "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core",
+  "command": "/usr/bin/clang++  -I/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/inc -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++11 -o CMakeFiles/RDK_Core.dir/src/motion.cpp.o -c /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motion.cpp",
+  "file": "/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motion.cpp"
+}
+]

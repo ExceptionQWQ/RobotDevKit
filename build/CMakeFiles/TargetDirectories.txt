@@ -10,5 +10,4 @@
 /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/CMakeFiles/list_install_components.dir
 /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/CMakeFiles/rebuild_cache.dir
 /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/CMakeFiles/edit_cache.dir
-/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/CMakeFiles/motion.dir
-/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/CMakeFiles/pid.dir
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/core/CMakeFiles/RDK_Core.dir

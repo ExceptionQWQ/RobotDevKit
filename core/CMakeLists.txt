@@ -6,7 +6,5 @@ project(RDK_Core VERSION 1.0)
 
 include_directories(inc)
 
-add_library(pid STATIC src/pid.cpp)
-
-add_library(motion STATIC src/motion.cpp)
+add_library(RDK_Core STATIC src/pid.cpp src/motor.cpp src/motion.cpp)
 

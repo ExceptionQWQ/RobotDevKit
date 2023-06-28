@@ -176,30 +176,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named motion
+# Target rules for targets named RDK_Core
 
 # Build rule for target.
-motion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motion
-.PHONY : motion
+RDK_Core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RDK_Core
+.PHONY : RDK_Core
 
 # fast build rule for target.
-motion/fast:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/build
-.PHONY : motion/fast
-
-#=============================================================================
-# Target rules for targets named pid
-
-# Build rule for target.
-pid: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pid
-.PHONY : pid
-
-# fast build rule for target.
-pid/fast:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/build
-.PHONY : pid/fast
+RDK_Core/fast:
+	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/build
+.PHONY : RDK_Core/fast
 
 # Help Target
 help:
@@ -213,8 +200,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... motion"
-	@echo "... pid"
+	@echo "... RDK_Core"
 .PHONY : help
 
 

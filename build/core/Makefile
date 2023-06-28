@@ -176,34 +176,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-core/CMakeFiles/motion.dir/rule:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/motion.dir/rule
-.PHONY : core/CMakeFiles/motion.dir/rule
+core/CMakeFiles/RDK_Core.dir/rule:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/RDK_Core.dir/rule
+.PHONY : core/CMakeFiles/RDK_Core.dir/rule
 
 # Convenience name for target.
-motion: core/CMakeFiles/motion.dir/rule
+RDK_Core: core/CMakeFiles/RDK_Core.dir/rule
 
-.PHONY : motion
+.PHONY : RDK_Core
 
 # fast build rule for target.
-motion/fast:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/build
-.PHONY : motion/fast
-
-# Convenience name for target.
-core/CMakeFiles/pid.dir/rule:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/pid.dir/rule
-.PHONY : core/CMakeFiles/pid.dir/rule
-
-# Convenience name for target.
-pid: core/CMakeFiles/pid.dir/rule
-
-.PHONY : pid
-
-# fast build rule for target.
-pid/fast:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/build
-.PHONY : pid/fast
+RDK_Core/fast:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/build
+.PHONY : RDK_Core/fast
 
 src/motion.o: src/motion.cpp.o
 
@@ -211,7 +196,7 @@ src/motion.o: src/motion.cpp.o
 
 # target to build an object file
 src/motion.cpp.o:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/src/motion.cpp.o
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/src/motion.cpp.o
 .PHONY : src/motion.cpp.o
 
 src/motion.i: src/motion.cpp.i
@@ -220,7 +205,7 @@ src/motion.i: src/motion.cpp.i
 
 # target to preprocess a source file
 src/motion.cpp.i:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/src/motion.cpp.i
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/src/motion.cpp.i
 .PHONY : src/motion.cpp.i
 
 src/motion.s: src/motion.cpp.s
@@ -229,8 +214,35 @@ src/motion.s: src/motion.cpp.s
 
 # target to generate assembly for a file
 src/motion.cpp.s:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/src/motion.cpp.s
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/src/motion.cpp.s
 .PHONY : src/motion.cpp.s
+
+src/motor.o: src/motor.cpp.o
+
+.PHONY : src/motor.o
+
+# target to build an object file
+src/motor.cpp.o:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/src/motor.cpp.o
+.PHONY : src/motor.cpp.o
+
+src/motor.i: src/motor.cpp.i
+
+.PHONY : src/motor.i
+
+# target to preprocess a source file
+src/motor.cpp.i:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/src/motor.cpp.i
+.PHONY : src/motor.cpp.i
+
+src/motor.s: src/motor.cpp.s
+
+.PHONY : src/motor.s
+
+# target to generate assembly for a file
+src/motor.cpp.s:
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/src/motor.cpp.s
+.PHONY : src/motor.cpp.s
 
 src/pid.o: src/pid.cpp.o
 
@@ -238,7 +250,7 @@ src/pid.o: src/pid.cpp.o
 
 # target to build an object file
 src/pid.cpp.o:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/src/pid.cpp.o
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/src/pid.cpp.o
 .PHONY : src/pid.cpp.o
 
 src/pid.i: src/pid.cpp.i
@@ -247,7 +259,7 @@ src/pid.i: src/pid.cpp.i
 
 # target to preprocess a source file
 src/pid.cpp.i:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/src/pid.cpp.i
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/src/pid.cpp.i
 .PHONY : src/pid.cpp.i
 
 src/pid.s: src/pid.cpp.s
@@ -256,7 +268,7 @@ src/pid.s: src/pid.cpp.s
 
 # target to generate assembly for a file
 src/pid.cpp.s:
-	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/src/pid.cpp.s
+	cd /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/src/pid.cpp.s
 .PHONY : src/pid.cpp.s
 
 # Help Target
@@ -271,11 +283,13 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... motion"
-	@echo "... pid"
+	@echo "... RDK_Core"
 	@echo "... src/motion.o"
 	@echo "... src/motion.i"
 	@echo "... src/motion.s"
+	@echo "... src/motor.o"
+	@echo "... src/motor.i"
+	@echo "... src/motor.s"
 	@echo "... src/pid.o"
 	@echo "... src/pid.i"
 	@echo "... src/pid.s"

@@ -90,8 +90,7 @@ clean: core/clean
 # Directory level rules for directory core
 
 # Recursive "all" directory target.
-core/all: core/CMakeFiles/motion.dir/all
-core/all: core/CMakeFiles/pid.dir/all
+core/all: core/CMakeFiles/RDK_Core.dir/all
 
 .PHONY : core/all
 
@@ -101,64 +100,36 @@ core/preinstall:
 .PHONY : core/preinstall
 
 # Recursive "clean" directory target.
-core/clean: core/CMakeFiles/motion.dir/clean
-core/clean: core/CMakeFiles/pid.dir/clean
+core/clean: core/CMakeFiles/RDK_Core.dir/clean
 
 .PHONY : core/clean
 
 #=============================================================================
-# Target rules for target core/CMakeFiles/motion.dir
+# Target rules for target core/CMakeFiles/RDK_Core.dir
 
 # All Build rule for target.
-core/CMakeFiles/motion.dir/all:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/depend
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles --progress-num=1,2 "Built target motion"
-.PHONY : core/CMakeFiles/motion.dir/all
+core/CMakeFiles/RDK_Core.dir/all:
+	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/depend
+	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles --progress-num=1,2,3,4 "Built target RDK_Core"
+.PHONY : core/CMakeFiles/RDK_Core.dir/all
 
 # Build rule for subdir invocation for target.
-core/CMakeFiles/motion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/motion.dir/all
+core/CMakeFiles/RDK_Core.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/RDK_Core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles 0
-.PHONY : core/CMakeFiles/motion.dir/rule
+.PHONY : core/CMakeFiles/RDK_Core.dir/rule
 
 # Convenience name for target.
-motion: core/CMakeFiles/motion.dir/rule
+RDK_Core: core/CMakeFiles/RDK_Core.dir/rule
 
-.PHONY : motion
-
-# clean rule for target.
-core/CMakeFiles/motion.dir/clean:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/motion.dir/build.make core/CMakeFiles/motion.dir/clean
-.PHONY : core/CMakeFiles/motion.dir/clean
-
-#=============================================================================
-# Target rules for target core/CMakeFiles/pid.dir
-
-# All Build rule for target.
-core/CMakeFiles/pid.dir/all:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/depend
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles --progress-num=3,4 "Built target pid"
-.PHONY : core/CMakeFiles/pid.dir/all
-
-# Build rule for subdir invocation for target.
-core/CMakeFiles/pid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/pid.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/build/CMakeFiles 0
-.PHONY : core/CMakeFiles/pid.dir/rule
-
-# Convenience name for target.
-pid: core/CMakeFiles/pid.dir/rule
-
-.PHONY : pid
+.PHONY : RDK_Core
 
 # clean rule for target.
-core/CMakeFiles/pid.dir/clean:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/pid.dir/build.make core/CMakeFiles/pid.dir/clean
-.PHONY : core/CMakeFiles/pid.dir/clean
+core/CMakeFiles/RDK_Core.dir/clean:
+	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/RDK_Core.dir/build.make core/CMakeFiles/RDK_Core.dir/clean
+.PHONY : core/CMakeFiles/RDK_Core.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

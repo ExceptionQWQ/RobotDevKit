@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../core/inc/motor.h
+pid.h
+../core/inc/pid.h
+utility
+-
+
+../core/inc/pid.h
+utility
+-
+
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motor.cpp
+motor.h
+/Users/mac/Desktop/RobotDevKit-WS/RobotDevKit/core/src/motor.h
+

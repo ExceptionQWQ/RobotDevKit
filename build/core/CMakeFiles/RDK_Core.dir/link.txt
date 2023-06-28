@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRDK_Core.a CMakeFiles/RDK_Core.dir/src/pid.cpp.o CMakeFiles/RDK_Core.dir/src/motor.cpp.o CMakeFiles/RDK_Core.dir/src/motion.cpp.o
+/usr/bin/ranlib libRDK_Core.a

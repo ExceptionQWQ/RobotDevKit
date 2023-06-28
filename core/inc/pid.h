@@ -23,13 +23,13 @@ private:
     double kp = 0; //p比例系数
     double ki = 0; //i比例系数
     double kd = 0; //d比例系数
-    double input; //输入值
-    double target; //目标值
-    double error; //误差（目标值-输入值）
-    double totalError; //总误差， 位置式算法中使用此变量
-    double lastError; //上一次误差
-    double lastError2; //上上一次误差， 增量式算法中使用此变量
-    double output;
+    volatile double input; //输入值
+    volatile double target; //目标值
+    volatile double error; //误差（目标值-输入值）
+    volatile double totalError; //总误差， 位置式算法中使用此变量
+    volatile double lastError; //上一次误差
+    volatile double lastError2; //上上一次误差， 增量式算法中使用此变量
+    volatile double output;
     std::pair<double, double> totalErrorRange = {0, 0}; //限制积分幅度
     std::pair<double, double> outputRange = {0, 0}; //限制输出幅度
     void IncTick();
