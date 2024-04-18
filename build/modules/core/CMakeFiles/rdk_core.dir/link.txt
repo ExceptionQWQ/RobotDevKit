@@ -1,0 +1,2 @@
+/usr/bin/aarch64-linux-gnu-ar qc librdk_core.a CMakeFiles/rdk_core.dir/src/serial_port/serial_port.cpp.o
+/usr/bin/aarch64-linux-gnu-ranlib librdk_core.a
