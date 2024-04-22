@@ -4,7 +4,7 @@
  * @version 1.0
  */
 
-#include "rdk/core/serial_port/serial_port.hpp"
+#include "rdk/core/transfer/serial_port.h"
 
 SerialPort::SerialPort(const std::string& serial_dev_path, int baud_rate)
 {
@@ -36,6 +36,11 @@ void SerialPort::close()
 std::size_t SerialPort::write(char* data, int len)
 {
     return boost::asio::write(*serial, boost::asio::buffer(data, len), boost::asio::transfer_all());
+}
+
+std::size_t SerialPort::read(char* buff, int size_to_read)
+{
+    return boost::asio::read(*serial, boost::asio::buffer(buff, size_to_read), boost::asio::transfer_at_least(1));
 }
 
 void SerialPort::set_default_option()

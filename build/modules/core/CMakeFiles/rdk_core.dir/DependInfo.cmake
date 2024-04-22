@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/work_dir/RobotDevKit/modules/core/src/serial_port/serial_port.cpp" "modules/core/CMakeFiles/rdk_core.dir/src/serial_port/serial_port.cpp.o" "gcc" "modules/core/CMakeFiles/rdk_core.dir/src/serial_port/serial_port.cpp.o.d"
+  "/home/work_dir/RobotDevKit/modules/core/src/transfer/io_stream.cpp" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o" "gcc" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o.d"
+  "/home/work_dir/RobotDevKit/modules/core/src/transfer/serial_port.cpp" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o" "gcc" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o.d"
+  "/home/work_dir/RobotDevKit/modules/core/src/transfer/simple_message_transfer.cpp" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o" "gcc" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o.d"
   )
 
 # Targets to which this target links.

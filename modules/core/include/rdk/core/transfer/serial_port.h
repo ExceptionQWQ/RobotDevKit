@@ -4,11 +4,15 @@
  * @version 1.0
  */
 
-#include <boost/asio.hpp>
+#pragma once
+
 #include <string>
 #include <memory>
+#include <boost/asio.hpp>
+#include "rdk/core/transfer/io_stream.h"
 
-class SerialPort
+
+class SerialPort : public IOStream
 {
 public:
     SerialPort(const std::string& serial_dev_path, int baud_rate);
@@ -17,7 +21,8 @@ public:
     void open(const std::string& serial_dev_path, int baud_rate);
     void close();
 
-    std::size_t write(char* data, int len);
+    std::size_t write(char* data, int len) override;
+    std::size_t read(char* buff, int size_to_read) override;
 
 
 private:

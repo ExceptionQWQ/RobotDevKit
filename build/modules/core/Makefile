@@ -144,29 +144,91 @@ test_serial_port/fast:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_serial_port.dir/build.make modules/core/CMakeFiles/test_serial_port.dir/build
 .PHONY : test_serial_port/fast
 
-src/serial_port/serial_port.o: src/serial_port/serial_port.cpp.o
-.PHONY : src/serial_port/serial_port.o
+# Convenience name for target.
+modules/core/CMakeFiles/test_simple_message_transfer.dir/rule:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_simple_message_transfer.dir/rule
+.PHONY : modules/core/CMakeFiles/test_simple_message_transfer.dir/rule
+
+# Convenience name for target.
+test_simple_message_transfer: modules/core/CMakeFiles/test_simple_message_transfer.dir/rule
+.PHONY : test_simple_message_transfer
+
+# fast build rule for target.
+test_simple_message_transfer/fast:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/build
+.PHONY : test_simple_message_transfer/fast
+
+src/transfer/io_stream.o: src/transfer/io_stream.cpp.o
+.PHONY : src/transfer/io_stream.o
 
 # target to build an object file
-src/serial_port/serial_port.cpp.o:
-	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/serial_port/serial_port.cpp.o
-.PHONY : src/serial_port/serial_port.cpp.o
+src/transfer/io_stream.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o
+.PHONY : src/transfer/io_stream.cpp.o
 
-src/serial_port/serial_port.i: src/serial_port/serial_port.cpp.i
-.PHONY : src/serial_port/serial_port.i
+src/transfer/io_stream.i: src/transfer/io_stream.cpp.i
+.PHONY : src/transfer/io_stream.i
 
 # target to preprocess a source file
-src/serial_port/serial_port.cpp.i:
-	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/serial_port/serial_port.cpp.i
-.PHONY : src/serial_port/serial_port.cpp.i
+src/transfer/io_stream.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.i
+.PHONY : src/transfer/io_stream.cpp.i
 
-src/serial_port/serial_port.s: src/serial_port/serial_port.cpp.s
-.PHONY : src/serial_port/serial_port.s
+src/transfer/io_stream.s: src/transfer/io_stream.cpp.s
+.PHONY : src/transfer/io_stream.s
 
 # target to generate assembly for a file
-src/serial_port/serial_port.cpp.s:
-	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/serial_port/serial_port.cpp.s
-.PHONY : src/serial_port/serial_port.cpp.s
+src/transfer/io_stream.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.s
+.PHONY : src/transfer/io_stream.cpp.s
+
+src/transfer/serial_port.o: src/transfer/serial_port.cpp.o
+.PHONY : src/transfer/serial_port.o
+
+# target to build an object file
+src/transfer/serial_port.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o
+.PHONY : src/transfer/serial_port.cpp.o
+
+src/transfer/serial_port.i: src/transfer/serial_port.cpp.i
+.PHONY : src/transfer/serial_port.i
+
+# target to preprocess a source file
+src/transfer/serial_port.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.i
+.PHONY : src/transfer/serial_port.cpp.i
+
+src/transfer/serial_port.s: src/transfer/serial_port.cpp.s
+.PHONY : src/transfer/serial_port.s
+
+# target to generate assembly for a file
+src/transfer/serial_port.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.s
+.PHONY : src/transfer/serial_port.cpp.s
+
+src/transfer/simple_message_transfer.o: src/transfer/simple_message_transfer.cpp.o
+.PHONY : src/transfer/simple_message_transfer.o
+
+# target to build an object file
+src/transfer/simple_message_transfer.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o
+.PHONY : src/transfer/simple_message_transfer.cpp.o
+
+src/transfer/simple_message_transfer.i: src/transfer/simple_message_transfer.cpp.i
+.PHONY : src/transfer/simple_message_transfer.i
+
+# target to preprocess a source file
+src/transfer/simple_message_transfer.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.i
+.PHONY : src/transfer/simple_message_transfer.cpp.i
+
+src/transfer/simple_message_transfer.s: src/transfer/simple_message_transfer.cpp.s
+.PHONY : src/transfer/simple_message_transfer.s
+
+# target to generate assembly for a file
+src/transfer/simple_message_transfer.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.s
+.PHONY : src/transfer/simple_message_transfer.cpp.s
 
 test/test_serial_port.o: test/test_serial_port.cpp.o
 .PHONY : test/test_serial_port.o
@@ -192,6 +254,30 @@ test/test_serial_port.cpp.s:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_serial_port.dir/build.make modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.s
 .PHONY : test/test_serial_port.cpp.s
 
+test/test_simple_message_transfer.o: test/test_simple_message_transfer.cpp.o
+.PHONY : test/test_simple_message_transfer.o
+
+# target to build an object file
+test/test_simple_message_transfer.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/test/test_simple_message_transfer.cpp.o
+.PHONY : test/test_simple_message_transfer.cpp.o
+
+test/test_simple_message_transfer.i: test/test_simple_message_transfer.cpp.i
+.PHONY : test/test_simple_message_transfer.i
+
+# target to preprocess a source file
+test/test_simple_message_transfer.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/test/test_simple_message_transfer.cpp.i
+.PHONY : test/test_simple_message_transfer.cpp.i
+
+test/test_simple_message_transfer.s: test/test_simple_message_transfer.cpp.s
+.PHONY : test/test_simple_message_transfer.s
+
+# target to generate assembly for a file
+test/test_simple_message_transfer.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/test/test_simple_message_transfer.cpp.s
+.PHONY : test/test_simple_message_transfer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,12 +288,22 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... rdk_core"
 	@echo "... test_serial_port"
-	@echo "... src/serial_port/serial_port.o"
-	@echo "... src/serial_port/serial_port.i"
-	@echo "... src/serial_port/serial_port.s"
+	@echo "... test_simple_message_transfer"
+	@echo "... src/transfer/io_stream.o"
+	@echo "... src/transfer/io_stream.i"
+	@echo "... src/transfer/io_stream.s"
+	@echo "... src/transfer/serial_port.o"
+	@echo "... src/transfer/serial_port.i"
+	@echo "... src/transfer/serial_port.s"
+	@echo "... src/transfer/simple_message_transfer.o"
+	@echo "... src/transfer/simple_message_transfer.i"
+	@echo "... src/transfer/simple_message_transfer.s"
 	@echo "... test/test_serial_port.o"
 	@echo "... test/test_serial_port.i"
 	@echo "... test/test_serial_port.s"
+	@echo "... test/test_simple_message_transfer.o"
+	@echo "... test/test_simple_message_transfer.i"
+	@echo "... test/test_simple_message_transfer.s"
 .PHONY : help
 
 

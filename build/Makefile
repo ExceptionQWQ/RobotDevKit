@@ -142,6 +142,19 @@ test_serial_port/fast:
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_serial_port.dir/build.make modules/core/CMakeFiles/test_serial_port.dir/build
 .PHONY : test_serial_port/fast
 
+#=============================================================================
+# Target rules for targets named test_simple_message_transfer
+
+# Build rule for target.
+test_simple_message_transfer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_simple_message_transfer
+.PHONY : test_simple_message_transfer
+
+# fast build rule for target.
+test_simple_message_transfer/fast:
+	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/build
+.PHONY : test_simple_message_transfer/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -152,6 +165,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... rdk_core"
 	@echo "... test_serial_port"
+	@echo "... test_simple_message_transfer"
 .PHONY : help
 
 

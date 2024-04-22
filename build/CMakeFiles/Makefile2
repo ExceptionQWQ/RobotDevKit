@@ -80,6 +80,7 @@ clean: modules/core/clean
 # Recursive "all" directory target.
 modules/core/all: modules/core/CMakeFiles/rdk_core.dir/all
 modules/core/all: modules/core/CMakeFiles/test_serial_port.dir/all
+modules/core/all: modules/core/CMakeFiles/test_simple_message_transfer.dir/all
 .PHONY : modules/core/all
 
 # Recursive "preinstall" directory target.
@@ -89,6 +90,7 @@ modules/core/preinstall:
 # Recursive "clean" directory target.
 modules/core/clean: modules/core/CMakeFiles/rdk_core.dir/clean
 modules/core/clean: modules/core/CMakeFiles/test_serial_port.dir/clean
+modules/core/clean: modules/core/CMakeFiles/test_simple_message_transfer.dir/clean
 .PHONY : modules/core/clean
 
 #=============================================================================
@@ -98,12 +100,12 @@ modules/core/clean: modules/core/CMakeFiles/test_serial_port.dir/clean
 modules/core/CMakeFiles/rdk_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=1,2 "Built target rdk_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=1,2,3,4 "Built target rdk_core"
 .PHONY : modules/core/CMakeFiles/rdk_core.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/rdk_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/rdk_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/rdk_core.dir/rule
@@ -124,12 +126,12 @@ modules/core/CMakeFiles/rdk_core.dir/clean:
 modules/core/CMakeFiles/test_serial_port.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_serial_port.dir/build.make modules/core/CMakeFiles/test_serial_port.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_serial_port.dir/build.make modules/core/CMakeFiles/test_serial_port.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=3,4 "Built target test_serial_port"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=5,6 "Built target test_serial_port"
 .PHONY : modules/core/CMakeFiles/test_serial_port.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/test_serial_port.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_serial_port.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/test_serial_port.dir/rule
@@ -142,6 +144,32 @@ test_serial_port: modules/core/CMakeFiles/test_serial_port.dir/rule
 modules/core/CMakeFiles/test_serial_port.dir/clean:
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_serial_port.dir/build.make modules/core/CMakeFiles/test_serial_port.dir/clean
 .PHONY : modules/core/CMakeFiles/test_serial_port.dir/clean
+
+#=============================================================================
+# Target rules for target modules/core/CMakeFiles/test_simple_message_transfer.dir
+
+# All Build rule for target.
+modules/core/CMakeFiles/test_simple_message_transfer.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
+	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/depend
+	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=7,8 "Built target test_simple_message_transfer"
+.PHONY : modules/core/CMakeFiles/test_simple_message_transfer.dir/all
+
+# Build rule for subdir invocation for target.
+modules/core/CMakeFiles/test_simple_message_transfer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_simple_message_transfer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
+.PHONY : modules/core/CMakeFiles/test_simple_message_transfer.dir/rule
+
+# Convenience name for target.
+test_simple_message_transfer: modules/core/CMakeFiles/test_simple_message_transfer.dir/rule
+.PHONY : test_simple_message_transfer
+
+# clean rule for target.
+modules/core/CMakeFiles/test_simple_message_transfer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/clean
+.PHONY : modules/core/CMakeFiles/test_simple_message_transfer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

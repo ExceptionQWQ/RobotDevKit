@@ -252,8 +252,8 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
   /usr/aarch64-linux-gnu/include/c++/11/bits/uses_allocator_args.h \
   /usr/aarch64-linux-gnu/include/c++/11/pstl/glue_memory_defs.h \
   /usr/aarch64-linux-gnu/include/c++/11/pstl/execution_defs.h \
-  ../modules/core/include/rdk/core.hpp \
-  ../modules/core/include/rdk/core/serial_port/serial_port.hpp \
+  ../modules/core/include/rdk/core.h \
+  ../modules/core/include/rdk/core/transfer/serial_port.h \
   /usr/aarch64-linux-gnu/include/boost/asio.hpp \
   /usr/aarch64-linux-gnu/include/boost/asio/associated_allocator.hpp \
   /usr/aarch64-linux-gnu/include/boost/asio/detail/config.hpp \
@@ -1255,8 +1255,29 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
   /usr/aarch64-linux-gnu/include/boost/asio/windows/random_access_handle.hpp \
   /usr/aarch64-linux-gnu/include/boost/asio/windows/stream_handle.hpp \
   /usr/aarch64-linux-gnu/include/boost/asio/write_at.hpp \
-  /usr/aarch64-linux-gnu/include/boost/asio/impl/write_at.hpp
+  /usr/aarch64-linux-gnu/include/boost/asio/impl/write_at.hpp \
+  ../modules/core/include/rdk/core/transfer/io_stream.h \
+  ../modules/core/include/rdk/core/transfer/simple_message_transfer.h \
+  /usr/aarch64-linux-gnu/include/boost/crc.hpp \
+  /usr/aarch64-linux-gnu/include/boost/array.hpp \
+  /usr/aarch64-linux-gnu/include/boost/swap.hpp \
+  /usr/aarch64-linux-gnu/include/boost/core/swap.hpp \
+  /usr/aarch64-linux-gnu/include/boost/integer.hpp \
+  /usr/aarch64-linux-gnu/include/boost/integer_fwd.hpp \
+  /usr/aarch64-linux-gnu/include/boost/integer_traits.hpp
 
+
+/usr/aarch64-linux-gnu/include/boost/integer_fwd.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/integer.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/array.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/crc.hpp:
+
+../modules/core/include/rdk/core/transfer/simple_message_transfer.h:
+
+../modules/core/include/rdk/core/transfer/io_stream.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/write_at.hpp:
 
@@ -1476,6 +1497,8 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 
 /usr/aarch64-linux-gnu/include/bits/poll.h:
 
+/usr/aarch64-linux-gnu/include/boost/integer_traits.hpp:
+
 /usr/aarch64-linux-gnu/include/sys/ttydefaults.h:
 
 /usr/aarch64-linux-gnu/include/c++/11/aarch64-linux-gnu/bits/cpu_defines.h:
@@ -1603,6 +1626,12 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/boost/asio/any_io_executor.hpp:
 
 /usr/aarch64-linux-gnu/include/bits/types/__mbstate_t.h:
+
+/usr/aarch64-linux-gnu/include/boost/detail/workaround.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/query.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/multiplies.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/traits/static_require.hpp:
 
@@ -1808,9 +1837,9 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 
 /usr/aarch64-linux-gnu/include/boost/asio/traits/execute_free.hpp:
 
-/usr/aarch64-linux-gnu/include/c++/11/bits/stl_iterator_base_funcs.h:
-
 /usr/aarch64-linux-gnu/include/c++/11/ext/alloc_traits.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/aarch64-linux-gnu/include/boost/predef/platform/mingw64.h:
 
@@ -1843,10 +1872,6 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/boost/asio/execution/bad_executor.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/execution/set_error.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/execution/set_done.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/numeric/conversion/numeric_cast_traits.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/impl/multiple_exceptions.ipp:
 
@@ -2010,10 +2035,6 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/stl_construct.h:
 
-/usr/aarch64-linux-gnu/include/bits/timerfd.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/impl/null_event.ipp:
-
 /usr/aarch64-linux-gnu/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/vector.tcc:
@@ -2053,6 +2074,10 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/boost/asio/uses_executor.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/reactor.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/version.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/preprocessor/logical/and.hpp:
 
 /usr/aarch64-linux-gnu/include/bits/types.h:
 
@@ -2097,6 +2122,8 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/bits/waitflags.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/connect.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/core/swap.hpp:
 
 /usr/lib/gcc-cross/aarch64-linux-gnu/11/include/stddef.h:
 
@@ -2520,12 +2547,6 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 
 /usr/aarch64-linux-gnu/include/c++/11/chrono:
 
-/usr/aarch64-linux-gnu/include/boost/preprocessor/logical/and.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/version.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/detail/workaround.hpp:
-
 /usr/aarch64-linux-gnu/include/features.h:
 
 /usr/aarch64-linux-gnu/include/limits.h:
@@ -2556,6 +2577,8 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/max_size_type.h:
 
+/usr/aarch64-linux-gnu/include/boost/swap.hpp:
+
 /usr/aarch64-linux-gnu/include/boost/asio/detail/eventfd_select_interrupter.hpp:
 
 /usr/aarch64-linux-gnu/include/asm-generic/bitsperlong.h:
@@ -2567,6 +2590,20 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/bits/types/clock_t.h:
 
 /usr/aarch64-linux-gnu/include/boost/mpl/if.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/execution/set_done.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/numeric/conversion/numeric_cast_traits.hpp:
+
+../modules/core/include/rdk/core/transfer/serial_port.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/execution/schedule.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/predef/architecture.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/steady_timer.hpp:
 
 /usr/aarch64-linux-gnu/include/c++/11/memory:
 
@@ -2593,12 +2630,6 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/bits/procfs-extra.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/ip/udp.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/windows/random_access_handle.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/void.hpp:
-
-/usr/aarch64-linux-gnu/include/bits/xopen_lim.h:
 
 /usr/aarch64-linux-gnu/include/boost/mpl/aux_/config/compiler.hpp:
 
@@ -2708,6 +2739,22 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 
 /usr/aarch64-linux-gnu/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
 
+/usr/aarch64-linux-gnu/include/bits/timerfd.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/impl/null_event.ipp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/windows/random_access_handle.hpp:
+
+/usr/aarch64-linux-gnu/include/bits/xopen_lim.h:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/void.hpp:
+
+../modules/core/include/rdk/core.h:
+
+/usr/aarch64-linux-gnu/include/boost/smart_ptr/detail/sp_thread_pause.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/date_time/int_adapter.hpp:
+
 /usr/aarch64-linux-gnu/include/c++/11/array:
 
 /usr/aarch64-linux-gnu/include/boost/asio/execution/sender.hpp:
@@ -2791,12 +2838,6 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/bits/posix_opt.h:
 
 /usr/aarch64-linux-gnu/include/bits/getopt_posix.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/query.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/multiplies.hpp:
-
-../modules/core/include/rdk/core.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/scheduler.hpp:
 
@@ -3023,10 +3064,6 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/ip/impl/basic_endpoint.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/smart_ptr/detail/sp_thread_pause.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/date_time/int_adapter.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/config/pragma_message.hpp:
 
@@ -3438,17 +3475,7 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 
 /usr/aarch64-linux-gnu/include/boost/mpl/aux_/nested_type_wknd.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/execution/schedule.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/predef/architecture.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/steady_timer.hpp:
-
 /usr/aarch64-linux-gnu/include/boost/mpl/integral_c.hpp:
-
-../modules/core/include/rdk/core/serial_port/serial_port.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/mpl/integral_c_fwd.hpp:
 

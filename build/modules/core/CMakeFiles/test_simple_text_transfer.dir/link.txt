@@ -1,0 +1,1 @@
+/usr/bin/aarch64-linux-gnu-g++ CMakeFiles/test_simple_text_transfer.dir/test/test_simple_text_transfer.cpp.o -o test_simple_text_transfer  librdk_core.a 

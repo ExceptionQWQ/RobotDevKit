@@ -1,7 +1,7 @@
 modules/core/CMakeFiles/rdk_core.dir/src/serial_port/serial_port.cpp.o: \
  /home/work_dir/RobotDevKit/modules/core/src/serial_port/serial_port.cpp \
  /usr/aarch64-linux-gnu/include/stdc-predef.h \
- /home/work_dir/RobotDevKit/modules/core/include/rdk/core/serial_port/serial_port.hpp \
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/serial_port/serial_port.h \
  /usr/aarch64-linux-gnu/include/boost/asio.hpp \
  /usr/aarch64-linux-gnu/include/boost/asio/associated_allocator.hpp \
  /usr/aarch64-linux-gnu/include/boost/asio/detail/config.hpp \
