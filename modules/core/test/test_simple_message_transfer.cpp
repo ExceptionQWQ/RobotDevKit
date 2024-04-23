@@ -24,12 +24,13 @@ int main()
         std::string msg = "Hello World";
         for (int i = 0; i < 1000; ++i) {
             transfer1->send_message(msg);
-            transfer2->recv_message();
+            transfer2->recv_message(1000);
             transfer2->send_message(msg);
-            transfer1->recv_message();
+            transfer1->recv_message(1000);
         }
         std::cout << "crc_error_cnt:" << transfer1->get_crc_error_cnt() << " " << transfer1->get_crc_error_cnt() << std::endl;
     }
 
+    
     return 0;
 }

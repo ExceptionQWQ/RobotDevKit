@@ -16,9 +16,11 @@ int main()
     std::cout << "打开成功" << std::endl;
     while(true) {
         char data[] = "Hello World\n";
-        serial1->write(data, strlen(data));
+        serial1->write(data, strlen(data), 1000);
         char buff[1024];
         size_t len = serial2->read(buff, 1024);
+        serial2->write(data, strlen(data));
+        len = serial1->read(buff, 1024, 1000);
         std::cout << buff;
     }
     return 0;

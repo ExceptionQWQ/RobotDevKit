@@ -9,7 +9,9 @@
 #include <memory>
 #include <string>
 #include <cstring>
+#include <optional>
 #include <boost/crc.hpp>
+#include <boost/asio.hpp>
 #include "rdk/core/transfer/io_stream.h"
 
 class SimpleMessageTransfer
@@ -31,6 +33,7 @@ public:
 private:
     std::shared_ptr<IOStream> io_stream;
     std::shared_ptr<boost::crc_optimal<8, 0x31, 0, 0, false, false>> crc8_calculator;
+    
     std::size_t send_bytes = 0;
     std::size_t recv_bytes = 0;
     std::size_t crc_error_cnt = 0;

@@ -62,7 +62,7 @@ std::string SimpleMessageTransfer::recv_message(int timeout)
         if (check_recv_status()) break;
         switch (recv_status) {
             case RecvStatus::RecvFirstFrameStart:
-                io_stream->read(recv_buff + pkg_len, 1);
+                io_stream->read(recv_buff + pkg_len, 1, timeout);
                 if (recv_buff[pkg_len] == 0xAA) {
                     recv_status = RecvStatus::RecvSecondFrameStart;
                     ++pkg_len;
@@ -72,7 +72,7 @@ std::string SimpleMessageTransfer::recv_message(int timeout)
             break;
 
             case RecvStatus::RecvSecondFrameStart:
-                io_stream->read(recv_buff + pkg_len, 1);
+                io_stream->read(recv_buff + pkg_len, 1, timeout);
                 if (recv_buff[pkg_len] == 0xAA) {
                     recv_status = RecvStatus::RecvMessageLen;
                     ++pkg_len;
@@ -82,7 +82,7 @@ std::string SimpleMessageTransfer::recv_message(int timeout)
             break;
 
             case RecvStatus::RecvMessageLen:
-                io_stream->read(recv_buff + pkg_len, 1);
+                io_stream->read(recv_buff + pkg_len, 1, timeout);
                 msg_len = recv_buff[pkg_len];
                 recv_status = RecvStatus::RecvMessage;
                 ++pkg_len;
@@ -90,7 +90,7 @@ std::string SimpleMessageTransfer::recv_message(int timeout)
 
             case RecvStatus::RecvMessage:
                 while (msg_len) {
-                    std::size_t recv_len = io_stream->read(recv_buff + pkg_len, msg_len);
+                    std::size_t recv_len = io_stream->read(recv_buff + pkg_len, msg_len, timeout);
                     pkg_len += recv_len;
                     msg_len -= recv_len;
                 }
@@ -98,7 +98,7 @@ std::string SimpleMessageTransfer::recv_message(int timeout)
             break;
 
             case RecvStatus::RecvCrc:
-                io_stream->read(recv_buff + pkg_len, 1);
+                io_stream->read(recv_buff + pkg_len, 1, timeout);
                 recv_status = RecvStatus::RecvDone;
                 ++pkg_len;
             break;

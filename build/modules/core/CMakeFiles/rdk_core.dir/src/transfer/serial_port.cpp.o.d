@@ -245,6 +245,8 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o: \
  /usr/aarch64-linux-gnu/include/c++/11/bits/uses_allocator_args.h \
  /usr/aarch64-linux-gnu/include/c++/11/pstl/glue_memory_defs.h \
  /usr/aarch64-linux-gnu/include/c++/11/pstl/execution_defs.h \
+ /usr/aarch64-linux-gnu/include/c++/11/optional \
+ /usr/aarch64-linux-gnu/include/c++/11/bits/enable_special_members.h \
  /usr/aarch64-linux-gnu/include/boost/asio.hpp \
  /usr/aarch64-linux-gnu/include/boost/asio/associated_allocator.hpp \
  /usr/aarch64-linux-gnu/include/boost/asio/detail/config.hpp \
@@ -338,7 +340,6 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o: \
  /usr/aarch64-linux-gnu/include/c++/11/unordered_map \
  /usr/aarch64-linux-gnu/include/c++/11/bits/hashtable.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/hashtable_policy.h \
- /usr/aarch64-linux-gnu/include/c++/11/bits/enable_special_members.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/node_handle.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/unordered_map.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/erase_if.h \
