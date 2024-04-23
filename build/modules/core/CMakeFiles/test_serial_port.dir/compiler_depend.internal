@@ -1260,11 +1260,5 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o
  /usr/aarch64-linux-gnu/include/boost/asio/impl/write_at.hpp
  /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/io_stream.h
  /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/simple_message_transfer.h
- /usr/aarch64-linux-gnu/include/boost/crc.hpp
- /usr/aarch64-linux-gnu/include/boost/array.hpp
- /usr/aarch64-linux-gnu/include/boost/swap.hpp
- /usr/aarch64-linux-gnu/include/boost/core/swap.hpp
- /usr/aarch64-linux-gnu/include/boost/integer.hpp
- /usr/aarch64-linux-gnu/include/boost/integer_fwd.hpp
- /usr/aarch64-linux-gnu/include/boost/integer_traits.hpp
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/crc.h
 

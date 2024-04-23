@@ -158,6 +158,44 @@ test_simple_message_transfer/fast:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/build
 .PHONY : test_simple_message_transfer/fast
 
+# Convenience name for target.
+modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/rule:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/rule
+.PHONY : modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/rule
+
+# Convenience name for target.
+test_simple_message_transfer_with_stm32: modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/rule
+.PHONY : test_simple_message_transfer_with_stm32
+
+# fast build rule for target.
+test_simple_message_transfer_with_stm32/fast:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build
+.PHONY : test_simple_message_transfer_with_stm32/fast
+
+src/transfer/crc.o: src/transfer/crc.cpp.o
+.PHONY : src/transfer/crc.o
+
+# target to build an object file
+src/transfer/crc.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.o
+.PHONY : src/transfer/crc.cpp.o
+
+src/transfer/crc.i: src/transfer/crc.cpp.i
+.PHONY : src/transfer/crc.i
+
+# target to preprocess a source file
+src/transfer/crc.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.i
+.PHONY : src/transfer/crc.cpp.i
+
+src/transfer/crc.s: src/transfer/crc.cpp.s
+.PHONY : src/transfer/crc.s
+
+# target to generate assembly for a file
+src/transfer/crc.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.s
+.PHONY : src/transfer/crc.cpp.s
+
 src/transfer/io_stream.o: src/transfer/io_stream.cpp.o
 .PHONY : src/transfer/io_stream.o
 
@@ -278,6 +316,30 @@ test/test_simple_message_transfer.cpp.s:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/test/test_simple_message_transfer.cpp.s
 .PHONY : test/test_simple_message_transfer.cpp.s
 
+test/test_simple_message_transfer_with_stm32.o: test/test_simple_message_transfer_with_stm32.cpp.o
+.PHONY : test/test_simple_message_transfer_with_stm32.o
+
+# target to build an object file
+test/test_simple_message_transfer_with_stm32.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_simple_message_transfer_with_stm32.cpp.o
+.PHONY : test/test_simple_message_transfer_with_stm32.cpp.o
+
+test/test_simple_message_transfer_with_stm32.i: test/test_simple_message_transfer_with_stm32.cpp.i
+.PHONY : test/test_simple_message_transfer_with_stm32.i
+
+# target to preprocess a source file
+test/test_simple_message_transfer_with_stm32.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_simple_message_transfer_with_stm32.cpp.i
+.PHONY : test/test_simple_message_transfer_with_stm32.cpp.i
+
+test/test_simple_message_transfer_with_stm32.s: test/test_simple_message_transfer_with_stm32.cpp.s
+.PHONY : test/test_simple_message_transfer_with_stm32.s
+
+# target to generate assembly for a file
+test/test_simple_message_transfer_with_stm32.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_simple_message_transfer_with_stm32.cpp.s
+.PHONY : test/test_simple_message_transfer_with_stm32.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -289,6 +351,10 @@ help:
 	@echo "... rdk_core"
 	@echo "... test_serial_port"
 	@echo "... test_simple_message_transfer"
+	@echo "... test_simple_message_transfer_with_stm32"
+	@echo "... src/transfer/crc.o"
+	@echo "... src/transfer/crc.i"
+	@echo "... src/transfer/crc.s"
 	@echo "... src/transfer/io_stream.o"
 	@echo "... src/transfer/io_stream.i"
 	@echo "... src/transfer/io_stream.s"
@@ -304,6 +370,9 @@ help:
 	@echo "... test/test_simple_message_transfer.o"
 	@echo "... test/test_simple_message_transfer.i"
 	@echo "... test/test_simple_message_transfer.s"
+	@echo "... test/test_simple_message_transfer_with_stm32.o"
+	@echo "... test/test_simple_message_transfer_with_stm32.i"
+	@echo "... test/test_simple_message_transfer_with_stm32.s"
 .PHONY : help
 
 

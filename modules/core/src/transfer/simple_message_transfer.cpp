@@ -9,7 +9,7 @@
 SimpleMessageTransfer::SimpleMessageTransfer(std::shared_ptr<IOStream> io_stream)
 {
     this->io_stream = io_stream;
-    crc8_calculator = std::make_shared<boost::crc_optimal<8, 0x31, 0, 0, false, false>>();
+    crc8_calculator = std::make_shared<Crc8Calculator>(0x31);
 }
 
 SimpleMessageTransfer::~SimpleMessageTransfer()
@@ -130,20 +130,22 @@ std::size_t SimpleMessageTransfer::encode(const std::string& msg)
     send_buff[2] = (char)msg_len;
     memcpy(send_buff + 3, msg.data(), msg_len);
     std::size_t pkg_len = 3 + msg_len;
-    crc8_calculator->process_bytes(send_buff, pkg_len);
+    crc8_calculator->process_bytes((uint8_t*)send_buff, pkg_len);
     send_buff[pkg_len++] = crc8_calculator->checksum();
     return pkg_len;
 }
 
+
 std::string SimpleMessageTransfer::decode(std::size_t pkg_len)
 {
-    crc8_calculator->process_bytes(recv_buff, pkg_len - 1);
+    crc8_calculator->process_bytes((uint8_t*)recv_buff, pkg_len - 1);
     char crc8 = crc8_calculator->checksum();
 
     if (crc8 != recv_buff[pkg_len - 1]) {
+
         ++crc_error_cnt;
         return std::string();
     }
 
-    return std::string(recv_buff + 2, pkg_len - 4);
+    return std::string(recv_buff + 3, pkg_len - 4);
 }

@@ -1265,8 +1265,11 @@ modules/core/CMakeFiles/test_simple_message_transfer.dir/test/test_simple_messag
   ../modules/core/include/rdk/core/transfer/serial_port.h \
   /usr/aarch64-linux-gnu/include/c++/11/optional \
   ../modules/core/include/rdk/core/transfer/io_stream.h \
-  ../modules/core/include/rdk/core/transfer/simple_message_transfer.h
+  ../modules/core/include/rdk/core/transfer/simple_message_transfer.h \
+  ../modules/core/include/rdk/core/transfer/crc.h
 
+
+../modules/core/include/rdk/core/transfer/crc.h:
 
 ../modules/core/include/rdk/core/transfer/simple_message_transfer.h:
 

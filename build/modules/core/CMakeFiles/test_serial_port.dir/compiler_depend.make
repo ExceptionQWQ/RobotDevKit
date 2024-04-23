@@ -1259,22 +1259,10 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
   /usr/aarch64-linux-gnu/include/boost/asio/impl/write_at.hpp \
   ../modules/core/include/rdk/core/transfer/io_stream.h \
   ../modules/core/include/rdk/core/transfer/simple_message_transfer.h \
-  /usr/aarch64-linux-gnu/include/boost/crc.hpp \
-  /usr/aarch64-linux-gnu/include/boost/array.hpp \
-  /usr/aarch64-linux-gnu/include/boost/swap.hpp \
-  /usr/aarch64-linux-gnu/include/boost/core/swap.hpp \
-  /usr/aarch64-linux-gnu/include/boost/integer.hpp \
-  /usr/aarch64-linux-gnu/include/boost/integer_fwd.hpp \
-  /usr/aarch64-linux-gnu/include/boost/integer_traits.hpp
+  ../modules/core/include/rdk/core/transfer/crc.h
 
 
-/usr/aarch64-linux-gnu/include/boost/integer_fwd.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/integer.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/array.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/crc.hpp:
+../modules/core/include/rdk/core/transfer/crc.h:
 
 ../modules/core/include/rdk/core/transfer/simple_message_transfer.h:
 
@@ -1497,8 +1485,6 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/netinet/tcp.h:
 
 /usr/aarch64-linux-gnu/include/bits/poll.h:
-
-/usr/aarch64-linux-gnu/include/boost/integer_traits.hpp:
 
 /usr/aarch64-linux-gnu/include/sys/ttydefaults.h:
 
@@ -2120,8 +2106,6 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 
 /usr/aarch64-linux-gnu/include/boost/asio/connect.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/core/swap.hpp:
-
 /usr/lib/gcc-cross/aarch64-linux-gnu/11/include/stddef.h:
 
 /usr/aarch64-linux-gnu/include/bits/floatn-common.h:
@@ -2581,8 +2565,6 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
 /usr/aarch64-linux-gnu/include/boost/mpl/aux_/config/arrays.hpp:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/max_size_type.h:
-
-/usr/aarch64-linux-gnu/include/boost/swap.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/eventfd_select_interrupter.hpp:
 

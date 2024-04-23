@@ -1,0 +1,3 @@
+/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles/edit_cache.dir
+/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles/SimpleMessageTransferDemo.elf.dir

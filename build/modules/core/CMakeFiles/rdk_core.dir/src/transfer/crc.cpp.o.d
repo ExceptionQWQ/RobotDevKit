@@ -1,0 +1,26 @@
+modules/core/CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.o: \
+ /home/work_dir/RobotDevKit/modules/core/src/transfer/crc.cpp \
+ /usr/aarch64-linux-gnu/include/stdc-predef.h \
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/crc.h \
+ /usr/aarch64-linux-gnu/include/c++/11/cstdint \
+ /usr/aarch64-linux-gnu/include/c++/11/aarch64-linux-gnu/bits/c++config.h \
+ /usr/aarch64-linux-gnu/include/c++/11/aarch64-linux-gnu/bits/os_defines.h \
+ /usr/aarch64-linux-gnu/include/features.h \
+ /usr/aarch64-linux-gnu/include/features-time64.h \
+ /usr/aarch64-linux-gnu/include/bits/wordsize.h \
+ /usr/aarch64-linux-gnu/include/bits/timesize.h \
+ /usr/aarch64-linux-gnu/include/sys/cdefs.h \
+ /usr/aarch64-linux-gnu/include/bits/long-double.h \
+ /usr/aarch64-linux-gnu/include/gnu/stubs.h \
+ /usr/aarch64-linux-gnu/include/gnu/stubs-lp64.h \
+ /usr/aarch64-linux-gnu/include/c++/11/aarch64-linux-gnu/bits/cpu_defines.h \
+ /usr/aarch64-linux-gnu/include/c++/11/pstl/pstl_config.h \
+ /usr/lib/gcc-cross/aarch64-linux-gnu/11/include/stdint.h \
+ /usr/aarch64-linux-gnu/include/stdint.h \
+ /usr/aarch64-linux-gnu/include/bits/libc-header-start.h \
+ /usr/aarch64-linux-gnu/include/bits/types.h \
+ /usr/aarch64-linux-gnu/include/bits/typesizes.h \
+ /usr/aarch64-linux-gnu/include/bits/time64.h \
+ /usr/aarch64-linux-gnu/include/bits/wchar.h \
+ /usr/aarch64-linux-gnu/include/bits/stdint-intn.h \
+ /usr/aarch64-linux-gnu/include/bits/stdint-uintn.h

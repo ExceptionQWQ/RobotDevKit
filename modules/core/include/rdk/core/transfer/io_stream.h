@@ -8,9 +8,10 @@
 
 #include <cstdint>
 #include <string>
+#include <functional>
 #include <boost/system/error_code.hpp>
 
-using ResultHandler = void(*)(const boost::system::error_code& error, std::size_t);
+using ResultHandler = std::function<void(const boost::system::error_code& error, std::size_t)>;
 
 class IOStream
 {
