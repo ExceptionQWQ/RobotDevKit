@@ -6,7 +6,6 @@
 
 #include <iostream>
 #include <cstring>
-#include <boost/asio.hpp>
 #include "rdk/core.h"
 
 int main()

@@ -172,6 +172,34 @@ test_simple_message_transfer_with_stm32/fast:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build
 .PHONY : test_simple_message_transfer_with_stm32/fast
 
+# Convenience name for target.
+modules/core/CMakeFiles/test_simple_binary_transfer.dir/rule:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_simple_binary_transfer.dir/rule
+.PHONY : modules/core/CMakeFiles/test_simple_binary_transfer.dir/rule
+
+# Convenience name for target.
+test_simple_binary_transfer: modules/core/CMakeFiles/test_simple_binary_transfer.dir/rule
+.PHONY : test_simple_binary_transfer
+
+# fast build rule for target.
+test_simple_binary_transfer/fast:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer.dir/build
+.PHONY : test_simple_binary_transfer/fast
+
+# Convenience name for target.
+modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/rule:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/rule
+.PHONY : modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/rule
+
+# Convenience name for target.
+test_simple_binary_transfer_with_stm32: modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/rule
+.PHONY : test_simple_binary_transfer_with_stm32
+
+# fast build rule for target.
+test_simple_binary_transfer_with_stm32/fast:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build
+.PHONY : test_simple_binary_transfer_with_stm32/fast
+
 src/transfer/circular_buffer.o: src/transfer/circular_buffer.cpp.o
 .PHONY : src/transfer/circular_buffer.o
 
@@ -268,6 +296,30 @@ src/transfer/serial_port.cpp.s:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.s
 .PHONY : src/transfer/serial_port.cpp.s
 
+src/transfer/simple_binary_transfer.o: src/transfer/simple_binary_transfer.cpp.o
+.PHONY : src/transfer/simple_binary_transfer.o
+
+# target to build an object file
+src/transfer/simple_binary_transfer.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_binary_transfer.cpp.o
+.PHONY : src/transfer/simple_binary_transfer.cpp.o
+
+src/transfer/simple_binary_transfer.i: src/transfer/simple_binary_transfer.cpp.i
+.PHONY : src/transfer/simple_binary_transfer.i
+
+# target to preprocess a source file
+src/transfer/simple_binary_transfer.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_binary_transfer.cpp.i
+.PHONY : src/transfer/simple_binary_transfer.cpp.i
+
+src/transfer/simple_binary_transfer.s: src/transfer/simple_binary_transfer.cpp.s
+.PHONY : src/transfer/simple_binary_transfer.s
+
+# target to generate assembly for a file
+src/transfer/simple_binary_transfer.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_binary_transfer.cpp.s
+.PHONY : src/transfer/simple_binary_transfer.cpp.s
+
 src/transfer/simple_message_transfer.o: src/transfer/simple_message_transfer.cpp.o
 .PHONY : src/transfer/simple_message_transfer.o
 
@@ -315,6 +367,54 @@ test/test_serial_port.s: test/test_serial_port.cpp.s
 test/test_serial_port.cpp.s:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_serial_port.dir/build.make modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.s
 .PHONY : test/test_serial_port.cpp.s
+
+test/test_simple_binary_transfer.o: test/test_simple_binary_transfer.cpp.o
+.PHONY : test/test_simple_binary_transfer.o
+
+# target to build an object file
+test/test_simple_binary_transfer.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer.dir/test/test_simple_binary_transfer.cpp.o
+.PHONY : test/test_simple_binary_transfer.cpp.o
+
+test/test_simple_binary_transfer.i: test/test_simple_binary_transfer.cpp.i
+.PHONY : test/test_simple_binary_transfer.i
+
+# target to preprocess a source file
+test/test_simple_binary_transfer.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer.dir/test/test_simple_binary_transfer.cpp.i
+.PHONY : test/test_simple_binary_transfer.cpp.i
+
+test/test_simple_binary_transfer.s: test/test_simple_binary_transfer.cpp.s
+.PHONY : test/test_simple_binary_transfer.s
+
+# target to generate assembly for a file
+test/test_simple_binary_transfer.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer.dir/test/test_simple_binary_transfer.cpp.s
+.PHONY : test/test_simple_binary_transfer.cpp.s
+
+test/test_simple_binary_transfer_with_stm32.o: test/test_simple_binary_transfer_with_stm32.cpp.o
+.PHONY : test/test_simple_binary_transfer_with_stm32.o
+
+# target to build an object file
+test/test_simple_binary_transfer_with_stm32.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/test/test_simple_binary_transfer_with_stm32.cpp.o
+.PHONY : test/test_simple_binary_transfer_with_stm32.cpp.o
+
+test/test_simple_binary_transfer_with_stm32.i: test/test_simple_binary_transfer_with_stm32.cpp.i
+.PHONY : test/test_simple_binary_transfer_with_stm32.i
+
+# target to preprocess a source file
+test/test_simple_binary_transfer_with_stm32.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/test/test_simple_binary_transfer_with_stm32.cpp.i
+.PHONY : test/test_simple_binary_transfer_with_stm32.cpp.i
+
+test/test_simple_binary_transfer_with_stm32.s: test/test_simple_binary_transfer_with_stm32.cpp.s
+.PHONY : test/test_simple_binary_transfer_with_stm32.s
+
+# target to generate assembly for a file
+test/test_simple_binary_transfer_with_stm32.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/test/test_simple_binary_transfer_with_stm32.cpp.s
+.PHONY : test/test_simple_binary_transfer_with_stm32.cpp.s
 
 test/test_simple_message_transfer.o: test/test_simple_message_transfer.cpp.o
 .PHONY : test/test_simple_message_transfer.o
@@ -374,6 +474,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... rdk_core"
 	@echo "... test_serial_port"
+	@echo "... test_simple_binary_transfer"
+	@echo "... test_simple_binary_transfer_with_stm32"
 	@echo "... test_simple_message_transfer"
 	@echo "... test_simple_message_transfer_with_stm32"
 	@echo "... src/transfer/circular_buffer.o"
@@ -388,12 +490,21 @@ help:
 	@echo "... src/transfer/serial_port.o"
 	@echo "... src/transfer/serial_port.i"
 	@echo "... src/transfer/serial_port.s"
+	@echo "... src/transfer/simple_binary_transfer.o"
+	@echo "... src/transfer/simple_binary_transfer.i"
+	@echo "... src/transfer/simple_binary_transfer.s"
 	@echo "... src/transfer/simple_message_transfer.o"
 	@echo "... src/transfer/simple_message_transfer.i"
 	@echo "... src/transfer/simple_message_transfer.s"
 	@echo "... test/test_serial_port.o"
 	@echo "... test/test_serial_port.i"
 	@echo "... test/test_serial_port.s"
+	@echo "... test/test_simple_binary_transfer.o"
+	@echo "... test/test_simple_binary_transfer.i"
+	@echo "... test/test_simple_binary_transfer.s"
+	@echo "... test/test_simple_binary_transfer_with_stm32.o"
+	@echo "... test/test_simple_binary_transfer_with_stm32.i"
+	@echo "... test/test_simple_binary_transfer_with_stm32.s"
 	@echo "... test/test_simple_message_transfer.o"
 	@echo "... test/test_simple_message_transfer.i"
 	@echo "... test/test_simple_message_transfer.s"

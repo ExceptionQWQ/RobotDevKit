@@ -59,4 +59,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "modules/core/CMakeFiles/test_serial_port.dir/DependInfo.cmake"
   "modules/core/CMakeFiles/test_simple_message_transfer.dir/DependInfo.cmake"
   "modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/DependInfo.cmake"
+  "modules/core/CMakeFiles/test_simple_binary_transfer.dir/DependInfo.cmake"
+  "modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/DependInfo.cmake"
   )

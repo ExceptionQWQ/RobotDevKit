@@ -194,32 +194,8 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
  /usr/aarch64-linux-gnu/include/c++/11/cstring \
  /usr/aarch64-linux-gnu/include/string.h \
  /usr/aarch64-linux-gnu/include/strings.h \
- /usr/aarch64-linux-gnu/include/boost/asio.hpp \
- /usr/aarch64-linux-gnu/include/boost/asio/associated_allocator.hpp \
- /usr/aarch64-linux-gnu/include/boost/asio/detail/config.hpp \
- /usr/aarch64-linux-gnu/include/boost/config.hpp \
- /usr/aarch64-linux-gnu/include/boost/config/user.hpp \
- /usr/aarch64-linux-gnu/include/boost/config/detail/select_compiler_config.hpp \
- /usr/aarch64-linux-gnu/include/boost/config/compiler/gcc.hpp \
- /usr/aarch64-linux-gnu/include/c++/11/cstddef \
- /usr/aarch64-linux-gnu/include/boost/config/detail/select_stdlib_config.hpp \
- /usr/aarch64-linux-gnu/include/c++/11/version \
- /usr/aarch64-linux-gnu/include/boost/config/stdlib/libstdcpp3.hpp \
- /usr/aarch64-linux-gnu/include/unistd.h \
- /usr/aarch64-linux-gnu/include/bits/posix_opt.h \
- /usr/aarch64-linux-gnu/include/bits/environments.h \
- /usr/aarch64-linux-gnu/include/bits/confname.h \
- /usr/aarch64-linux-gnu/include/bits/getopt_posix.h \
- /usr/aarch64-linux-gnu/include/bits/getopt_core.h \
- /usr/aarch64-linux-gnu/include/bits/unistd_ext.h \
- /usr/aarch64-linux-gnu/include/linux/close_range.h \
- /usr/aarch64-linux-gnu/include/boost/config/detail/select_platform_config.hpp \
- /usr/aarch64-linux-gnu/include/boost/config/platform/linux.hpp \
- /usr/aarch64-linux-gnu/include/boost/config/detail/posix_features.hpp \
- /usr/aarch64-linux-gnu/include/boost/config/detail/suffix.hpp \
- /usr/aarch64-linux-gnu/include/boost/config/helper_macros.hpp \
- /usr/aarch64-linux-gnu/include/boost/version.hpp \
- /usr/aarch64-linux-gnu/include/linux/version.h \
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core.h \
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/serial_port.h \
  /usr/aarch64-linux-gnu/include/c++/11/memory \
  /usr/aarch64-linux-gnu/include/c++/11/bits/stl_uninitialized.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -252,6 +228,14 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
  /usr/aarch64-linux-gnu/include/bits/posix2_lim.h \
  /usr/aarch64-linux-gnu/include/bits/xopen_lim.h \
  /usr/aarch64-linux-gnu/include/bits/uio_lim.h \
+ /usr/aarch64-linux-gnu/include/unistd.h \
+ /usr/aarch64-linux-gnu/include/bits/posix_opt.h \
+ /usr/aarch64-linux-gnu/include/bits/environments.h \
+ /usr/aarch64-linux-gnu/include/bits/confname.h \
+ /usr/aarch64-linux-gnu/include/bits/getopt_posix.h \
+ /usr/aarch64-linux-gnu/include/bits/getopt_core.h \
+ /usr/aarch64-linux-gnu/include/bits/unistd_ext.h \
+ /usr/aarch64-linux-gnu/include/linux/close_range.h \
  /usr/aarch64-linux-gnu/include/syscall.h \
  /usr/aarch64-linux-gnu/include/sys/syscall.h \
  /usr/aarch64-linux-gnu/include/asm/unistd.h \
@@ -268,6 +252,26 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
  /usr/aarch64-linux-gnu/include/c++/11/bits/uses_allocator_args.h \
  /usr/aarch64-linux-gnu/include/c++/11/pstl/glue_memory_defs.h \
  /usr/aarch64-linux-gnu/include/c++/11/pstl/execution_defs.h \
+ /usr/aarch64-linux-gnu/include/c++/11/optional \
+ /usr/aarch64-linux-gnu/include/c++/11/bits/enable_special_members.h \
+ /usr/aarch64-linux-gnu/include/boost/asio.hpp \
+ /usr/aarch64-linux-gnu/include/boost/asio/associated_allocator.hpp \
+ /usr/aarch64-linux-gnu/include/boost/asio/detail/config.hpp \
+ /usr/aarch64-linux-gnu/include/boost/config.hpp \
+ /usr/aarch64-linux-gnu/include/boost/config/user.hpp \
+ /usr/aarch64-linux-gnu/include/boost/config/detail/select_compiler_config.hpp \
+ /usr/aarch64-linux-gnu/include/boost/config/compiler/gcc.hpp \
+ /usr/aarch64-linux-gnu/include/c++/11/cstddef \
+ /usr/aarch64-linux-gnu/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/aarch64-linux-gnu/include/c++/11/version \
+ /usr/aarch64-linux-gnu/include/boost/config/stdlib/libstdcpp3.hpp \
+ /usr/aarch64-linux-gnu/include/boost/config/detail/select_platform_config.hpp \
+ /usr/aarch64-linux-gnu/include/boost/config/platform/linux.hpp \
+ /usr/aarch64-linux-gnu/include/boost/config/detail/posix_features.hpp \
+ /usr/aarch64-linux-gnu/include/boost/config/detail/suffix.hpp \
+ /usr/aarch64-linux-gnu/include/boost/config/helper_macros.hpp \
+ /usr/aarch64-linux-gnu/include/boost/version.hpp \
+ /usr/aarch64-linux-gnu/include/linux/version.h \
  /usr/aarch64-linux-gnu/include/boost/asio/detail/type_traits.hpp \
  /usr/aarch64-linux-gnu/include/boost/asio/detail/push_options.hpp \
  /usr/aarch64-linux-gnu/include/boost/asio/detail/pop_options.hpp \
@@ -343,7 +347,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
  /usr/aarch64-linux-gnu/include/c++/11/unordered_map \
  /usr/aarch64-linux-gnu/include/c++/11/bits/hashtable.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/hashtable_policy.h \
- /usr/aarch64-linux-gnu/include/c++/11/bits/enable_special_members.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/node_handle.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/unordered_map.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/erase_if.h \
@@ -1252,9 +1255,7 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
  /usr/aarch64-linux-gnu/include/boost/asio/windows/stream_handle.hpp \
  /usr/aarch64-linux-gnu/include/boost/asio/write_at.hpp \
  /usr/aarch64-linux-gnu/include/boost/asio/impl/write_at.hpp \
- /home/work_dir/RobotDevKit/modules/core/include/rdk/core.h \
- /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/serial_port.h \
- /usr/aarch64-linux-gnu/include/c++/11/optional \
  /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/io_stream.h \
  /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/simple_message_transfer.h \
- /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/crc.h
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/crc.h \
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/simple_binary_transfer.h

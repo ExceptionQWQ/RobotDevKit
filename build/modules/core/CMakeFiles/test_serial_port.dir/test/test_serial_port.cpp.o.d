@@ -1257,4 +1257,5 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: \
  /usr/aarch64-linux-gnu/include/boost/asio/impl/write_at.hpp \
  /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/io_stream.h \
  /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/simple_message_transfer.h \
- /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/crc.h
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/crc.h \
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/simple_binary_transfer.h

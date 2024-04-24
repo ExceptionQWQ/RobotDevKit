@@ -196,32 +196,8 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
   /usr/aarch64-linux-gnu/include/c++/11/cstring \
   /usr/aarch64-linux-gnu/include/string.h \
   /usr/aarch64-linux-gnu/include/strings.h \
-  /usr/aarch64-linux-gnu/include/boost/asio.hpp \
-  /usr/aarch64-linux-gnu/include/boost/asio/associated_allocator.hpp \
-  /usr/aarch64-linux-gnu/include/boost/asio/detail/config.hpp \
-  /usr/aarch64-linux-gnu/include/boost/config.hpp \
-  /usr/aarch64-linux-gnu/include/boost/config/user.hpp \
-  /usr/aarch64-linux-gnu/include/boost/config/detail/select_compiler_config.hpp \
-  /usr/aarch64-linux-gnu/include/boost/config/compiler/gcc.hpp \
-  /usr/aarch64-linux-gnu/include/c++/11/cstddef \
-  /usr/aarch64-linux-gnu/include/boost/config/detail/select_stdlib_config.hpp \
-  /usr/aarch64-linux-gnu/include/c++/11/version \
-  /usr/aarch64-linux-gnu/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/aarch64-linux-gnu/include/unistd.h \
-  /usr/aarch64-linux-gnu/include/bits/posix_opt.h \
-  /usr/aarch64-linux-gnu/include/bits/environments.h \
-  /usr/aarch64-linux-gnu/include/bits/confname.h \
-  /usr/aarch64-linux-gnu/include/bits/getopt_posix.h \
-  /usr/aarch64-linux-gnu/include/bits/getopt_core.h \
-  /usr/aarch64-linux-gnu/include/bits/unistd_ext.h \
-  /usr/aarch64-linux-gnu/include/linux/close_range.h \
-  /usr/aarch64-linux-gnu/include/boost/config/detail/select_platform_config.hpp \
-  /usr/aarch64-linux-gnu/include/boost/config/platform/linux.hpp \
-  /usr/aarch64-linux-gnu/include/boost/config/detail/posix_features.hpp \
-  /usr/aarch64-linux-gnu/include/boost/config/detail/suffix.hpp \
-  /usr/aarch64-linux-gnu/include/boost/config/helper_macros.hpp \
-  /usr/aarch64-linux-gnu/include/boost/version.hpp \
-  /usr/aarch64-linux-gnu/include/linux/version.h \
+  ../modules/core/include/rdk/core.h \
+  ../modules/core/include/rdk/core/transfer/serial_port.h \
   /usr/aarch64-linux-gnu/include/c++/11/memory \
   /usr/aarch64-linux-gnu/include/c++/11/bits/stl_uninitialized.h \
   /usr/aarch64-linux-gnu/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -254,6 +230,14 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
   /usr/aarch64-linux-gnu/include/bits/posix2_lim.h \
   /usr/aarch64-linux-gnu/include/bits/xopen_lim.h \
   /usr/aarch64-linux-gnu/include/bits/uio_lim.h \
+  /usr/aarch64-linux-gnu/include/unistd.h \
+  /usr/aarch64-linux-gnu/include/bits/posix_opt.h \
+  /usr/aarch64-linux-gnu/include/bits/environments.h \
+  /usr/aarch64-linux-gnu/include/bits/confname.h \
+  /usr/aarch64-linux-gnu/include/bits/getopt_posix.h \
+  /usr/aarch64-linux-gnu/include/bits/getopt_core.h \
+  /usr/aarch64-linux-gnu/include/bits/unistd_ext.h \
+  /usr/aarch64-linux-gnu/include/linux/close_range.h \
   /usr/aarch64-linux-gnu/include/syscall.h \
   /usr/aarch64-linux-gnu/include/sys/syscall.h \
   /usr/aarch64-linux-gnu/include/asm/unistd.h \
@@ -270,6 +254,26 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
   /usr/aarch64-linux-gnu/include/c++/11/bits/uses_allocator_args.h \
   /usr/aarch64-linux-gnu/include/c++/11/pstl/glue_memory_defs.h \
   /usr/aarch64-linux-gnu/include/c++/11/pstl/execution_defs.h \
+  /usr/aarch64-linux-gnu/include/c++/11/optional \
+  /usr/aarch64-linux-gnu/include/c++/11/bits/enable_special_members.h \
+  /usr/aarch64-linux-gnu/include/boost/asio.hpp \
+  /usr/aarch64-linux-gnu/include/boost/asio/associated_allocator.hpp \
+  /usr/aarch64-linux-gnu/include/boost/asio/detail/config.hpp \
+  /usr/aarch64-linux-gnu/include/boost/config.hpp \
+  /usr/aarch64-linux-gnu/include/boost/config/user.hpp \
+  /usr/aarch64-linux-gnu/include/boost/config/detail/select_compiler_config.hpp \
+  /usr/aarch64-linux-gnu/include/boost/config/compiler/gcc.hpp \
+  /usr/aarch64-linux-gnu/include/c++/11/cstddef \
+  /usr/aarch64-linux-gnu/include/boost/config/detail/select_stdlib_config.hpp \
+  /usr/aarch64-linux-gnu/include/c++/11/version \
+  /usr/aarch64-linux-gnu/include/boost/config/stdlib/libstdcpp3.hpp \
+  /usr/aarch64-linux-gnu/include/boost/config/detail/select_platform_config.hpp \
+  /usr/aarch64-linux-gnu/include/boost/config/platform/linux.hpp \
+  /usr/aarch64-linux-gnu/include/boost/config/detail/posix_features.hpp \
+  /usr/aarch64-linux-gnu/include/boost/config/detail/suffix.hpp \
+  /usr/aarch64-linux-gnu/include/boost/config/helper_macros.hpp \
+  /usr/aarch64-linux-gnu/include/boost/version.hpp \
+  /usr/aarch64-linux-gnu/include/linux/version.h \
   /usr/aarch64-linux-gnu/include/boost/asio/detail/type_traits.hpp \
   /usr/aarch64-linux-gnu/include/boost/asio/detail/push_options.hpp \
   /usr/aarch64-linux-gnu/include/boost/asio/detail/pop_options.hpp \
@@ -345,7 +349,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
   /usr/aarch64-linux-gnu/include/c++/11/unordered_map \
   /usr/aarch64-linux-gnu/include/c++/11/bits/hashtable.h \
   /usr/aarch64-linux-gnu/include/c++/11/bits/hashtable_policy.h \
-  /usr/aarch64-linux-gnu/include/c++/11/bits/enable_special_members.h \
   /usr/aarch64-linux-gnu/include/c++/11/bits/node_handle.h \
   /usr/aarch64-linux-gnu/include/c++/11/bits/unordered_map.h \
   /usr/aarch64-linux-gnu/include/c++/11/bits/erase_if.h \
@@ -1254,25 +1257,19 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
   /usr/aarch64-linux-gnu/include/boost/asio/windows/stream_handle.hpp \
   /usr/aarch64-linux-gnu/include/boost/asio/write_at.hpp \
   /usr/aarch64-linux-gnu/include/boost/asio/impl/write_at.hpp \
-  ../modules/core/include/rdk/core.h \
-  ../modules/core/include/rdk/core/transfer/serial_port.h \
-  /usr/aarch64-linux-gnu/include/c++/11/optional \
   ../modules/core/include/rdk/core/transfer/io_stream.h \
   ../modules/core/include/rdk/core/transfer/simple_message_transfer.h \
-  ../modules/core/include/rdk/core/transfer/crc.h
+  ../modules/core/include/rdk/core/transfer/crc.h \
+  ../modules/core/include/rdk/core/transfer/simple_binary_transfer.h
 
+
+../modules/core/include/rdk/core/transfer/simple_binary_transfer.h:
 
 ../modules/core/include/rdk/core/transfer/crc.h:
 
 ../modules/core/include/rdk/core/transfer/simple_message_transfer.h:
 
 ../modules/core/include/rdk/core/transfer/io_stream.h:
-
-/usr/aarch64-linux-gnu/include/c++/11/optional:
-
-../modules/core/include/rdk/core/transfer/serial_port.h:
-
-../modules/core/include/rdk/core.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/write_at.hpp:
 
@@ -1454,7 +1451,11 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/predef/architecture/z.h:
 
-/usr/aarch64-linux-gnu/include/c++/11/bits/stl_heap.h:
+/usr/aarch64-linux-gnu/include/boost/predef/architecture/x86/64.h:
+
+/usr/aarch64-linux-gnu/include/boost/predef/architecture/x86/32.h:
+
+/usr/aarch64-linux-gnu/include/boost/predef/architecture/x86.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/signal_blocker.hpp:
 
@@ -1826,9 +1827,9 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/asio/traits/execute_free.hpp:
 
-/usr/aarch64-linux-gnu/include/c++/11/bits/stl_iterator_base_funcs.h:
-
 /usr/aarch64-linux-gnu/include/c++/11/ext/alloc_traits.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/aarch64-linux-gnu/include/boost/predef/platform/mingw64.h:
 
@@ -1862,10 +1863,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/asio/execution/set_error.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/execution/set_done.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/numeric/conversion/numeric_cast_traits.hpp:
-
 /usr/aarch64-linux-gnu/include/boost/asio/impl/multiple_exceptions.ipp:
 
 /usr/aarch64-linux-gnu/include/boost/mpl/aux_/template_arity_fwd.hpp:
@@ -1898,37 +1895,33 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/bits/procfs-id.h:
 
-/usr/aarch64-linux-gnu/include/c++/11/pstl/execution_defs.h:
+/usr/aarch64-linux-gnu/include/boost/asio/detail/cstddef.hpp:
 
-/usr/aarch64-linux-gnu/include/c++/11/pstl/glue_memory_defs.h:
+/usr/aarch64-linux-gnu/include/sys/syscall.h:
 
-/usr/aarch64-linux-gnu/include/c++/11/bits/uses_allocator_args.h:
+/usr/aarch64-linux-gnu/include/boost/asio/ip/network_v6.hpp:
 
-/usr/aarch64-linux-gnu/include/sys/ioctl.h:
+/usr/aarch64-linux-gnu/include/boost/config/platform/linux.hpp:
 
-/usr/aarch64-linux-gnu/include/c++/11/iterator:
+/usr/aarch64-linux-gnu/include/boost/config/stdlib/libstdcpp3.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/execution/detail/submit_receiver.hpp:
+/usr/aarch64-linux-gnu/include/boost/asio/execution/context_as.hpp:
 
-/usr/aarch64-linux-gnu/include/c++/11/bits/ranges_algobase.h:
+/usr/aarch64-linux-gnu/include/boost/asio/impl/buffered_write_stream.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/detail/resolver_service.hpp:
+/usr/aarch64-linux-gnu/include/boost/config/detail/select_stdlib_config.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/local/stream_protocol.hpp:
+/usr/aarch64-linux-gnu/include/boost/predef/hardware/simd/x86_amd.h:
 
-/usr/aarch64-linux-gnu/include/boost/asio/detail/throw_exception.hpp:
+/usr/aarch64-linux-gnu/include/c++/11/cstddef:
 
-/usr/aarch64-linux-gnu/include/c++/11/bits/ranges_uninitialized.h:
+/usr/aarch64-linux-gnu/include/boost/asio/detail/wait_op.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/traits/set_done_member.hpp:
+/usr/aarch64-linux-gnu/include/boost/config/compiler/gcc.hpp:
 
-/usr/aarch64-linux-gnu/include/c++/11/backward/auto_ptr.h:
+/usr/aarch64-linux-gnu/include/boost/asio/execution/impl/bad_executor.ipp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/detail/handler_tracking.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/std_mutex.h:
-
-/usr/aarch64-linux-gnu/include/asm-generic/bitsperlong.h:
+/usr/aarch64-linux-gnu/include/boost/config.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/basic_stream_socket.hpp:
 
@@ -1964,8 +1957,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/type_traits/is_base_and_derived.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/predef/architecture/x86/64.h:
-
 /usr/aarch64-linux-gnu/include/boost/numeric/conversion/detail/converter.hpp:
 
 /usr/aarch64-linux-gnu/include/c++/11/cstring:
@@ -1979,6 +1970,8 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/asm/ioctl.h:
 
 /usr/aarch64-linux-gnu/include/c++/11/aarch64-linux-gnu/bits/error_constants.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/optional:
 
 /usr/aarch64-linux-gnu/include/bits/cpu-set.h:
 
@@ -1996,6 +1989,26 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/locale.h:
 
+/usr/aarch64-linux-gnu/include/boost/asio/traits/connect_member.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/io_service.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/concepts:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/int_fwd.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/select_interrupter.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/aux_/numeric_op.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/execution/detail/submit_receiver.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/ranges_algobase.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/resolver_service.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/local/stream_protocol.hpp:
+
 /usr/aarch64-linux-gnu/include/boost/asio/traits/require_concept_free.hpp:
 
 /usr/aarch64-linux-gnu/include/sched.h:
@@ -2006,25 +2019,19 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/iterator_concepts.h:
 
-/usr/aarch64-linux-gnu/include/bits/signum-generic.h:
-
-/usr/aarch64-linux-gnu/include/bits/signum-arch.h:
-
-/usr/aarch64-linux-gnu/include/c++/11/aarch64-linux-gnu/bits/gthr.h:
-
 /usr/aarch64-linux-gnu/include/boost/asio/impl/system_executor.hpp:
 
 /usr/aarch64-linux-gnu/include/asm/unistd.h:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/stl_construct.h:
 
-/usr/aarch64-linux-gnu/include/bits/timerfd.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/impl/null_event.ipp:
-
 /usr/aarch64-linux-gnu/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/vector.tcc:
+
+/usr/aarch64-linux-gnu/include/boost/asio/traits/set_done_member.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/backward/auto_ptr.h:
 
 /usr/aarch64-linux-gnu/include/boost/predef/platform/cloudabi.h:
 
@@ -2045,10 +2052,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/boost/date_time/gregorian_calendar.ipp:
 
 /usr/aarch64-linux-gnu/include/bits/siginfo-consts-arch.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/execution/impl/bad_executor.ipp:
-
-/usr/aarch64-linux-gnu/include/boost/config.hpp:
 
 /usr/aarch64-linux-gnu/include/time.h:
 
@@ -2116,15 +2119,15 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/asio/connect.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/predef/hardware/simd/x86_amd.h:
-
-/usr/aarch64-linux-gnu/include/c++/11/cstddef:
-
 /usr/lib/gcc-cross/aarch64-linux-gnu/11/include/stddef.h:
 
 /usr/aarch64-linux-gnu/include/bits/floatn-common.h:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/ranges_cmp.h:
+
+/usr/aarch64-linux-gnu/include/boost/config/helper_macros.hpp:
+
+/usr/aarch64-linux-gnu/include/bits/types/sigset_t.h:
 
 /usr/aarch64-linux-gnu/include/boost/smart_ptr/detail/sp_noexcept.hpp:
 
@@ -2156,9 +2159,11 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/asio/execution/outstanding_work.hpp:
 
-/usr/aarch64-linux-gnu/include/bits/types/sigset_t.h:
+/usr/aarch64-linux-gnu/include/boost/asio/detail/conditionally_enabled_event.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/config/helper_macros.hpp:
+/usr/aarch64-linux-gnu/include/boost/config/detail/posix_features.hpp:
+
+/usr/aarch64-linux-gnu/include/linux/limits.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/traits/start_member.hpp:
 
@@ -2214,6 +2219,10 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/asio/basic_socket.hpp:
 
+/usr/aarch64-linux-gnu/include/boost/asio/detail/throw_exception.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/ranges_uninitialized.h:
+
 /usr/aarch64-linux-gnu/include/boost/asio/detail/executor_op.hpp:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/exception.h:
@@ -2231,12 +2240,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/bits/sigaction.h:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/basic_ios.h:
-
-/usr/aarch64-linux-gnu/include/sys/syscall.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/cstddef.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/ip/network_v6.hpp:
 
 /usr/aarch64-linux-gnu/include/c++/11/ios:
 
@@ -2310,18 +2313,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/hash_bytes.h:
 
-/usr/aarch64-linux-gnu/include/boost/asio/traits/connect_member.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/io_service.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/concepts:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/int_fwd.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/select_interrupter.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/aux_/numeric_op.hpp:
-
 /usr/aarch64-linux-gnu/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/thread_info_base.hpp:
@@ -2352,13 +2343,17 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/signal.h:
 
+/usr/aarch64-linux-gnu/include/c++/11/bits/stl_heap.h:
+
 /usr/aarch64-linux-gnu/include/bits/types/timer_t.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/impl/resolver_service_base.ipp:
 
 /usr/aarch64-linux-gnu/include/bits/types/__locale_t.h:
 
-/usr/aarch64-linux-gnu/include/boost/config/platform/linux.hpp:
+/usr/aarch64-linux-gnu/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/aarch64-linux-gnu/include/sys/ioctl.h:
 
 /usr/aarch64-linux-gnu/include/bits/struct_mutex.h:
 
@@ -2379,12 +2374,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/c++/11/version:
 
 /usr/aarch64-linux-gnu/include/linux/falloc.h:
-
-/usr/aarch64-linux-gnu/include/sys/timerfd.h:
-
-/usr/aarch64-linux-gnu/include/boost/preprocessor/repetition/repeat.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/preprocessor/list/detail/fold_left.hpp:
 
 /usr/aarch64-linux-gnu/include/asm-generic/errno-base.h:
 
@@ -2410,6 +2399,8 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/atomic_futex.h:
 
+/usr/aarch64-linux-gnu/include/c++/11/iterator:
+
 /usr/aarch64-linux-gnu/include/bits/types/struct_timespec.h:
 
 /usr/aarch64-linux-gnu/include/boost/mpl/aux_/nttp_decl.hpp:
@@ -2432,10 +2423,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/posix_signal_blocker.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/detail/wait_op.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/config/compiler/gcc.hpp:
-
 /usr/aarch64-linux-gnu/include/boost/date_time/posix_time/time_period.hpp:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/ptr_traits.h:
@@ -2443,6 +2430,8 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/c++/11/bits/move.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/io_context_strand.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/enable_special_members.h:
 
 /usr/aarch64-linux-gnu/include/bits/waitstatus.h:
 
@@ -2554,14 +2543,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/preprocessor/arithmetic/inc.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/execution/context_as.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/config/stdlib/libstdcpp3.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/impl/buffered_write_stream.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/config/detail/select_stdlib_config.hpp:
-
 /usr/aarch64-linux-gnu/include/c++/11/chrono:
 
 /usr/aarch64-linux-gnu/include/features.h:
@@ -2596,6 +2577,8 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/eventfd_select_interrupter.hpp:
 
+/usr/aarch64-linux-gnu/include/asm-generic/bitsperlong.h:
+
 /usr/aarch64-linux-gnu/include/c++/11/numbers:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/string_view.tcc:
@@ -2603,6 +2586,20 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/bits/types/clock_t.h:
 
 /usr/aarch64-linux-gnu/include/boost/mpl/if.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/execution/set_done.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/numeric/conversion/numeric_cast_traits.hpp:
+
+../modules/core/include/rdk/core/transfer/serial_port.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/execution/schedule.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/predef/architecture.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/steady_timer.hpp:
 
 /usr/aarch64-linux-gnu/include/c++/11/memory:
 
@@ -2630,17 +2627,7 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/asio/ip/udp.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/windows/random_access_handle.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/void.hpp:
-
-/usr/aarch64-linux-gnu/include/bits/xopen_lim.h:
-
 /usr/aarch64-linux-gnu/include/boost/mpl/aux_/config/compiler.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/date_time/time.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/is_buffer_sequence.hpp:
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/charconv.h:
 
@@ -2667,12 +2654,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/boost/preprocessor/repetition/enum_trailing_params.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/predef/version_number.h:
-
-/usr/aarch64-linux-gnu/include/bits/types/sig_atomic_t.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/tss_ptr.hpp:
-
-/usr/aarch64-linux-gnu/include/bits/termios-tcflow.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/execution/detail/void_receiver.hpp:
 
@@ -2714,9 +2695,123 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/c++/11/bits/ostream.tcc:
 
-/usr/aarch64-linux-gnu/include/boost/predef/os/haiku.h:
+/usr/aarch64-linux-gnu/include/boost/asio/detail/handler_tracking.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio.hpp:
+/usr/aarch64-linux-gnu/include/c++/11/bits/std_mutex.h:
+
+/usr/aarch64-linux-gnu/include/sys/timerfd.h:
+
+/usr/aarch64-linux-gnu/include/boost/preprocessor/list/detail/fold_left.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/preprocessor/repetition/repeat.hpp:
+
+/usr/aarch64-linux-gnu/include/bits/timerfd.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/impl/null_event.ipp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/windows/random_access_handle.hpp:
+
+/usr/aarch64-linux-gnu/include/bits/xopen_lim.h:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/void.hpp:
+
+../modules/core/include/rdk/core.h:
+
+/usr/aarch64-linux-gnu/include/boost/smart_ptr/detail/sp_thread_pause.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/date_time/int_adapter.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/utility:
+
+/usr/aarch64-linux-gnu/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/predef/os/bsd/dragonfly.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/aarch64-linux-gnu/include/bits/sigevent-consts.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/impl/epoll_reactor.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/thread_context.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/locale_classes.tcc:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/aux_/config/lambda.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/impl/throw_error.ipp:
+
+/usr/aarch64-linux-gnu/include/boost/preprocessor/control/while.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/limits.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/uses_allocator.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/socket_types.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/array:
+
+/usr/aarch64-linux-gnu/include/boost/asio/execution/sender.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/aarch64-linux-gnu/include/sys/procfs.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/aarch64-linux-gnu/include/boost/predef/hardware/simd.h:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/impl/write.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/stl_iterator_base_types.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/char_traits.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/bits/atomic_wait.h:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/aux_/config/static_constant.hpp:
+
+/usr/aarch64-linux-gnu/include/sys/poll.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/climits:
+
+/usr/aarch64-linux-gnu/include/boost/preprocessor/list/detail/fold_right.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/predef/detail/test.h:
+
+/usr/lib/gcc-cross/aarch64-linux-gnu/11/include/syslimits.h:
+
+/usr/aarch64-linux-gnu/include/bits/statx-generic.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/require.hpp:
+
+/usr/aarch64-linux-gnu/include/bits/local_lim.h:
+
+/usr/aarch64-linux-gnu/include/bits/unistd_ext.h:
+
+/usr/aarch64-linux-gnu/include/boost/mpl/aux_/msvc_eti_base.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/new:
+
+/usr/aarch64-linux-gnu/include/boost/numeric/conversion/detail/conversion_traits.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/impl/use_future.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/execution/mapping.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/asio/ip/basic_endpoint.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/predef/compiler/borland.h:
+
+/usr/aarch64-linux-gnu/include/bits/posix2_lim.h:
+
+/usr/aarch64-linux-gnu/include/bits/uio_lim.h:
 
 /usr/aarch64-linux-gnu/include/stdio.h:
 
@@ -2750,108 +2845,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/asio/ip/basic_resolver_query.hpp:
 
-/usr/aarch64-linux-gnu/include/bits/unistd_ext.h:
-
-/usr/aarch64-linux-gnu/include/bits/local_lim.h:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/aux_/msvc_eti_base.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/new:
-
-/usr/aarch64-linux-gnu/include/boost/numeric/conversion/detail/conversion_traits.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/enable_special_members.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/conditionally_enabled_event.hpp:
-
-/usr/aarch64-linux-gnu/include/linux/limits.h:
-
-/usr/aarch64-linux-gnu/include/boost/config/detail/posix_features.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/char_traits.h:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/atomic_wait.h:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/aux_/config/static_constant.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/predef/os/bsd/dragonfly.h:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/aarch64-linux-gnu/include/bits/sigevent-consts.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/impl/epoll_reactor.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/thread_context.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/locale_classes.tcc:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/aux_/config/lambda.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/impl/throw_error.ipp:
-
-/usr/aarch64-linux-gnu/include/boost/preprocessor/control/while.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/limits.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/uses_allocator.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/detail/socket_types.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/utility:
-
-/usr/aarch64-linux-gnu/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/array:
-
-/usr/aarch64-linux-gnu/include/boost/asio/execution/sender.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/tr1/poly_laguerre.tcc:
-
-/usr/aarch64-linux-gnu/include/sys/procfs.h:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/shared_ptr_base.h:
-
-/usr/aarch64-linux-gnu/include/boost/predef/hardware/simd.h:
-
-/usr/aarch64-linux-gnu/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/impl/write.hpp:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/stl_iterator_base_types.h:
-
-/usr/aarch64-linux-gnu/include/c++/11/bits/atomic_lockfree_defines.h:
-
-/usr/aarch64-linux-gnu/include/sys/poll.h:
-
-/usr/aarch64-linux-gnu/include/c++/11/climits:
-
-/usr/aarch64-linux-gnu/include/boost/preprocessor/list/detail/fold_right.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/predef/detail/test.h:
-
-/usr/aarch64-linux-gnu/include/boost/predef/architecture/x86/32.h:
-
-/usr/lib/gcc-cross/aarch64-linux-gnu/11/include/syslimits.h:
-
-/usr/aarch64-linux-gnu/include/bits/statx-generic.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/require.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/impl/use_future.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/execution/mapping.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/asio/ip/basic_endpoint.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/predef/compiler/borland.h:
-
-/usr/aarch64-linux-gnu/include/bits/posix2_lim.h:
-
-/usr/aarch64-linux-gnu/include/bits/uio_lim.h:
-
 /usr/aarch64-linux-gnu/include/boost/asio/execution/submit.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/scheduler_thread_info.hpp:
@@ -2859,6 +2852,30 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/asm-generic/int-ll64.h:
 
 /usr/aarch64-linux-gnu/include/ctype.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/pstl/glue_memory_defs.h:
+
+/usr/aarch64-linux-gnu/include/c++/11/pstl/execution_defs.h:
+
+/usr/aarch64-linux-gnu/include/boost/predef/os/haiku.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio.hpp:
+
+/usr/aarch64-linux-gnu/include/c++/11/aarch64-linux-gnu/bits/gthr.h:
+
+/usr/aarch64-linux-gnu/include/bits/signum-generic.h:
+
+/usr/aarch64-linux-gnu/include/bits/signum-arch.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/is_buffer_sequence.hpp:
+
+/usr/aarch64-linux-gnu/include/boost/date_time/time.hpp:
+
+/usr/aarch64-linux-gnu/include/bits/types/sig_atomic_t.h:
+
+/usr/aarch64-linux-gnu/include/boost/asio/detail/tss_ptr.hpp:
+
+/usr/aarch64-linux-gnu/include/bits/termios-tcflow.h:
 
 /usr/aarch64-linux-gnu/include/boost/asio/detail/memory.hpp:
 
@@ -3043,10 +3060,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/boost/smart_ptr/detail/sp_counted_impl.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/asio/ip/impl/basic_endpoint.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/smart_ptr/detail/sp_thread_pause.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/date_time/int_adapter.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/config/pragma_message.hpp:
 
@@ -3452,14 +3465,6 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 
 /usr/aarch64-linux-gnu/include/boost/mpl/aux_/nested_type_wknd.hpp:
 
-/usr/aarch64-linux-gnu/include/boost/asio/execution/schedule.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
-
-/usr/aarch64-linux-gnu/include/boost/predef/architecture.h:
-
-/usr/aarch64-linux-gnu/include/boost/asio/steady_timer.hpp:
-
 /usr/aarch64-linux-gnu/include/boost/mpl/integral_c.hpp:
 
 /usr/aarch64-linux-gnu/include/boost/mpl/integral_c_fwd.hpp:
@@ -3777,5 +3782,3 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
 /usr/aarch64-linux-gnu/include/boost/predef/architecture/sys370.h:
 
 /usr/aarch64-linux-gnu/include/boost/predef/architecture/sys390.h:
-
-/usr/aarch64-linux-gnu/include/boost/predef/architecture/x86.h:

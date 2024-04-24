@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 
-add_library(rdk_core src/transfer/crc.cpp src/transfer/circular_buffer.cpp src/transfer/io_stream.cpp src/transfer/serial_port.cpp src/transfer/simple_message_transfer.cpp)
+file(GLOB_RECURSE SOURCES "src/*.*")
+
+add_library(rdk_core ${SOURCES})
 target_include_directories(rdk_core PRIVATE include)
 
 
@@ -15,3 +17,11 @@ target_link_libraries(test_simple_message_transfer rdk_core)
 add_executable(test_simple_message_transfer_with_stm32 test/test_simple_message_transfer_with_stm32.cpp)
 target_include_directories(test_simple_message_transfer_with_stm32 PRIVATE include)
 target_link_libraries(test_simple_message_transfer_with_stm32 rdk_core)
+
+add_executable(test_simple_binary_transfer test/test_simple_binary_transfer.cpp)
+target_include_directories(test_simple_binary_transfer PRIVATE include)
+target_link_libraries(test_simple_binary_transfer rdk_core)
+
+add_executable(test_simple_binary_transfer_with_stm32 test/test_simple_binary_transfer_with_stm32.cpp)
+target_include_directories(test_simple_binary_transfer_with_stm32 PRIVATE include)
+target_link_libraries(test_simple_binary_transfer_with_stm32 rdk_core)
