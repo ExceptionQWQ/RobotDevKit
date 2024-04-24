@@ -10,7 +10,9 @@
 SerialPort::SerialPort(UART_HandleTypeDef* huart)
 {
     this->huart = huart;
-//    __HAL_UART_ENABLE_IT(huart, UART_IT_IDLE);
+    __HAL_UART_CLEAR_FLAG(huart, UART_FLAG_RXNE);
+    __HAL_UART_CLEAR_FLAG(huart, UART_FLAG_ORE);
+    HAL_UARTEx_ReceiveToIdle_DMA(huart, recv_buff1, 512);
 }
 
 SerialPort::~SerialPort()
@@ -21,31 +23,57 @@ SerialPort::~SerialPort()
 void SerialPort::OnHAL_UARTEx_RxEventCallback(UART_HandleTypeDef* huart, uint16_t size)
 {
     if (huart->Instance != this->huart->Instance) return ;
-    read_result_handler(size);
+    if (buff_select) { //双缓冲接收数据
+        buff_select = false;
+        __HAL_UART_CLEAR_FLAG(huart, UART_FLAG_RXNE);
+        __HAL_UART_CLEAR_FLAG(huart, UART_FLAG_ORE);
+        HAL_UARTEx_ReceiveToIdle_DMA(huart, recv_buff2, 512);
+        for (int i = 0; i < size; ++i) {
+            circular_buffer.push_back(recv_buff1[i]);
+        }
+    } else {
+        buff_select = true;
+        __HAL_UART_CLEAR_FLAG(huart, UART_FLAG_RXNE);
+        __HAL_UART_CLEAR_FLAG(huart, UART_FLAG_ORE);
+        HAL_UARTEx_ReceiveToIdle_DMA(huart, recv_buff1, 512);
+        for (int i = 0; i < size; ++i) {
+            circular_buffer.push_back(recv_buff2[i]);
+        }
+    }
 }
 
 void SerialPort::OnHAL_UART_TxCpltCallback(UART_HandleTypeDef* huart)
 {
     if (huart->Instance != this->huart->Instance) return ;
-    write_result_handler(huart->TxXferSize);
+    if (write_result_handler) write_result_handler(huart->TxXferSize - huart->TxXferCount);
+}
+
+void SerialPort::OnHAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
+{
+    if (huart->Instance != this->huart->Instance) return ;
+    if (read_result_handler) read_result_handler(huart->RxXferSize - huart->RxXferCount);
 }
 
 void SerialPort::OnHAL_UART_ErrorCallback(UART_HandleTypeDef* huart)
 {
     if (huart->Instance != this->huart->Instance) return ;
-    __HAL_UART_CLEAR_OREFLAG(huart);
+    __HAL_UART_CLEAR_FLAG(huart, UART_FLAG_ORE); //清除ORE错误
+
+    //重启DMA接收
+    buff_select = true;
+    HAL_UARTEx_ReceiveToIdle_DMA(huart, recv_buff1, 512);
 }
 
 void SerialPort::async_write(char* data, int len, ResultHandler result_handler)
 {
     write_result_handler = result_handler;
-    HAL_UART_Transmit_DMA(huart, (uint8_t*)data, len);
+    HAL_UART_Transmit_IT(huart, (uint8_t*)data, len);
 }
 
 void SerialPort::async_read(char* buff, int size_to_read, ResultHandler result_handler)
 {
     read_result_handler = result_handler;
-    HAL_UARTEx_ReceiveToIdle_DMA(huart, (uint8_t*)buff, size_to_read);
+    HAL_UART_Receive_DMA(huart, (uint8_t*)buff, size_to_read);
 }
 
 std::size_t SerialPort::write(char* data, int len)
@@ -62,24 +90,20 @@ std::size_t SerialPort::read(char* buff, int size_to_read)
 
 std::size_t SerialPort::write(char* data, int len, int timeout)
 {
-    volatile std::size_t write_bytes = 0;
-    async_write(data, len, std::bind([](volatile std::size_t* write_bytes_out, std::size_t sz){
-        *write_bytes_out = sz;
-    }, &write_bytes, std::placeholders::_1));
-    while (!write_bytes) {}
-    return write_bytes;
+    HAL_UART_Transmit(huart, (uint8_t*)data, len, timeout);
+    return len;
 }
 
 std::size_t SerialPort::read(char* buff, int size_to_read, int timeout)
 {
-//    volatile std::size_t read_bytes = 0;
-//    async_read(buff, size_to_read, std::bind([](volatile std::size_t* read_bytes_out, std::size_t sz){
-//        *read_bytes_out = sz;
-//    }, &read_bytes, std::placeholders::_1));
-//    while (!read_bytes) {}
-//    return read_bytes;
-    HAL_UART_Receive(huart, (uint8_t*)buff, size_to_read, timeout);
-    return size_to_read;
+    uint32_t tick = HAL_GetTick();
+    int index = 0;
+
+    while (size_to_read--) {
+        if (circular_buffer.available()) {
+            buff[index++] = circular_buffer.pop_front();
+        }
+        if (HAL_GetTick() - tick > (uint32_t)timeout) break;
+    }
+    return index;
 }
-
-

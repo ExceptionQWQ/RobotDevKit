@@ -38,6 +38,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
   "CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
   "CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+  "CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj"
   "CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj"
   "CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.obj"
   "CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj"

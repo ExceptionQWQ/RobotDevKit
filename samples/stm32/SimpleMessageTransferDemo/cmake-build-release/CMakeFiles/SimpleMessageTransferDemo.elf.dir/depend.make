@@ -38,6 +38,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj: ../Drivers/STM3
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj: ../rdk/core/transfer/circular_buffer.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj: ../rdk/core/transfer/circular_buffer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj: ../rdk/core/transfer/serial_port.h
@@ -89,6 +91,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj: ../Middlew
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj: ../rdk/core/transfer/circular_buffer.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj: ../rdk/core/transfer/circular_buffer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj: ../rdk/core/transfer/serial_port.h
@@ -130,6 +134,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj: ../Drivers/STM
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj: ../rdk/core/transfer/circular_buffer.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj: ../rdk/core/transfer/circular_buffer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj: ../rdk/core/transfer/serial_port.h
@@ -183,6 +189,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj: ../Middlewares
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj: ../rdk/core/transfer/circular_buffer.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj: ../rdk/core/transfer/circular_buffer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj: ../rdk/core/transfer/serial_port.h
@@ -223,6 +231,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: .
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../rdk/core/transfer/circular_buffer.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../rdk/core/transfer/circular_buffer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../rdk/core/transfer/serial_port.h
@@ -297,6 +307,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../Dri
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../rdk/core/transfer/circular_buffer.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../rdk/core/transfer/circular_buffer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../rdk/core/transfer/serial_port.h
@@ -374,6 +386,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj: ../Drivers/ST
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj: ../rdk/core/transfer/circular_buffer.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj: ../rdk/core/transfer/circular_buffer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj: ../rdk/core/transfer/serial_port.h
@@ -1073,11 +1087,16 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../Driv
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../rdk/core/transfer/circular_buffer.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../rdk/core/transfer/circular_buffer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../rdk/core/transfer/serial_port.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../rdk/core/transfer/simple_message_transfer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj: ../Core/Src/RobotMain.cpp
+
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj: ../rdk/core/transfer/circular_buffer.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj: ../rdk/core/transfer/circular_buffer.cpp
 
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj: ../rdk/core/transfer/crc.cpp
@@ -1116,10 +1135,43 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.o
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: ../rdk/core/transfer/circular_buffer.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: ../rdk/core/transfer/circular_buffer.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: ../rdk/core/transfer/serial_port.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: ../rdk/core/transfer/serial_port.cpp
 
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Core/Inc/stm32f4xx_hal_conf.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Include/cmsis_armcc.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Include/cmsis_armclang.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Include/cmsis_compiler.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Include/cmsis_gcc.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Include/cmsis_iccarm.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Include/cmsis_version.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Include/core_cm4.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/CMSIS/Include/mpu_armv7.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../rdk/core/transfer/crc.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../rdk/core/transfer/io_stream.h
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../rdk/core/transfer/simple_message_transfer.h

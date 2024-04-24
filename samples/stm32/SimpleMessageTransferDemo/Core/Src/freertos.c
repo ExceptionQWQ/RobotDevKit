@@ -58,7 +58,7 @@ const osThreadAttr_t defaultTask_attributes = {
 osThreadId_t transferDemoHandle;
 const osThreadAttr_t transferDemo_attributes = {
   .name = "transferDemo",
-  .stack_size = 512 * 4,
+  .stack_size = 1024 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
 
@@ -128,6 +128,9 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
+      for (int i = 0; i < 10000000; ++i) {
+
+      }
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */

@@ -17,42 +17,70 @@ SimpleMessageTransfer::~SimpleMessageTransfer()
 
 }
 
+/*
+ * @brief 获取已发送的字节数
+ */
 std::size_t SimpleMessageTransfer::get_send_bytes()
 {
     return send_bytes;
 }
 
+/*
+ * @brief 获取接收到的字节数
+ */
 std::size_t SimpleMessageTransfer::get_recv_bytes()
 {
     return recv_bytes;
 }
 
+/*
+ * @brief 清除已发送的字节数
+ */
 void SimpleMessageTransfer::clear_send_bytes()
 {
     send_bytes = 0;
 }
 
+/*
+ * @brief 清除接收到的字节数
+ */
 void SimpleMessageTransfer::clear_recv_bytes()
 {
     recv_bytes = 0;
 }
 
+/*
+ * @brief 获取最大能够传输消息的长度
+ */
 std::size_t SimpleMessageTransfer::get_max_transfer_msg_size()
 {
     return max_transfer_msg_size;
 }
 
+/*
+ * @brief 获取crc错误计数
+ */
 std::size_t SimpleMessageTransfer::get_crc_error_cnt()
 {
     return crc_error_cnt;
 }
 
+/*
+ * @brief 发送消息
+ * @param msg 消息
+ */
 void SimpleMessageTransfer::send_message(const std::string& msg)
 {
     std::size_t pkg_len = encode(msg);
     io_stream->write(send_buff, pkg_len);
+    send_bytes += pkg_len;
 }
 
+/*
+ * @brief 接收消息
+ * @param timeout 超时时间（毫秒）
+ * @return 消息
+ */
 std::string SimpleMessageTransfer::recv_message(int timeout)
 {
     std::size_t pkg_len = 0;
@@ -104,9 +132,13 @@ std::string SimpleMessageTransfer::recv_message(int timeout)
             break;
         }
     }
+    recv_bytes += pkg_len;
     return decode(pkg_len);
 }
 
+/*
+ * @brief 检查消息长度，不能超过最大能够发送的长度
+ */
 std::size_t SimpleMessageTransfer::check_message_len(const std::string& msg)
 {
     std::size_t msg_len = strlen(msg.data());
@@ -116,12 +148,19 @@ std::size_t SimpleMessageTransfer::check_message_len(const std::string& msg)
     return msg_len;
 }
 
+/*
+ * @brief 检查状态机接收状态
+ * @return true 已接收完一个数据包
+ */
 bool SimpleMessageTransfer::check_recv_status()
 {
     if (recv_status == RecvStatus::RecvDone) return true;
     else return false;
 }
 
+/*
+ * @brief 将消息编码成二进制数据包
+ */
 std::size_t SimpleMessageTransfer::encode(const std::string& msg)
 {
     std::size_t msg_len = check_message_len(msg);
@@ -135,17 +174,22 @@ std::size_t SimpleMessageTransfer::encode(const std::string& msg)
     return pkg_len;
 }
 
-
+/*
+ * @brief 将二进制数据包解码成消息
+ */
 std::string SimpleMessageTransfer::decode(std::size_t pkg_len)
 {
+    if (pkg_len < 4 || pkg_len > 260) return std::string();
+
     crc8_calculator->process_bytes((uint8_t*)recv_buff, pkg_len - 1);
     char crc8 = crc8_calculator->checksum();
 
     if (crc8 != recv_buff[pkg_len - 1]) {
-
         ++crc_error_cnt;
         return std::string();
     }
+
+    recv_buff[pkg_len - 1] = 0;
 
     return std::string(recv_buff + 3, pkg_len - 4);
 }

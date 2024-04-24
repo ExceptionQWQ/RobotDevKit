@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-add_library(rdk_core src/transfer/crc.cpp src/transfer/io_stream.cpp src/transfer/serial_port.cpp src/transfer/simple_message_transfer.cpp)
+add_library(rdk_core src/transfer/crc.cpp src/transfer/circular_buffer.cpp src/transfer/io_stream.cpp src/transfer/serial_port.cpp src/transfer/simple_message_transfer.cpp)
 target_include_directories(rdk_core PRIVATE include)
 
 

@@ -21,11 +21,10 @@ void RobotTest()
 {
     HAL_GPIO_WritePin(GPIOF, GPIO_PIN_9, GPIO_PIN_RESET);
     while (true) {
-        std::string msg = transfer->recv_message(10);
+        std::string msg = transfer->recv_message(200);
         transfer->send_message(msg);
         HAL_GPIO_TogglePin(GPIOF, GPIO_PIN_10);
     }
-
 }
 
 void OnHAL_UARTEx_RxEventCallback(UART_HandleTypeDef* huart, uint16_t size)
@@ -36,6 +35,11 @@ void OnHAL_UARTEx_RxEventCallback(UART_HandleTypeDef* huart, uint16_t size)
 void OnHAL_UART_TxCpltCallback(UART_HandleTypeDef* huart)
 {
     serial_port->OnHAL_UART_TxCpltCallback(huart);
+}
+
+void OnHAL_UART_RxCpltCallback(UART_HandleTypeDef* huart)
+{
+    serial_port->OnHAL_UART_RxCpltCallback(huart);
 }
 
 void OnHAL_UART_ErrorCallback(UART_HandleTypeDef* huart)

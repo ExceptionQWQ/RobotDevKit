@@ -172,6 +172,30 @@ test_simple_message_transfer_with_stm32/fast:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build
 .PHONY : test_simple_message_transfer_with_stm32/fast
 
+src/transfer/circular_buffer.o: src/transfer/circular_buffer.cpp.o
+.PHONY : src/transfer/circular_buffer.o
+
+# target to build an object file
+src/transfer/circular_buffer.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o
+.PHONY : src/transfer/circular_buffer.cpp.o
+
+src/transfer/circular_buffer.i: src/transfer/circular_buffer.cpp.i
+.PHONY : src/transfer/circular_buffer.i
+
+# target to preprocess a source file
+src/transfer/circular_buffer.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.i
+.PHONY : src/transfer/circular_buffer.cpp.i
+
+src/transfer/circular_buffer.s: src/transfer/circular_buffer.cpp.s
+.PHONY : src/transfer/circular_buffer.s
+
+# target to generate assembly for a file
+src/transfer/circular_buffer.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.s
+.PHONY : src/transfer/circular_buffer.cpp.s
+
 src/transfer/crc.o: src/transfer/crc.cpp.o
 .PHONY : src/transfer/crc.o
 
@@ -352,6 +376,9 @@ help:
 	@echo "... test_serial_port"
 	@echo "... test_simple_message_transfer"
 	@echo "... test_simple_message_transfer_with_stm32"
+	@echo "... src/transfer/circular_buffer.o"
+	@echo "... src/transfer/circular_buffer.i"
+	@echo "... src/transfer/circular_buffer.s"
 	@echo "... src/transfer/crc.o"
 	@echo "... src/transfer/crc.i"
 	@echo "... src/transfer/crc.s"

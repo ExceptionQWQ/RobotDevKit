@@ -83,10 +83,24 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.s"
 	cd /home/work_dir/RobotDevKit/build/modules/core && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/work_dir/RobotDevKit/modules/core/src/transfer/crc.cpp -o CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.s
 
+modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o: modules/core/CMakeFiles/rdk_core.dir/flags.make
+modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o: ../modules/core/src/transfer/circular_buffer.cpp
+modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o: modules/core/CMakeFiles/rdk_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o"
+	cd /home/work_dir/RobotDevKit/build/modules/core && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o -MF CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o.d -o CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o -c /home/work_dir/RobotDevKit/modules/core/src/transfer/circular_buffer.cpp
+
+modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.i"
+	cd /home/work_dir/RobotDevKit/build/modules/core && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/work_dir/RobotDevKit/modules/core/src/transfer/circular_buffer.cpp > CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.i
+
+modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.s"
+	cd /home/work_dir/RobotDevKit/build/modules/core && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/work_dir/RobotDevKit/modules/core/src/transfer/circular_buffer.cpp -o CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.s
+
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o: modules/core/CMakeFiles/rdk_core.dir/flags.make
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o: ../modules/core/src/transfer/io_stream.cpp
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o: modules/core/CMakeFiles/rdk_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o"
 	cd /home/work_dir/RobotDevKit/build/modules/core && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o -MF CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o.d -o CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o -c /home/work_dir/RobotDevKit/modules/core/src/transfer/io_stream.cpp
 
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.i: cmake_force
@@ -100,7 +114,7 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.s: cmake_force
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o: modules/core/CMakeFiles/rdk_core.dir/flags.make
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o: ../modules/core/src/transfer/serial_port.cpp
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o: modules/core/CMakeFiles/rdk_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o"
 	cd /home/work_dir/RobotDevKit/build/modules/core && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o -MF CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o.d -o CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o -c /home/work_dir/RobotDevKit/modules/core/src/transfer/serial_port.cpp
 
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.i: cmake_force
@@ -114,7 +128,7 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.s: cmake_force
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o: modules/core/CMakeFiles/rdk_core.dir/flags.make
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o: ../modules/core/src/transfer/simple_message_transfer.cpp
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o: modules/core/CMakeFiles/rdk_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o"
 	cd /home/work_dir/RobotDevKit/build/modules/core && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o -MF CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o.d -o CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o -c /home/work_dir/RobotDevKit/modules/core/src/transfer/simple_message_transfer.cpp
 
 modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.i: cmake_force
@@ -128,6 +142,7 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.s:
 # Object files for target rdk_core
 rdk_core_OBJECTS = \
 "CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.o" \
+"CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o" \
 "CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o" \
 "CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o" \
 "CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o"
@@ -136,12 +151,13 @@ rdk_core_OBJECTS = \
 rdk_core_EXTERNAL_OBJECTS =
 
 modules/core/librdk_core.a: modules/core/CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.o
+modules/core/librdk_core.a: modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o
 modules/core/librdk_core.a: modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o
 modules/core/librdk_core.a: modules/core/CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o
 modules/core/librdk_core.a: modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o
 modules/core/librdk_core.a: modules/core/CMakeFiles/rdk_core.dir/build.make
 modules/core/librdk_core.a: modules/core/CMakeFiles/rdk_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library librdk_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library librdk_core.a"
 	cd /home/work_dir/RobotDevKit/build/modules/core && $(CMAKE_COMMAND) -P CMakeFiles/rdk_core.dir/cmake_clean_target.cmake
 	cd /home/work_dir/RobotDevKit/build/modules/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rdk_core.dir/link.txt --verbose=$(VERBOSE)
 

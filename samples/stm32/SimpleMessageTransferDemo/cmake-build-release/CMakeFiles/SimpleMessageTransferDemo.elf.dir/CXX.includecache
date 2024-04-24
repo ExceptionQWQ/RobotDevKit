@@ -326,6 +326,16 @@ stm32f4xx_hal_def.h
 stm32f4xx_hal_def.h
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 
+../rdk/core/transfer/circular_buffer.cpp
+rdk/core/transfer/circular_buffer.h
+../rdk/core/transfer/rdk/core/transfer/circular_buffer.h
+
+../rdk/core/transfer/circular_buffer.h
+cstdint
+-
+string
+-
+
 ../rdk/core/transfer/crc.h
 cstdint
 -
@@ -339,6 +349,8 @@ functional
 -
 
 ../rdk/core/transfer/serial_port.h
+rdk/core/transfer/circular_buffer.cpp
+../rdk/core/transfer/rdk/core/transfer/circular_buffer.cpp
 rdk/core/transfer/io_stream.h
 ../rdk/core/transfer/rdk/core/transfer/io_stream.h
 stm32f4xx_hal.h
@@ -359,6 +371,8 @@ rdk/core/transfer/crc.h
 ../rdk/core/transfer/rdk/core/transfer/crc.h
 rdk/core/transfer/io_stream.h
 ../rdk/core/transfer/rdk/core/transfer/io_stream.h
+stm32f4xx_hal.h
+../rdk/core/transfer/stm32f4xx_hal.h
 
 /Users/mac/CLionProjects/SimpleMessageTransferDemo/Core/Src/RobotMain.cpp
 RobotMain.h

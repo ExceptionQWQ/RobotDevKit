@@ -13,6 +13,7 @@
 #include <stdexcept>
 #include "rdk/core/transfer/crc.h"
 #include "rdk/core/transfer/io_stream.h"
+#include "stm32f4xx_hal.h"
 
 class SimpleMessageTransfer
 {

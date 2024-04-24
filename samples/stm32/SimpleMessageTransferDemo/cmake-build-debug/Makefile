@@ -1177,6 +1177,33 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleMessageTransferDemo.elf.dir/build.make CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+rdk/core/transfer/circular_buffer.obj: rdk/core/transfer/circular_buffer.cpp.obj
+
+.PHONY : rdk/core/transfer/circular_buffer.obj
+
+# target to build an object file
+rdk/core/transfer/circular_buffer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleMessageTransferDemo.elf.dir/build.make CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj
+.PHONY : rdk/core/transfer/circular_buffer.cpp.obj
+
+rdk/core/transfer/circular_buffer.i: rdk/core/transfer/circular_buffer.cpp.i
+
+.PHONY : rdk/core/transfer/circular_buffer.i
+
+# target to preprocess a source file
+rdk/core/transfer/circular_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleMessageTransferDemo.elf.dir/build.make CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.i
+.PHONY : rdk/core/transfer/circular_buffer.cpp.i
+
+rdk/core/transfer/circular_buffer.s: rdk/core/transfer/circular_buffer.cpp.s
+
+.PHONY : rdk/core/transfer/circular_buffer.s
+
+# target to generate assembly for a file
+rdk/core/transfer/circular_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SimpleMessageTransferDemo.elf.dir/build.make CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.s
+.PHONY : rdk/core/transfer/circular_buffer.cpp.s
+
 rdk/core/transfer/crc.obj: rdk/core/transfer/crc.cpp.obj
 
 .PHONY : rdk/core/transfer/crc.obj
@@ -1409,6 +1436,9 @@ help:
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.obj"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.i"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.s"
+	@echo "... rdk/core/transfer/circular_buffer.obj"
+	@echo "... rdk/core/transfer/circular_buffer.i"
+	@echo "... rdk/core/transfer/circular_buffer.s"
 	@echo "... rdk/core/transfer/crc.obj"
 	@echo "... rdk/core/transfer/crc.i"
 	@echo "... rdk/core/transfer/crc.s"

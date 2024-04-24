@@ -31,6 +31,7 @@ extern "C" {
     void RobotTest();
     void OnHAL_UARTEx_RxEventCallback(UART_HandleTypeDef* huart, uint16_t size);
     void OnHAL_UART_TxCpltCallback(UART_HandleTypeDef* huart);
+    void OnHAL_UART_RxCpltCallback(UART_HandleTypeDef* huart);
     void OnHAL_UART_ErrorCallback(UART_HandleTypeDef* huart);
 
 #ifdef __cplusplus

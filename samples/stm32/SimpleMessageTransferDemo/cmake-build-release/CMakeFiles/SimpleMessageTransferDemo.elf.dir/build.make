@@ -575,9 +575,22 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/So
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s"
 	/Applications/Arm/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mac/CLionProjects/SimpleMessageTransferDemo/Middlewares/Third_Party/FreeRTOS/Source/timers.c -o CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj: CMakeFiles/SimpleMessageTransferDemo.elf.dir/flags.make
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj: ../rdk/core/transfer/circular_buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj"
+	/Applications/Arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj -c /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/circular_buffer.cpp
+
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.i"
+	/Applications/Arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/circular_buffer.cpp > CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.i
+
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.s"
+	/Applications/Arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/circular_buffer.cpp -o CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.s
+
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj: CMakeFiles/SimpleMessageTransferDemo.elf.dir/flags.make
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj: ../rdk/core/transfer/crc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj"
 	/Applications/Arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj -c /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/crc.cpp
 
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.i: cmake_force
@@ -590,7 +603,7 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.s: cmake_
 
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.obj: CMakeFiles/SimpleMessageTransferDemo.elf.dir/flags.make
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.obj: ../rdk/core/transfer/io_stream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.obj"
 	/Applications/Arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.obj -c /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/io_stream.cpp
 
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.i: cmake_force
@@ -603,7 +616,7 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.s: 
 
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: CMakeFiles/SimpleMessageTransferDemo.elf.dir/flags.make
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj: ../rdk/core/transfer/serial_port.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj"
 	/Applications/Arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj -c /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/serial_port.cpp
 
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.i: cmake_force
@@ -616,7 +629,7 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.s
 
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: CMakeFiles/SimpleMessageTransferDemo.elf.dir/flags.make
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj: ../rdk/core/transfer/simple_message_transfer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj"
 	/Applications/Arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj -c /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/simple_message_transfer.cpp
 
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.i: cmake_force
@@ -668,6 +681,7 @@ SimpleMessageTransferDemo_elf_OBJECTS = \
 "CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" \
 "CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" \
 "CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" \
+"CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj" \
 "CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj" \
 "CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.obj" \
 "CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj" \
@@ -715,13 +729,14 @@ SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/Midd
 SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
 SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
 SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj
 SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj
 SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/io_stream.cpp.obj
 SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
 SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj
 SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/build.make
 SimpleMessageTransferDemo.elf: CMakeFiles/SimpleMessageTransferDemo.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable SimpleMessageTransferDemo.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking CXX executable SimpleMessageTransferDemo.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleMessageTransferDemo.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/SimpleMessageTransferDemo.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /Users/mac/CLionProjects/SimpleMessageTransferDemo/cmake-build-release/SimpleMessageTransferDemo.bin"

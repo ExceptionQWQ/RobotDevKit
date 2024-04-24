@@ -39,6 +39,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/dma.c.obj
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../rdk/core/transfer/circular_buffer.cpp
+ ../rdk/core/transfer/circular_buffer.h
  ../rdk/core/transfer/crc.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/serial_port.h
@@ -90,6 +92,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/freertos.c.obj
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ ../rdk/core/transfer/circular_buffer.cpp
+ ../rdk/core/transfer/circular_buffer.h
  ../rdk/core/transfer/crc.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/serial_port.h
@@ -131,6 +135,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/gpio.c.obj
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../rdk/core/transfer/circular_buffer.cpp
+ ../rdk/core/transfer/circular_buffer.h
  ../rdk/core/transfer/crc.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/serial_port.h
@@ -184,6 +190,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/main.c.obj
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ ../rdk/core/transfer/circular_buffer.cpp
+ ../rdk/core/transfer/circular_buffer.h
  ../rdk/core/transfer/crc.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/serial_port.h
@@ -224,6 +232,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../rdk/core/transfer/circular_buffer.cpp
+ ../rdk/core/transfer/circular_buffer.h
  ../rdk/core/transfer/crc.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/serial_port.h
@@ -298,6 +308,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/stm32f4xx_it.c.obj
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../rdk/core/transfer/circular_buffer.cpp
+ ../rdk/core/transfer/circular_buffer.h
  ../rdk/core/transfer/crc.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/serial_port.h
@@ -375,6 +387,8 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/usart.c.obj
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../rdk/core/transfer/circular_buffer.cpp
+ ../rdk/core/transfer/circular_buffer.h
  ../rdk/core/transfer/crc.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/serial_port.h
@@ -1074,11 +1088,16 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/Core/Src/RobotMain.cpp.obj
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../rdk/core/transfer/circular_buffer.cpp
+ ../rdk/core/transfer/circular_buffer.h
  ../rdk/core/transfer/crc.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/serial_port.h
  ../rdk/core/transfer/simple_message_transfer.h
  /Users/mac/CLionProjects/SimpleMessageTransferDemo/Core/Src/RobotMain.cpp
+CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/circular_buffer.cpp.obj
+ ../rdk/core/transfer/circular_buffer.h
+ /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/circular_buffer.cpp
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/crc.cpp.obj
  ../rdk/core/transfer/crc.h
  /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/crc.cpp
@@ -1117,10 +1136,43 @@ CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.o
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../rdk/core/transfer/circular_buffer.cpp
+ ../rdk/core/transfer/circular_buffer.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/serial_port.h
  /Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/serial_port.cpp
 CMakeFiles/SimpleMessageTransferDemo.elf.dir/rdk/core/transfer/simple_message_transfer.cpp.obj
+ ../Core/Inc/stm32f4xx_hal_conf.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
  ../rdk/core/transfer/crc.h
  ../rdk/core/transfer/io_stream.h
  ../rdk/core/transfer/simple_message_transfer.h

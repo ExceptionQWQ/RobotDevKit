@@ -491,6 +491,12 @@
 		<Unit filename="/Users/mac/CLionProjects/SimpleMessageTransferDemo/STM32F407ZGTX_FLASH.ld">
 			<Option target="SimpleMessageTransferDemo.elf"/>
 		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/circular_buffer.cpp">
+			<Option target="SimpleMessageTransferDemo.elf"/>
+		</Unit>
+		<Unit filename="/Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/circular_buffer.h">
+			<Option target="SimpleMessageTransferDemo.elf"/>
+		</Unit>
 		<Unit filename="/Users/mac/CLionProjects/SimpleMessageTransferDemo/rdk/core/transfer/crc.cpp">
 			<Option target="SimpleMessageTransferDemo.elf"/>
 		</Unit>
