@@ -6,5 +6,6 @@
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/test_simple_binary_transfer.dir
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir
+/home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/test_reliable_binary_transfer.dir
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/edit_cache.dir
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/rebuild_cache.dir

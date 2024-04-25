@@ -1260,8 +1260,11 @@ modules/core/CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o: ../mod
   ../modules/core/include/rdk/core/transfer/io_stream.h \
   ../modules/core/include/rdk/core/transfer/simple_message_transfer.h \
   ../modules/core/include/rdk/core/transfer/crc.h \
-  ../modules/core/include/rdk/core/transfer/simple_binary_transfer.h
+  ../modules/core/include/rdk/core/transfer/simple_binary_transfer.h \
+  ../modules/core/include/rdk/core/transfer/reliable_binary_transfer.h
 
+
+../modules/core/include/rdk/core/transfer/reliable_binary_transfer.h:
 
 ../modules/core/include/rdk/core/transfer/simple_binary_transfer.h:
 

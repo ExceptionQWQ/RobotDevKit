@@ -200,6 +200,20 @@ test_simple_binary_transfer_with_stm32/fast:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build
 .PHONY : test_simple_binary_transfer_with_stm32/fast
 
+# Convenience name for target.
+modules/core/CMakeFiles/test_reliable_binary_transfer.dir/rule:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_reliable_binary_transfer.dir/rule
+.PHONY : modules/core/CMakeFiles/test_reliable_binary_transfer.dir/rule
+
+# Convenience name for target.
+test_reliable_binary_transfer: modules/core/CMakeFiles/test_reliable_binary_transfer.dir/rule
+.PHONY : test_reliable_binary_transfer
+
+# fast build rule for target.
+test_reliable_binary_transfer/fast:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer.dir/build
+.PHONY : test_reliable_binary_transfer/fast
+
 src/transfer/circular_buffer.o: src/transfer/circular_buffer.cpp.o
 .PHONY : src/transfer/circular_buffer.o
 
@@ -272,6 +286,30 @@ src/transfer/io_stream.cpp.s:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.s
 .PHONY : src/transfer/io_stream.cpp.s
 
+src/transfer/reliable_binary_transfer.o: src/transfer/reliable_binary_transfer.cpp.o
+.PHONY : src/transfer/reliable_binary_transfer.o
+
+# target to build an object file
+src/transfer/reliable_binary_transfer.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/reliable_binary_transfer.cpp.o
+.PHONY : src/transfer/reliable_binary_transfer.cpp.o
+
+src/transfer/reliable_binary_transfer.i: src/transfer/reliable_binary_transfer.cpp.i
+.PHONY : src/transfer/reliable_binary_transfer.i
+
+# target to preprocess a source file
+src/transfer/reliable_binary_transfer.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/reliable_binary_transfer.cpp.i
+.PHONY : src/transfer/reliable_binary_transfer.cpp.i
+
+src/transfer/reliable_binary_transfer.s: src/transfer/reliable_binary_transfer.cpp.s
+.PHONY : src/transfer/reliable_binary_transfer.s
+
+# target to generate assembly for a file
+src/transfer/reliable_binary_transfer.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/reliable_binary_transfer.cpp.s
+.PHONY : src/transfer/reliable_binary_transfer.cpp.s
+
 src/transfer/serial_port.o: src/transfer/serial_port.cpp.o
 .PHONY : src/transfer/serial_port.o
 
@@ -343,6 +381,30 @@ src/transfer/simple_message_transfer.s: src/transfer/simple_message_transfer.cpp
 src/transfer/simple_message_transfer.cpp.s:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.s
 .PHONY : src/transfer/simple_message_transfer.cpp.s
+
+test/test_reliable_binary_transfer.o: test/test_reliable_binary_transfer.cpp.o
+.PHONY : test/test_reliable_binary_transfer.o
+
+# target to build an object file
+test/test_reliable_binary_transfer.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer.dir/test/test_reliable_binary_transfer.cpp.o
+.PHONY : test/test_reliable_binary_transfer.cpp.o
+
+test/test_reliable_binary_transfer.i: test/test_reliable_binary_transfer.cpp.i
+.PHONY : test/test_reliable_binary_transfer.i
+
+# target to preprocess a source file
+test/test_reliable_binary_transfer.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer.dir/test/test_reliable_binary_transfer.cpp.i
+.PHONY : test/test_reliable_binary_transfer.cpp.i
+
+test/test_reliable_binary_transfer.s: test/test_reliable_binary_transfer.cpp.s
+.PHONY : test/test_reliable_binary_transfer.s
+
+# target to generate assembly for a file
+test/test_reliable_binary_transfer.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer.dir/test/test_reliable_binary_transfer.cpp.s
+.PHONY : test/test_reliable_binary_transfer.cpp.s
 
 test/test_serial_port.o: test/test_serial_port.cpp.o
 .PHONY : test/test_serial_port.o
@@ -473,6 +535,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rdk_core"
+	@echo "... test_reliable_binary_transfer"
 	@echo "... test_serial_port"
 	@echo "... test_simple_binary_transfer"
 	@echo "... test_simple_binary_transfer_with_stm32"
@@ -487,6 +550,9 @@ help:
 	@echo "... src/transfer/io_stream.o"
 	@echo "... src/transfer/io_stream.i"
 	@echo "... src/transfer/io_stream.s"
+	@echo "... src/transfer/reliable_binary_transfer.o"
+	@echo "... src/transfer/reliable_binary_transfer.i"
+	@echo "... src/transfer/reliable_binary_transfer.s"
 	@echo "... src/transfer/serial_port.o"
 	@echo "... src/transfer/serial_port.i"
 	@echo "... src/transfer/serial_port.s"
@@ -496,6 +562,9 @@ help:
 	@echo "... src/transfer/simple_message_transfer.o"
 	@echo "... src/transfer/simple_message_transfer.i"
 	@echo "... src/transfer/simple_message_transfer.s"
+	@echo "... test/test_reliable_binary_transfer.o"
+	@echo "... test/test_reliable_binary_transfer.i"
+	@echo "... test/test_reliable_binary_transfer.s"
 	@echo "... test/test_serial_port.o"
 	@echo "... test/test_serial_port.i"
 	@echo "... test/test_serial_port.s"

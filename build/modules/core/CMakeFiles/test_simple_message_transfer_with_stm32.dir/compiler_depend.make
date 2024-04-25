@@ -1260,8 +1260,11 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/test/test_si
   ../modules/core/include/rdk/core/transfer/io_stream.h \
   ../modules/core/include/rdk/core/transfer/simple_message_transfer.h \
   ../modules/core/include/rdk/core/transfer/crc.h \
-  ../modules/core/include/rdk/core/transfer/simple_binary_transfer.h
+  ../modules/core/include/rdk/core/transfer/simple_binary_transfer.h \
+  ../modules/core/include/rdk/core/transfer/reliable_binary_transfer.h
 
+
+../modules/core/include/rdk/core/transfer/reliable_binary_transfer.h:
 
 ../modules/core/include/rdk/core/transfer/simple_binary_transfer.h:
 

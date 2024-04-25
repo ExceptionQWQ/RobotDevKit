@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.o.d"
   "CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o"
   "CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o.d"
+  "CMakeFiles/rdk_core.dir/src/transfer/reliable_binary_transfer.cpp.o"
+  "CMakeFiles/rdk_core.dir/src/transfer/reliable_binary_transfer.cpp.o.d"
   "CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o"
   "CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o.d"
   "CMakeFiles/rdk_core.dir/src/transfer/simple_binary_transfer.cpp.o"

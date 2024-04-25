@@ -1258,4 +1258,5 @@ modules/core/CMakeFiles/test_simple_message_transfer.dir/test/test_simple_messag
  /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/io_stream.h \
  /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/simple_message_transfer.h \
  /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/crc.h \
- /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/simple_binary_transfer.h
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/simple_binary_transfer.h \
+ /home/work_dir/RobotDevKit/modules/core/include/rdk/core/transfer/reliable_binary_transfer.h
