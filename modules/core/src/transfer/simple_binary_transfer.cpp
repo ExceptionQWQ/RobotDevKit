@@ -70,7 +70,7 @@ std::size_t SimpleBinaryTransfer::get_crc_error_cnt()
  * @param data 数据
  * @param len 数据长度
  */
-void SimpleBinaryTransfer::send_binary(char* data, std::size_t len)
+void SimpleBinaryTransfer::send_binary(uint8_t* data, std::size_t len)
 {
     memset(send_buff, 0, 260);
     std::size_t pkg_len = encode(data, len);
@@ -85,7 +85,7 @@ void SimpleBinaryTransfer::send_binary(char* data, std::size_t len)
  * @param timeout 超时时间（毫秒）
  * @return 数据长度
  */
-std::size_t SimpleBinaryTransfer::recv_binary(char* buff, std::size_t buff_len, int timeout)
+std::size_t SimpleBinaryTransfer::recv_binary(uint8_t* buff, std::size_t buff_len, int timeout)
 {
     memset(recv_buff, 0, 260);
     std::size_t pkg_len = 0;
@@ -165,7 +165,7 @@ bool SimpleBinaryTransfer::check_recv_status()
 /*
  * @brief 将数据编码成二进制数据包
  */
-std::size_t SimpleBinaryTransfer::encode(char* data, std::size_t len)
+std::size_t SimpleBinaryTransfer::encode(uint8_t* data, std::size_t len)
 {
     check_binary_len(len);
     send_buff[0] = 0xAA;
@@ -181,7 +181,7 @@ std::size_t SimpleBinaryTransfer::encode(char* data, std::size_t len)
 /*
  * @brief 将二进制数据包解码成数据
  */
-std::size_t SimpleBinaryTransfer::decode(char* buff, std::size_t buff_len, std::size_t pkg_len)
+std::size_t SimpleBinaryTransfer::decode(uint8_t* buff, std::size_t buff_len, std::size_t pkg_len)
 {
     if (pkg_len < 4 || pkg_len > 260) return 0;
 

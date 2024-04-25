@@ -40,8 +40,8 @@ private:
     std::size_t crc_error_cnt = 0;
     std::size_t max_transfer_msg_size = 256;
 
-    char send_buff[260];
-    char recv_buff[260];
+    uint8_t send_buff[260];
+    uint8_t recv_buff[260];
 
     enum class RecvStatus
     {

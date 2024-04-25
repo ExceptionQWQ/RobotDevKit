@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/work_dir/RobotDevKit/modules/core/test/test_simple_text_transfer.cpp" "modules/core/CMakeFiles/test_simple_text_transfer.dir/test/test_simple_text_transfer.cpp.o" "gcc" "modules/core/CMakeFiles/test_simple_text_transfer.dir/test/test_simple_text_transfer.cpp.o.d"
+  "/home/work_dir/RobotDevKit/modules/core/test/test_jy901b_imu.cpp" "modules/core/CMakeFiles/test_jy901b_imu.dir/test/test_jy901b_imu.cpp.o" "gcc" "modules/core/CMakeFiles/test_jy901b_imu.dir/test/test_jy901b_imu.cpp.o.d"
   )
 
 # Targets to which this target links.

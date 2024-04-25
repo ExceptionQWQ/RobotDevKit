@@ -22,8 +22,8 @@ public:
     std::size_t get_max_transfer_binary_size();
     std::size_t get_crc_error_cnt();
 
-    std::size_t send_binary(char* data, std::size_t len);
-    std::size_t recv_binary(char* buff, std::size_t buff_len, int timeout = 3000);
+    std::size_t send_binary(uint8_t* data, std::size_t len);
+    std::size_t recv_binary(uint8_t* buff, std::size_t buff_len, int timeout = 3000);
 
     void set_max_try_cnt(int max_try_cnt);
     void set_ack_timeout(int ack_timeout);
@@ -34,8 +34,8 @@ private:
     int max_try_cnt = 3;
     int ack_timeout = 20;
 
-    char control_block_send_buff[300];
-    char control_block_recv_buff[300];
+    uint8_t control_block_send_buff[300];
+    uint8_t control_block_recv_buff[300];
 
     boost::asio::io_context ioc;
     std::shared_ptr<boost::asio::high_resolution_timer> timer;
@@ -52,10 +52,10 @@ private:
         uint8_t seq;
         ControlCommand cm;
         uint8_t data_len;
-        char data[0];
+        uint8_t data[0];
     };
     #pragma pack(pop)
 
-    std::size_t send_binary_once(char* data, std::size_t len);
-    std::size_t recv_binary_once(char* buff, std::size_t buff_len, int* recv_duplicated_flag, int timeout = 3000);
+    std::size_t send_binary_once(uint8_t* data, std::size_t len);
+    std::size_t recv_binary_once(uint8_t* buff, std::size_t buff_len, int* recv_duplicated_flag, int timeout = 3000);
 };

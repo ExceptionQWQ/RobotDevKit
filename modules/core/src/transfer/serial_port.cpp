@@ -34,27 +34,27 @@ void SerialPort::close()
     serial->close();
 }
 
-void SerialPort::async_write(char* data, int len, ResultHandler result_handler)
+void SerialPort::async_write(uint8_t* data, std::size_t len, ResultHandler result_handler)
 {
     boost::asio::async_write(*serial, boost::asio::buffer(data, len), boost::asio::transfer_all(), result_handler);
 }
 
-void SerialPort::async_read(char* buff, int size_to_read, ResultHandler result_handler)
+void SerialPort::async_read(uint8_t* buff, std::size_t size_to_read, ResultHandler result_handler)
 {
     boost::asio::async_read(*serial, boost::asio::buffer(buff, size_to_read), boost::asio::transfer_at_least(1), result_handler);
 }
 
-std::size_t SerialPort::write(char* data, int len)
+std::size_t SerialPort::write(uint8_t* data, std::size_t len)
 {
     return boost::asio::write(*serial, boost::asio::buffer(data, len), boost::asio::transfer_at_least(1));
 }
 
-std::size_t SerialPort::read(char* buff, int size_to_read)
+std::size_t SerialPort::read(uint8_t* buff, std::size_t size_to_read)
 {
     return boost::asio::read(*serial, boost::asio::buffer(buff, size_to_read), boost::asio::transfer_at_least(1));
 }
 
-std::size_t SerialPort::write(char* data, int len, int timeout)
+std::size_t SerialPort::write(uint8_t* data, std::size_t len, int timeout)
 {
     std::optional<boost::system::error_code> timeout_result, write_result;
     std::size_t write_bytes = 0;
@@ -83,7 +83,7 @@ std::size_t SerialPort::write(char* data, int len, int timeout)
     return write_bytes;
 }
 
-std::size_t SerialPort::read(char* buff, int size_to_read, int timeout)
+std::size_t SerialPort::read(uint8_t* buff, std::size_t size_to_read, int timeout)
 {
     std::optional<boost::system::error_code> timeout_result, read_result;
     std::size_t read_bytes = 0;

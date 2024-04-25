@@ -32,9 +32,9 @@ int main()
         memcpy(test_msg.info, info.data(), info.size() + 1);
         ++id;
 
-        transfer1->send_binary((char*)&test_msg, sizeof(TestMsg));
+        transfer1->send_binary((uint8_t*)&test_msg, sizeof(TestMsg));
 
-        char recv_buff[1024];
+        uint8_t recv_buff[1024];
         std::size_t recv_len = transfer2->recv_binary(recv_buff, 1024, 3000);
         if (recv_len == 0) {
             std::cout << "接收失败" << std::endl;

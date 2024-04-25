@@ -30,7 +30,7 @@ void send_thread()
         memcpy(test_msg.info, info.data(), info.size() + 1);
         ++id;
 
-        auto ret = transfer1->send_binary((char*)&test_msg, sizeof(TestMsg));
+        auto ret = transfer1->send_binary((uint8_t*)&test_msg, sizeof(TestMsg));
         if (ret == 0) {
             std::cout << "发送失败" << std::endl;
          }
@@ -45,7 +45,7 @@ void recv_thread()
     std::shared_ptr<ReliableBinaryTransfer> transfer2 = std::make_shared<ReliableBinaryTransfer>(serial2);
 
     while (true) {
-        char recv_buff[1024];
+        uint8_t recv_buff[1024];
         std::size_t recv_len = transfer2->recv_binary(recv_buff, 1024, 3000);
         if (recv_len == 0) {
             std::cout << "接收失败" << std::endl;

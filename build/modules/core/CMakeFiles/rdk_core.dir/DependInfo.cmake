@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/work_dir/RobotDevKit/modules/core/src/imu/wit_private_protocol.cpp" "modules/core/CMakeFiles/rdk_core.dir/src/imu/wit_private_protocol.cpp.o" "gcc" "modules/core/CMakeFiles/rdk_core.dir/src/imu/wit_private_protocol.cpp.o.d"
   "/home/work_dir/RobotDevKit/modules/core/src/transfer/circular_buffer.cpp" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o" "gcc" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o.d"
   "/home/work_dir/RobotDevKit/modules/core/src/transfer/crc.cpp" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.o" "gcc" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.o.d"
   "/home/work_dir/RobotDevKit/modules/core/src/transfer/io_stream.cpp" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o" "gcc" "modules/core/CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o.d"

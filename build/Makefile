@@ -220,6 +220,19 @@ test_reliable_binary_transfer_with_stm32/fast:
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/build
 .PHONY : test_reliable_binary_transfer_with_stm32/fast
 
+#=============================================================================
+# Target rules for targets named test_jy901b_imu
+
+# Build rule for target.
+test_jy901b_imu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_jy901b_imu
+.PHONY : test_jy901b_imu
+
+# fast build rule for target.
+test_jy901b_imu/fast:
+	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_jy901b_imu.dir/build.make modules/core/CMakeFiles/test_jy901b_imu.dir/build
+.PHONY : test_jy901b_imu/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -229,6 +242,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rdk_core"
+	@echo "... test_jy901b_imu"
 	@echo "... test_reliable_binary_transfer"
 	@echo "... test_reliable_binary_transfer_with_stm32"
 	@echo "... test_serial_port"

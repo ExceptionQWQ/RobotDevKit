@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rdk_core.dir/src/imu/wit_private_protocol.cpp.o"
+  "CMakeFiles/rdk_core.dir/src/imu/wit_private_protocol.cpp.o.d"
   "CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o"
   "CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o.d"
   "CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.o"

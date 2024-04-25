@@ -30,12 +30,12 @@ void test_thread()
         memcpy(test_msg.info, info.data(), info.size() + 1);
         ++id;
 
-        auto ret = transfer1->send_binary((char*)&test_msg, sizeof(TestMsg));
+        auto ret = transfer1->send_binary((uint8_t*)&test_msg, sizeof(TestMsg));
         if (ret == 0) {
             std::cout << "发送失败" << std::endl;
         }
 
-        char recv_buff[1024];
+        uint8_t recv_buff[1024];
         std::size_t recv_len = transfer1->recv_binary(recv_buff, 1024, 300);
         if (recv_len == 0) {
             std::cout << "接收失败" << std::endl;

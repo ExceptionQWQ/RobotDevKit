@@ -228,6 +228,44 @@ test_reliable_binary_transfer_with_stm32/fast:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/build
 .PHONY : test_reliable_binary_transfer_with_stm32/fast
 
+# Convenience name for target.
+modules/core/CMakeFiles/test_jy901b_imu.dir/rule:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_jy901b_imu.dir/rule
+.PHONY : modules/core/CMakeFiles/test_jy901b_imu.dir/rule
+
+# Convenience name for target.
+test_jy901b_imu: modules/core/CMakeFiles/test_jy901b_imu.dir/rule
+.PHONY : test_jy901b_imu
+
+# fast build rule for target.
+test_jy901b_imu/fast:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_jy901b_imu.dir/build.make modules/core/CMakeFiles/test_jy901b_imu.dir/build
+.PHONY : test_jy901b_imu/fast
+
+src/imu/wit_private_protocol.o: src/imu/wit_private_protocol.cpp.o
+.PHONY : src/imu/wit_private_protocol.o
+
+# target to build an object file
+src/imu/wit_private_protocol.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/imu/wit_private_protocol.cpp.o
+.PHONY : src/imu/wit_private_protocol.cpp.o
+
+src/imu/wit_private_protocol.i: src/imu/wit_private_protocol.cpp.i
+.PHONY : src/imu/wit_private_protocol.i
+
+# target to preprocess a source file
+src/imu/wit_private_protocol.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/imu/wit_private_protocol.cpp.i
+.PHONY : src/imu/wit_private_protocol.cpp.i
+
+src/imu/wit_private_protocol.s: src/imu/wit_private_protocol.cpp.s
+.PHONY : src/imu/wit_private_protocol.s
+
+# target to generate assembly for a file
+src/imu/wit_private_protocol.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/imu/wit_private_protocol.cpp.s
+.PHONY : src/imu/wit_private_protocol.cpp.s
+
 src/transfer/circular_buffer.o: src/transfer/circular_buffer.cpp.o
 .PHONY : src/transfer/circular_buffer.o
 
@@ -395,6 +433,30 @@ src/transfer/simple_message_transfer.s: src/transfer/simple_message_transfer.cpp
 src/transfer/simple_message_transfer.cpp.s:
 	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.s
 .PHONY : src/transfer/simple_message_transfer.cpp.s
+
+test/test_jy901b_imu.o: test/test_jy901b_imu.cpp.o
+.PHONY : test/test_jy901b_imu.o
+
+# target to build an object file
+test/test_jy901b_imu.cpp.o:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_jy901b_imu.dir/build.make modules/core/CMakeFiles/test_jy901b_imu.dir/test/test_jy901b_imu.cpp.o
+.PHONY : test/test_jy901b_imu.cpp.o
+
+test/test_jy901b_imu.i: test/test_jy901b_imu.cpp.i
+.PHONY : test/test_jy901b_imu.i
+
+# target to preprocess a source file
+test/test_jy901b_imu.cpp.i:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_jy901b_imu.dir/build.make modules/core/CMakeFiles/test_jy901b_imu.dir/test/test_jy901b_imu.cpp.i
+.PHONY : test/test_jy901b_imu.cpp.i
+
+test/test_jy901b_imu.s: test/test_jy901b_imu.cpp.s
+.PHONY : test/test_jy901b_imu.s
+
+# target to generate assembly for a file
+test/test_jy901b_imu.cpp.s:
+	cd /home/work_dir/RobotDevKit/build && $(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_jy901b_imu.dir/build.make modules/core/CMakeFiles/test_jy901b_imu.dir/test/test_jy901b_imu.cpp.s
+.PHONY : test/test_jy901b_imu.cpp.s
 
 test/test_reliable_binary_transfer.o: test/test_reliable_binary_transfer.cpp.o
 .PHONY : test/test_reliable_binary_transfer.o
@@ -573,6 +635,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rdk_core"
+	@echo "... test_jy901b_imu"
 	@echo "... test_reliable_binary_transfer"
 	@echo "... test_reliable_binary_transfer_with_stm32"
 	@echo "... test_serial_port"
@@ -580,6 +643,9 @@ help:
 	@echo "... test_simple_binary_transfer_with_stm32"
 	@echo "... test_simple_message_transfer"
 	@echo "... test_simple_message_transfer_with_stm32"
+	@echo "... src/imu/wit_private_protocol.o"
+	@echo "... src/imu/wit_private_protocol.i"
+	@echo "... src/imu/wit_private_protocol.s"
 	@echo "... src/transfer/circular_buffer.o"
 	@echo "... src/transfer/circular_buffer.i"
 	@echo "... src/transfer/circular_buffer.s"
@@ -601,6 +667,9 @@ help:
 	@echo "... src/transfer/simple_message_transfer.o"
 	@echo "... src/transfer/simple_message_transfer.i"
 	@echo "... src/transfer/simple_message_transfer.s"
+	@echo "... test/test_jy901b_imu.o"
+	@echo "... test/test_jy901b_imu.i"
+	@echo "... test/test_jy901b_imu.s"
 	@echo "... test/test_reliable_binary_transfer.o"
 	@echo "... test/test_reliable_binary_transfer.i"
 	@echo "... test/test_reliable_binary_transfer.s"

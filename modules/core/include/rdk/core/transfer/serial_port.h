@@ -22,14 +22,14 @@ public:
     void open(const std::string& serial_dev_path, int baud_rate);
     void close();
 
-    void async_write(char* data, int len, ResultHandler result_handler) override;
-    void async_read(char* buff, int size_to_read, ResultHandler result_handler) override;
+    void async_write(uint8_t* data, std::size_t len, ResultHandler result_handler) override;
+    void async_read(uint8_t* buff, std::size_t size_to_read, ResultHandler result_handler) override;
 
-    std::size_t write(char* data, int len) override;
-    std::size_t read(char* buff, int size_to_read) override;
+    std::size_t write(uint8_t* data, std::size_t len) override;
+    std::size_t read(uint8_t* buff, std::size_t size_to_read) override;
 
-    std::size_t write(char* data, int len, int timeout) override;
-    std::size_t read(char* buff, int size_to_read, int timeout) override;
+    std::size_t write(uint8_t* data, std::size_t len, int timeout) override;
+    std::size_t read(uint8_t* buff, std::size_t size_to_read, int timeout) override;
 
 private:
     boost::asio::io_context ioc;

@@ -193,5 +193,5 @@ std::string SimpleMessageTransfer::decode(std::size_t pkg_len)
 
     recv_buff[pkg_len - 1] = 0;
 
-    return std::string(recv_buff + 3, pkg_len - 4);
+    return std::string((char*)(recv_buff + 3), pkg_len - 4);
 }

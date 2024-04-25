@@ -86,6 +86,7 @@ modules/core/all: modules/core/CMakeFiles/test_simple_binary_transfer.dir/all
 modules/core/all: modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/all
 modules/core/all: modules/core/CMakeFiles/test_reliable_binary_transfer.dir/all
 modules/core/all: modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/all
+modules/core/all: modules/core/CMakeFiles/test_jy901b_imu.dir/all
 .PHONY : modules/core/all
 
 # Recursive "preinstall" directory target.
@@ -101,6 +102,7 @@ modules/core/clean: modules/core/CMakeFiles/test_simple_binary_transfer.dir/clea
 modules/core/clean: modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/clean
 modules/core/clean: modules/core/CMakeFiles/test_reliable_binary_transfer.dir/clean
 modules/core/clean: modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/clean
+modules/core/clean: modules/core/CMakeFiles/test_jy901b_imu.dir/clean
 .PHONY : modules/core/clean
 
 #=============================================================================
@@ -110,12 +112,12 @@ modules/core/clean: modules/core/CMakeFiles/test_reliable_binary_transfer_with_s
 modules/core/CMakeFiles/rdk_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/rdk_core.dir/build.make modules/core/CMakeFiles/rdk_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target rdk_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target rdk_core"
 .PHONY : modules/core/CMakeFiles/rdk_core.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/rdk_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/rdk_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/rdk_core.dir/rule
@@ -136,12 +138,12 @@ modules/core/CMakeFiles/rdk_core.dir/clean:
 modules/core/CMakeFiles/test_serial_port.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_serial_port.dir/build.make modules/core/CMakeFiles/test_serial_port.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_serial_port.dir/build.make modules/core/CMakeFiles/test_serial_port.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=13,14 "Built target test_serial_port"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=16,17 "Built target test_serial_port"
 .PHONY : modules/core/CMakeFiles/test_serial_port.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/test_serial_port.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_serial_port.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/test_serial_port.dir/rule
@@ -162,12 +164,12 @@ modules/core/CMakeFiles/test_serial_port.dir/clean:
 modules/core/CMakeFiles/test_simple_message_transfer.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=19,20 "Built target test_simple_message_transfer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=22,23 "Built target test_simple_message_transfer"
 .PHONY : modules/core/CMakeFiles/test_simple_message_transfer.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/test_simple_message_transfer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_simple_message_transfer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/test_simple_message_transfer.dir/rule
@@ -188,12 +190,12 @@ modules/core/CMakeFiles/test_simple_message_transfer.dir/clean:
 modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=21,22 "Built target test_simple_message_transfer_with_stm32"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=24,25 "Built target test_simple_message_transfer_with_stm32"
 .PHONY : modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/rule
@@ -214,12 +216,12 @@ modules/core/CMakeFiles/test_simple_message_transfer_with_stm32.dir/clean:
 modules/core/CMakeFiles/test_simple_binary_transfer.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=15,16 "Built target test_simple_binary_transfer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=18,19 "Built target test_simple_binary_transfer"
 .PHONY : modules/core/CMakeFiles/test_simple_binary_transfer.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/test_simple_binary_transfer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_simple_binary_transfer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/test_simple_binary_transfer.dir/rule
@@ -240,12 +242,12 @@ modules/core/CMakeFiles/test_simple_binary_transfer.dir/clean:
 modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=17,18 "Built target test_simple_binary_transfer_with_stm32"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=20,21 "Built target test_simple_binary_transfer_with_stm32"
 .PHONY : modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/rule
@@ -266,12 +268,12 @@ modules/core/CMakeFiles/test_simple_binary_transfer_with_stm32.dir/clean:
 modules/core/CMakeFiles/test_reliable_binary_transfer.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=9,10 "Built target test_reliable_binary_transfer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=12,13 "Built target test_reliable_binary_transfer"
 .PHONY : modules/core/CMakeFiles/test_reliable_binary_transfer.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/test_reliable_binary_transfer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_reliable_binary_transfer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/test_reliable_binary_transfer.dir/rule
@@ -292,12 +294,12 @@ modules/core/CMakeFiles/test_reliable_binary_transfer.dir/clean:
 modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/depend
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=11,12 "Built target test_reliable_binary_transfer_with_stm32"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=14,15 "Built target test_reliable_binary_transfer_with_stm32"
 .PHONY : modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/all
 
 # Build rule for subdir invocation for target.
 modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
 .PHONY : modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/rule
@@ -310,6 +312,32 @@ test_reliable_binary_transfer_with_stm32: modules/core/CMakeFiles/test_reliable_
 modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/clean:
 	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/build.make modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/clean
 .PHONY : modules/core/CMakeFiles/test_reliable_binary_transfer_with_stm32.dir/clean
+
+#=============================================================================
+# Target rules for target modules/core/CMakeFiles/test_jy901b_imu.dir
+
+# All Build rule for target.
+modules/core/CMakeFiles/test_jy901b_imu.dir/all: modules/core/CMakeFiles/rdk_core.dir/all
+	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_jy901b_imu.dir/build.make modules/core/CMakeFiles/test_jy901b_imu.dir/depend
+	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_jy901b_imu.dir/build.make modules/core/CMakeFiles/test_jy901b_imu.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/work_dir/RobotDevKit/build/CMakeFiles --progress-num=10,11 "Built target test_jy901b_imu"
+.PHONY : modules/core/CMakeFiles/test_jy901b_imu.dir/all
+
+# Build rule for subdir invocation for target.
+modules/core/CMakeFiles/test_jy901b_imu.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modules/core/CMakeFiles/test_jy901b_imu.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/work_dir/RobotDevKit/build/CMakeFiles 0
+.PHONY : modules/core/CMakeFiles/test_jy901b_imu.dir/rule
+
+# Convenience name for target.
+test_jy901b_imu: modules/core/CMakeFiles/test_jy901b_imu.dir/rule
+.PHONY : test_jy901b_imu
+
+# clean rule for target.
+modules/core/CMakeFiles/test_jy901b_imu.dir/clean:
+	$(MAKE) $(MAKESILENT) -f modules/core/CMakeFiles/test_jy901b_imu.dir/build.make modules/core/CMakeFiles/test_jy901b_imu.dir/clean
+.PHONY : modules/core/CMakeFiles/test_jy901b_imu.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

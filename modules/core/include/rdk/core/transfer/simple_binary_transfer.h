@@ -28,8 +28,8 @@ public:
     std::size_t get_max_transfer_binary_size();
     std::size_t get_crc_error_cnt();
 
-    void send_binary(char* data, std::size_t len);
-    std::size_t recv_binary(char* buff, std::size_t buff_len, int timeout = 3000);
+    void send_binary(uint8_t* data, std::size_t len);
+    std::size_t recv_binary(uint8_t* buff, std::size_t buff_len, int timeout = 3000);
 
 private:
     std::shared_ptr<IOStream> io_stream;
@@ -40,8 +40,8 @@ private:
     std::size_t crc_error_cnt = 0;
     std::size_t max_transfer_binary_size = 256;
 
-    char send_buff[260];
-    char recv_buff[260];
+    uint8_t send_buff[260];
+    uint8_t recv_buff[260];
 
     enum class RecvStatus
     {
@@ -57,6 +57,6 @@ private:
 
     bool check_binary_len(std::size_t len);
     bool check_recv_status();
-    std::size_t encode(char* data, std::size_t len);
-    std::size_t decode(char* buff, std::size_t buff_len, std::size_t pkg_len);
+    std::size_t encode(uint8_t* data, std::size_t len);
+    std::size_t decode(uint8_t* buff, std::size_t buff_len, std::size_t pkg_len);
 };
