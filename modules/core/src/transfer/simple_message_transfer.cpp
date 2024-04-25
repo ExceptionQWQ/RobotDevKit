@@ -71,6 +71,7 @@ std::size_t SimpleMessageTransfer::get_crc_error_cnt()
  */
 void SimpleMessageTransfer::send_message(const std::string& msg)
 {
+    memset(send_buff, 0, 260);
     std::size_t pkg_len = encode(msg);
     io_stream->write(send_buff, pkg_len);
     send_bytes += pkg_len;
@@ -83,6 +84,7 @@ void SimpleMessageTransfer::send_message(const std::string& msg)
  */
 std::string SimpleMessageTransfer::recv_message(int timeout)
 {
+    memset(recv_buff, 0, 260);
     std::size_t pkg_len = 0;
     std::size_t msg_len = 0;
     recv_status = RecvStatus::RecvFirstFrameStart;

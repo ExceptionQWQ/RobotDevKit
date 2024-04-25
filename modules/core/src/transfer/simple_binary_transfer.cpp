@@ -72,6 +72,7 @@ std::size_t SimpleBinaryTransfer::get_crc_error_cnt()
  */
 void SimpleBinaryTransfer::send_binary(char* data, std::size_t len)
 {
+    memset(send_buff, 0, 260);
     std::size_t pkg_len = encode(data, len);
     io_stream->write(send_buff, pkg_len);
     send_bytes += pkg_len;
@@ -86,6 +87,7 @@ void SimpleBinaryTransfer::send_binary(char* data, std::size_t len)
  */
 std::size_t SimpleBinaryTransfer::recv_binary(char* buff, std::size_t buff_len, int timeout)
 {
+    memset(recv_buff, 0, 260);
     std::size_t pkg_len = 0;
     std::size_t binary_len = 0;
     recv_status = RecvStatus::RecvFirstFrameStart;

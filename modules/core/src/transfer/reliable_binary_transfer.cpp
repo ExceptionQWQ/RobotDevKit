@@ -85,10 +85,9 @@ std::size_t ReliableBinaryTransfer::send_binary(char* data, std::size_t len)
             break;
         } else {
             ++try_cnt;
-            printf("尝试次数:%d\n", try_cnt);
+            // printf("try_cnt:%d\n", try_cnt);
         }
     }
-    ++seq;
     return send_bytes;
 }
 
@@ -107,7 +106,7 @@ std::size_t ReliableBinaryTransfer::recv_binary(char* buff, std::size_t buff_len
         try {
             recv_bytes = recv_binary_once(buff, buff_len, &recv_duplicated_flag, timeout);
         } catch (const IOStream::TimeOutException& e) {
-
+            
         }
     } while (recv_duplicated_flag);
     return recv_bytes;
@@ -139,16 +138,32 @@ void ReliableBinaryTransfer::set_ack_timeout(int ack_timeout)
  */
 std::size_t ReliableBinaryTransfer::send_binary_once(char* data, std::size_t len)
 {
+    memset(control_block_send_buff, 0, 300);
     ControlBlock* cb = (ControlBlock*)control_block_send_buff;
-    cb->seq = seq;
+    cb->seq = seq++;
     cb->cm = ControlCommand::Data;
     cb->data_len = (uint8_t)len;
     memcpy(cb->data, data, len);
     SimpleBinaryTransfer::send_binary(control_block_send_buff, sizeof(ControlBlock) + len);
-    std::size_t recv_len = SimpleBinaryTransfer::recv_binary(control_block_recv_buff, 300, ack_timeout);
-    if (recv_len == 0) return 0;
-    ControlBlock* cb2 = (ControlBlock*)control_block_recv_buff;
-    if (cb->seq == cb2->seq && cb2->cm == ControlCommand::ACK) return len;
+    for (int try_cnt = 0; try_cnt < max_try_cnt; ++try_cnt) {
+        std::size_t recv_len = 0;
+        try {
+            recv_len = SimpleBinaryTransfer::recv_binary(control_block_recv_buff, 300, ack_timeout);
+        } catch (const IOStream::TimeOutException& e) {
+        
+        }
+        if (recv_len == 0) continue;
+        ControlBlock* cb2 = (ControlBlock*)control_block_recv_buff;
+        // if (cb2->cm == ControlCommand::ACK) {
+        //     printf("seq:%d %d\n", cb->seq, cb2->seq);
+        // } else {
+        //     printf("seq2:%d %d\n", cb->seq, cb2->seq);
+        // }
+        if (cb->seq == cb2->seq && cb2->cm == ControlCommand::ACK) {
+            SimpleBinaryTransfer::send_binary(control_block_recv_buff, recv_len);
+            return len;
+        }
+    }
     return 0;
 }
 
@@ -162,6 +177,7 @@ std::size_t ReliableBinaryTransfer::send_binary_once(char* data, std::size_t len
  */
 std::size_t ReliableBinaryTransfer::recv_binary_once(char* buff, std::size_t buff_len, int* recv_duplicated_flag, int timeout)
 {
+    memset(control_block_recv_buff, 0, 300);
     ControlBlock* cb = (ControlBlock*)control_block_recv_buff;
     std::size_t recv_len = SimpleBinaryTransfer::recv_binary(control_block_recv_buff, 300, timeout);
     if (recv_len == 0) return 0;
@@ -170,12 +186,34 @@ std::size_t ReliableBinaryTransfer::recv_binary_once(char* buff, std::size_t buf
         *recv_duplicated_flag = 1;
         return 0; //丢弃重复数据包
     }
-    *recv_duplicated_flag = 0;
     recv_seq = cb->seq;
+    *recv_duplicated_flag = 0;
+    if (cb->cm == ControlCommand::ACK) { //丢弃ACK数据包
+        return 0;
+    }
     ControlBlock* cb2 = (ControlBlock*)control_block_send_buff;
     cb2->seq = cb->seq;
     cb2->cm = ControlCommand::ACK;
     SimpleBinaryTransfer::send_binary(control_block_send_buff, sizeof(ControlBlock));
-    memcpy(buff, cb->data, cb->data_len);
-    return cb->data_len;
+
+    for (int try_cnt = 0; try_cnt < max_try_cnt; ++try_cnt) {
+        std::size_t recv_len = 0;
+        try {
+            recv_len = SimpleBinaryTransfer::recv_binary(control_block_recv_buff, 300, ack_timeout);
+        } catch (const IOStream::TimeOutException& e) {
+        
+        }
+        if (recv_len == 0) continue;
+        cb = (ControlBlock*)control_block_recv_buff;
+        // if (cb->cm == ControlCommand::ACK) {
+        //     printf("seq:%d %d\n", cb->seq, cb2->seq);
+        // } else {
+        //     printf("seq2:%d %d\n", cb->seq, cb2->seq);
+        // }
+        if (cb->seq == cb2->seq && cb->cm == ControlCommand::ACK) {
+            memcpy(buff, cb->data, cb->data_len);
+            return cb->data_len;
+        }
+    }
+    return 0;
 }
