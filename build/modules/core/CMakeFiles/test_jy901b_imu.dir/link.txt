@@ -1,1 +1,0 @@
-/usr/bin/aarch64-linux-gnu-g++ -O3 -DNDEBUG CMakeFiles/test_jy901b_imu.dir/test/test_jy901b_imu.cpp.o -o test_jy901b_imu  librdk_core.a 

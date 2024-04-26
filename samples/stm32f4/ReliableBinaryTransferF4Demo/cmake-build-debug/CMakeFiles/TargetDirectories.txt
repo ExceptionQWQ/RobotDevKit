@@ -1,3 +1,0 @@
-/Users/mac/Desktop/机器人开发工具包/RobotDevKit/samples/stm32f4/ReliableBinaryTransferF4Demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/mac/Desktop/机器人开发工具包/RobotDevKit/samples/stm32f4/ReliableBinaryTransferF4Demo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mac/Desktop/机器人开发工具包/RobotDevKit/samples/stm32f4/ReliableBinaryTransferF4Demo/cmake-build-debug/CMakeFiles/ReliableBinaryTransferF4Demo.elf.dir

@@ -1,2 +1,0 @@
-/usr/bin/aarch64-linux-gnu-ar qc librdk_core.a CMakeFiles/rdk_core.dir/src/imu/wit_private_protocol.cpp.o CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o CMakeFiles/rdk_core.dir/src/transfer/crc.cpp.o CMakeFiles/rdk_core.dir/src/transfer/io_stream.cpp.o CMakeFiles/rdk_core.dir/src/transfer/reliable_binary_transfer.cpp.o CMakeFiles/rdk_core.dir/src/transfer/serial_port.cpp.o CMakeFiles/rdk_core.dir/src/transfer/simple_binary_transfer.cpp.o CMakeFiles/rdk_core.dir/src/transfer/simple_message_transfer.cpp.o
-/usr/bin/aarch64-linux-gnu-ranlib librdk_core.a

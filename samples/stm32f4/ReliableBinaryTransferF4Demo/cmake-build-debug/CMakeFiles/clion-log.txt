@@ -1,5 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/mac/Desktop/机器人开发工具包/RobotDevKit/samples/stm32f4/ReliableBinaryTransferF4Demo
--- Minimal optimization, debug info included
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/mac/Desktop/机器人开发工具包/RobotDevKit/samples/stm32f4/ReliableBinaryTransferF4Demo/cmake-build-debug

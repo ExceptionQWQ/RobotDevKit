@@ -1,1 +1,0 @@
-/usr/bin/aarch64-linux-gnu-g++ -O3 -DNDEBUG CMakeFiles/test_serial_port.dir/test/test_serial_port.cpp.o -o test_serial_port  librdk_core.a 
