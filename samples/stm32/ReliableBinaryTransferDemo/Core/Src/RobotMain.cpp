@@ -19,7 +19,7 @@ void RobotTest()
 {
     HAL_GPIO_WritePin(GPIOF, GPIO_PIN_9, GPIO_PIN_RESET);
     while (true) {
-        char recv_buff[64];
+        uint8_t recv_buff[64];
         std::size_t recv_len = transfer->recv_binary(recv_buff, 64, 3000);
         if (recv_len == 0) continue;
         transfer->send_binary(recv_buff, recv_len);

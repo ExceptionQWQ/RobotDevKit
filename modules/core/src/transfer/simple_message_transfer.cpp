@@ -184,7 +184,7 @@ std::string SimpleMessageTransfer::decode(std::size_t pkg_len)
     if (pkg_len < 4 || pkg_len > 260) return std::string();
 
     crc8_calculator->process_bytes((uint8_t*)recv_buff, pkg_len - 1);
-    char crc8 = crc8_calculator->checksum();
+    uint8_t crc8 = crc8_calculator->checksum();
 
     if (crc8 != recv_buff[pkg_len - 1]) {
         ++crc_error_cnt;

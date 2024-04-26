@@ -27,14 +27,14 @@ public:
     void OnHAL_UART_RxCpltCallback(UART_HandleTypeDef* huart);
     void OnHAL_UART_ErrorCallback(UART_HandleTypeDef* huart);
 
-    void async_write(char* data, int len, ResultHandler result_handler);
-    void async_read(char* buff, int size_to_read, ResultHandler result_handler);
+    void async_write(uint8_t* data, std::size_t len, ResultHandler result_handler);
+    void async_read(uint8_t* buff, std::size_t size_to_read, ResultHandler result_handler);
 
-    std::size_t write(char* data, int len);
-    std::size_t read(char* buff, int size_to_read);
+    std::size_t write(uint8_t* data, std::size_t len);
+    std::size_t read(uint8_t* buff, std::size_t size_to_read);
 
-    std::size_t write(char* data, int len, int timeout);
-    std::size_t read(char* buff, int size_to_read, int timeout);
+    std::size_t write(uint8_t* data, std::size_t len, int timeout);
+    std::size_t read(uint8_t* buff, std::size_t size_to_read, int timeout);
 
 private:
     UART_HandleTypeDef* huart;

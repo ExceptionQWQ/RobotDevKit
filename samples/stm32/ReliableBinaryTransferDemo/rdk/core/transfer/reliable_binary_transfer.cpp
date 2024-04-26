@@ -70,7 +70,7 @@ std::size_t ReliableBinaryTransfer::get_crc_error_cnt()
  * @param len 数据长度
  * @return 实际发送的字节数，为0表示发送失败
  */
-std::size_t ReliableBinaryTransfer::send_binary(char* data, std::size_t len)
+std::size_t ReliableBinaryTransfer::send_binary(uint8_t* data, std::size_t len)
 {
     std::size_t send_bytes;
     int try_cnt = 0;
@@ -92,7 +92,7 @@ std::size_t ReliableBinaryTransfer::send_binary(char* data, std::size_t len)
  * @param timeout 超时时间（毫秒）
  * @return 实际接收到的字节数
  */
-std::size_t ReliableBinaryTransfer::recv_binary(char* buff, std::size_t buff_len, int timeout)
+std::size_t ReliableBinaryTransfer::recv_binary(uint8_t* buff, std::size_t buff_len, int timeout)
 {
     volatile int recv_duplicated_flag = 0;
     std::size_t recv_bytes = 0;
@@ -108,7 +108,7 @@ std::size_t ReliableBinaryTransfer::recv_binary(char* buff, std::size_t buff_len
  * @param len 数据长度
  * @return 实际发送的字节数，为0表示发送失败
  */
-std::size_t ReliableBinaryTransfer::send_binary_once(char* data, std::size_t len)
+std::size_t ReliableBinaryTransfer::send_binary_once(uint8_t* data, std::size_t len)
 {
     memset(control_block_send_buff, 0, 300);
     ControlBlock* cb = (ControlBlock*)control_block_send_buff;
@@ -138,7 +138,7 @@ std::size_t ReliableBinaryTransfer::send_binary_once(char* data, std::size_t len
  * @param recv_duplicated_flag 接收到重复包标志
  * @return 实际接收到的字节数
  */
-std::size_t ReliableBinaryTransfer::recv_binary_once(char* buff, std::size_t buff_len, volatile int* recv_duplicated_flag, int timeout)
+std::size_t ReliableBinaryTransfer::recv_binary_once(uint8_t* buff, std::size_t buff_len, volatile int* recv_duplicated_flag, int timeout)
 {
     memset(control_block_recv_buff, 0, 300);
     ControlBlock* cb = (ControlBlock*)control_block_recv_buff;

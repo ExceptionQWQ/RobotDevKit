@@ -94,6 +94,7 @@ void WitPrivateProcotol::read_sensor_thread(WitPrivateProcotol* wit)
         {
             case RecvDataType::Angle:
                 wit->save_angle_info(recv_buff + 2);
+                wit->unlock();
             break;
         }
     }
@@ -108,4 +109,65 @@ void WitPrivateProcotol::save_angle_info(uint8_t* buff)
     angle_info.yaw = recv_angle_info->yaw / 32768.0 * 180.0;
     angle_info.version = recv_angle_info->version;
     angle_info.time_stamp = get_time_stamp();
+}
+
+void WitPrivateProcotol::unlock()
+{
+    WriteRegCommand wrc;
+    wrc.addr = 0x69;
+    wrc.data = 0xB588;
+    io_stream->write((uint8_t*)&wrc, sizeof(WriteRegCommand));
+}
+
+void WitPrivateProcotol::save()
+{
+    WriteRegCommand wrc;
+    wrc.addr = 0x00;
+    wrc.data = 0x0000;
+    io_stream->write((uint8_t*)&wrc, sizeof(WriteRegCommand));
+}
+
+/*
+ * @brief 加速度校准必须将模块正面放置去校准，如果模块反面放置校准会导致加速度异常，从而导致角度异常
+ */
+void WitPrivateProcotol::acceleration_calibration()
+{
+    unlock();  
+    std::this_thread::sleep_for(std::chrono::milliseconds(200)); 
+    WriteRegCommand wrc;
+    wrc.addr = 0x01;
+    wrc.data = 0x0001;
+    io_stream->write((uint8_t*)&wrc, sizeof(WriteRegCommand));
+    std::this_thread::sleep_for(std::chrono::milliseconds(5000)); 
+    save();
+}
+
+/*
+ * @brief 角度参考是以传感器当前的实际位置，让xy轴的角度归零，做一个相对归零的操作
+ */
+void WitPrivateProcotol::angle_reference()
+{
+    unlock();
+    std::this_thread::sleep_for(std::chrono::milliseconds(200)); 
+    WriteRegCommand wrc;
+    wrc.addr = 0x01;
+    wrc.data = 0x0008;
+    io_stream->write((uint8_t*)&wrc, sizeof(WriteRegCommand));
+    std::this_thread::sleep_for(std::chrono::milliseconds(3000)); 
+    save();
+}
+
+/*
+ * @brief z轴归零需要在6轴算法的前提下，算法切换可以在上位机配置界面修改，9轴设备下的9轴算法是绝对角度，不能归零
+ */
+void WitPrivateProcotol::set_z_axis_to_zero()
+{
+    unlock();
+    std::this_thread::sleep_for(std::chrono::milliseconds(200)); 
+    WriteRegCommand wrc;
+    wrc.addr = 0x01;
+    wrc.data = 0x0004;
+    io_stream->write((uint8_t*)&wrc, sizeof(WriteRegCommand));
+    std::this_thread::sleep_for(std::chrono::milliseconds(3000)); 
+    save();
 }

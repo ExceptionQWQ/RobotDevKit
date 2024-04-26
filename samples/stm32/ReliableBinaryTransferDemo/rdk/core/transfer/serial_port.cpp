@@ -66,37 +66,37 @@ void SerialPort::OnHAL_UART_ErrorCallback(UART_HandleTypeDef* huart)
     HAL_UARTEx_ReceiveToIdle_DMA(huart, recv_buff1, 512);
 }
 
-void SerialPort::async_write(char* data, int len, ResultHandler result_handler)
+void SerialPort::async_write(uint8_t* data, std::size_t len, ResultHandler result_handler)
 {
     write_result_handler = result_handler;
-    HAL_UART_Transmit_IT(huart, (uint8_t*)data, len);
+    HAL_UART_Transmit_IT(huart, data, len);
 }
 
-void SerialPort::async_read(char* buff, int size_to_read, ResultHandler result_handler)
+void SerialPort::async_read(uint8_t* buff, std::size_t size_to_read, ResultHandler result_handler)
 {
     read_result_handler = result_handler;
-    HAL_UART_Receive_DMA(huart, (uint8_t*)buff, size_to_read);
+    HAL_UART_Receive_DMA(huart, buff, size_to_read);
 }
 
-std::size_t SerialPort::write(char* data, int len)
+std::size_t SerialPort::write(uint8_t* data, std::size_t len)
 {
     write(data, len, 3000);
     return len;
 }
 
-std::size_t SerialPort::read(char* buff, int size_to_read)
+std::size_t SerialPort::read(uint8_t* buff, std::size_t size_to_read)
 {
     read(buff, size_to_read, 3000);
     return size_to_read;
 }
 
-std::size_t SerialPort::write(char* data, int len, int timeout)
+std::size_t SerialPort::write(uint8_t* data, std::size_t len, int timeout)
 {
-    HAL_UART_Transmit(huart, (uint8_t*)data, len, timeout);
+    HAL_UART_Transmit(huart, data, len, timeout);
     return len;
 }
 
-std::size_t SerialPort::read(char* buff, int size_to_read, int timeout)
+std::size_t SerialPort::read(uint8_t* buff, std::size_t size_to_read, int timeout)
 {
     uint32_t tick = HAL_GetTick();
     int index = 0;

@@ -1518,15 +1518,15 @@ Discarded input sections
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
  .ARM.exidx.text._ZN22ReliableBinaryTransfer17get_crc_error_cntEv
                 0x0000000000000000        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
- .ARM.extab.text._ZN22ReliableBinaryTransfer16send_binary_onceEPcj
+ .ARM.extab.text._ZN22ReliableBinaryTransfer16send_binary_onceEPhj
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
- .ARM.extab.text._ZN22ReliableBinaryTransfer11send_binaryEPcj
+ .ARM.extab.text._ZN22ReliableBinaryTransfer11send_binaryEPhj
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
- .text._ZN22ReliableBinaryTransfer16recv_binary_onceEPcjPVii
+ .text._ZN22ReliableBinaryTransfer16recv_binary_onceEPhjPVii
                 0x0000000000000000       0xe0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
- .ARM.extab.text._ZN22ReliableBinaryTransfer16recv_binary_onceEPcjPVii
+ .ARM.extab.text._ZN22ReliableBinaryTransfer16recv_binary_onceEPhjPVii
                 0x0000000000000000       0x24 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
- .ARM.exidx.text._ZN22ReliableBinaryTransfer16recv_binary_onceEPcjPVii
+ .ARM.exidx.text._ZN22ReliableBinaryTransfer16recv_binary_onceEPhjPVii
                 0x0000000000000000        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
  .group         0x0000000000000000       0x18 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  .group         0x0000000000000000        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
@@ -1536,11 +1536,11 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  .data          0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
- .ARM.extab.text._ZN10SerialPort4readEPci
+ .ARM.extab.text._ZN10SerialPort4readEPhj
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
- .ARM.extab.text._ZN10SerialPort5writeEPcii
+ .ARM.extab.text._ZN10SerialPort5writeEPhji
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
- .ARM.extab.text._ZN10SerialPort5writeEPci
+ .ARM.extab.text._ZN10SerialPort5writeEPhj
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  .ARM.extab.text._ZN10SerialPort28OnHAL_UARTEx_RxEventCallbackEP20__UART_HandleTypeDeft
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
@@ -1612,9 +1612,9 @@ Discarded input sections
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
  .ARM.exidx.text._ZN20SimpleBinaryTransfer17get_crc_error_cntEv
                 0x0000000000000000        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .ARM.extab.text._ZN20SimpleBinaryTransfer11recv_binaryEPcji
+ .ARM.extab.text._ZN20SimpleBinaryTransfer11recv_binaryEPhji
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .ARM.extab.text._ZN20SimpleBinaryTransfer11send_binaryEPcj
+ .ARM.extab.text._ZN20SimpleBinaryTransfer11send_binaryEPhj
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
  .text._ZN20SimpleBinaryTransfer17check_recv_statusEv
                 0x0000000000000000       0x10 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
@@ -1622,17 +1622,17 @@ Discarded input sections
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
  .ARM.exidx.text._ZN20SimpleBinaryTransfer17check_recv_statusEv
                 0x0000000000000000        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .text._ZN20SimpleBinaryTransfer6encodeEPcj
+ .text._ZN20SimpleBinaryTransfer6encodeEPhj
                 0x0000000000000000       0x44 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .ARM.extab.text._ZN20SimpleBinaryTransfer6encodeEPcj
+ .ARM.extab.text._ZN20SimpleBinaryTransfer6encodeEPhj
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .ARM.exidx.text._ZN20SimpleBinaryTransfer6encodeEPcj
+ .ARM.exidx.text._ZN20SimpleBinaryTransfer6encodeEPhj
                 0x0000000000000000        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .text._ZN20SimpleBinaryTransfer6decodeEPcjj
+ .text._ZN20SimpleBinaryTransfer6decodeEPhjj
                 0x0000000000000000       0x64 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .ARM.extab.text._ZN20SimpleBinaryTransfer6decodeEPcjj
+ .ARM.extab.text._ZN20SimpleBinaryTransfer6decodeEPhjj
                 0x0000000000000000        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .ARM.exidx.text._ZN20SimpleBinaryTransfer6decodeEPcjj
+ .ARM.exidx.text._ZN20SimpleBinaryTransfer6decodeEPhjj
                 0x0000000000000000        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
  .rodata._ZTSSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE0EE
                 0x0000000000000000       0x2f CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
@@ -6765,37 +6765,37 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
                 0x000000000800c554        0xc CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
                 0x000000000800c554                ReliableBinaryTransfer::~ReliableBinaryTransfer()
                 0x000000000800c554                ReliableBinaryTransfer::~ReliableBinaryTransfer()
- .text._ZN22ReliableBinaryTransfer11recv_binaryEPcji
+ .text._ZN22ReliableBinaryTransfer11recv_binaryEPhji
                 0x000000000800c560       0xf4 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
-                0x000000000800c560                ReliableBinaryTransfer::recv_binary(char*, unsigned int, int)
- .text._ZN22ReliableBinaryTransfer16send_binary_onceEPcj
+                0x000000000800c560                ReliableBinaryTransfer::recv_binary(unsigned char*, unsigned int, int)
+ .text._ZN22ReliableBinaryTransfer16send_binary_onceEPhj
                 0x000000000800c654       0xa4 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
-                0x000000000800c654                ReliableBinaryTransfer::send_binary_once(char*, unsigned int)
- .text._ZN22ReliableBinaryTransfer11send_binaryEPcj
+                0x000000000800c654                ReliableBinaryTransfer::send_binary_once(unsigned char*, unsigned int)
+ .text._ZN22ReliableBinaryTransfer11send_binaryEPhj
                 0x000000000800c6f8       0x34 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
-                0x000000000800c6f8                ReliableBinaryTransfer::send_binary(char*, unsigned int)
- .text._ZN10SerialPort4readEPci
+                0x000000000800c6f8                ReliableBinaryTransfer::send_binary(unsigned char*, unsigned int)
+ .text._ZN10SerialPort4readEPhj
                 0x000000000800c72c       0x14 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
-                0x000000000800c72c                SerialPort::read(char*, int)
- .text._ZN10SerialPort10async_readEPciSt8functionIFvjEE
+                0x000000000800c72c                SerialPort::read(unsigned char*, unsigned int)
+ .text._ZN10SerialPort10async_readEPhjSt8functionIFvjEE
                 0x000000000800c740       0x88 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
-                0x000000000800c740                SerialPort::async_read(char*, int, std::function<void (unsigned int)>)
- .text._ZN10SerialPort5writeEPcii
+                0x000000000800c740                SerialPort::async_read(unsigned char*, unsigned int, std::function<void (unsigned int)>)
+ .text._ZN10SerialPort5writeEPhji
                 0x000000000800c7c8       0x10 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
-                0x000000000800c7c8                SerialPort::write(char*, int, int)
+                0x000000000800c7c8                SerialPort::write(unsigned char*, unsigned int, int)
  .text._ZN14CircularBufferIhLj1024EE20BufferEmptyExceptionD2Ev
                 0x000000000800c7d8       0x1c CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
                 0x000000000800c7d8                CircularBuffer<unsigned char, 1024u>::BufferEmptyException::~BufferEmptyException()
                 0x000000000800c7d8                CircularBuffer<unsigned char, 1024u>::BufferEmptyException::~BufferEmptyException()
- .text._ZN10SerialPort5writeEPci
+ .text._ZN10SerialPort5writeEPhj
                 0x000000000800c7f4       0x2c CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
-                0x000000000800c7f4                SerialPort::write(char*, int)
- .text._ZN10SerialPort11async_writeEPciSt8functionIFvjEE
+                0x000000000800c7f4                SerialPort::write(unsigned char*, unsigned int)
+ .text._ZN10SerialPort11async_writeEPhjSt8functionIFvjEE
                 0x000000000800c820       0x88 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
-                0x000000000800c820                SerialPort::async_write(char*, int, std::function<void (unsigned int)>)
- .text._ZN10SerialPort4readEPcii
+                0x000000000800c820                SerialPort::async_write(unsigned char*, unsigned int, std::function<void (unsigned int)>)
+ .text._ZN10SerialPort4readEPhji
                 0x000000000800c8a8       0xf0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
-                0x000000000800c8a8                SerialPort::read(char*, int, int)
+                0x000000000800c8a8                SerialPort::read(unsigned char*, unsigned int, int)
  .text._ZN10SerialPortC2EP20__UART_HandleTypeDef
                 0x000000000800c998       0x74 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
                 0x000000000800c998                SerialPort::SerialPort(__UART_HandleTypeDef*)
@@ -6839,15 +6839,15 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
                 0x000000000800ce0c       0x54 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
                 0x000000000800ce0c                SimpleBinaryTransfer::~SimpleBinaryTransfer()
                 0x000000000800ce0c                SimpleBinaryTransfer::~SimpleBinaryTransfer()
- .text._ZN20SimpleBinaryTransfer11recv_binaryEPcji
+ .text._ZN20SimpleBinaryTransfer11recv_binaryEPhji
                 0x000000000800ce60      0x15c CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
-                0x000000000800ce60                SimpleBinaryTransfer::recv_binary(char*, unsigned int, int)
+                0x000000000800ce60                SimpleBinaryTransfer::recv_binary(unsigned char*, unsigned int, int)
  .text._ZN20SimpleBinaryTransfer16check_binary_lenEj
                 0x000000000800cfbc      0x200 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
                 0x000000000800cfbc                SimpleBinaryTransfer::check_binary_len(unsigned int)
- .text._ZN20SimpleBinaryTransfer11send_binaryEPcj
+ .text._ZN20SimpleBinaryTransfer11send_binaryEPhj
                 0x000000000800d1bc       0x64 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
-                0x000000000800d1bc                SimpleBinaryTransfer::send_binary(char*, unsigned int)
+                0x000000000800d1bc                SimpleBinaryTransfer::send_binary(unsigned char*, unsigned int)
  .text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE0EED2Ev
                 0x000000000800d220       0x2c CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
                 0x000000000800d220                std::__shared_count<(__gnu_cxx::_Lock_policy)0>::~__shared_count()
@@ -7484,7 +7484,7 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
  .rodata._ZTIN8IOStream16TimeOutExceptionE
                 0x0000000008015ca8        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
                 0x0000000008015ca8                typeinfo for IOStream::TimeOutException
- .rodata._ZN10SerialPort4readEPcii.str1.4
+ .rodata._ZN10SerialPort4readEPhji.str1.4
                 0x0000000008015cb0       0x3f CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  *fill*         0x0000000008015cef        0x1 
  .rodata._ZTSN14CircularBufferIhLj1024EE20BufferEmptyExceptionE
@@ -7751,17 +7751,17 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
  .ARM.extab.text._ZN22ReliableBinaryTransferC2ESt10shared_ptrI8IOStreamE
                 0x0000000008017014       0x15 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
  *fill*         0x0000000008017029        0x3 
- .ARM.extab.text._ZN22ReliableBinaryTransfer11recv_binaryEPcji
+ .ARM.extab.text._ZN22ReliableBinaryTransfer11recv_binaryEPhji
                 0x000000000801702c       0x24 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
- .ARM.extab.text._ZN10SerialPort10async_readEPciSt8functionIFvjEE
+ .ARM.extab.text._ZN10SerialPort10async_readEPhjSt8functionIFvjEE
                 0x0000000008017050       0x19 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  .ARM.extab.text._ZN14CircularBufferIhLj1024EE20BufferEmptyExceptionD2Ev
                 0x0000000008017069        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  *fill*         0x0000000008017069        0x3 
- .ARM.extab.text._ZN10SerialPort11async_writeEPciSt8functionIFvjEE
+ .ARM.extab.text._ZN10SerialPort11async_writeEPhjSt8functionIFvjEE
                 0x000000000801706c       0x19 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  *fill*         0x0000000008017085        0x3 
- .ARM.extab.text._ZN10SerialPort4readEPcii
+ .ARM.extab.text._ZN10SerialPort4readEPhji
                 0x0000000008017088       0x1b CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  *fill*         0x00000000080170a3        0x1 
  .ARM.extab.text._ZN10SerialPortC2EP20__UART_HandleTypeDef
@@ -7928,26 +7928,26 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
                 0x0000000008017368        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
  .ARM.exidx.text._ZN22ReliableBinaryTransferD2Ev
                 0x0000000008017370        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
- .ARM.exidx.text._ZN22ReliableBinaryTransfer11recv_binaryEPcji
+ .ARM.exidx.text._ZN22ReliableBinaryTransfer11recv_binaryEPhji
                 0x0000000008017378        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
- .ARM.exidx.text._ZN22ReliableBinaryTransfer16send_binary_onceEPcj
+ .ARM.exidx.text._ZN22ReliableBinaryTransfer16send_binary_onceEPhj
                 0x0000000008017380        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
- .ARM.exidx.text._ZN22ReliableBinaryTransfer11send_binaryEPcj
+ .ARM.exidx.text._ZN22ReliableBinaryTransfer11send_binaryEPhj
                 0x0000000008017388        0x0 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/reliable_binary_transfer.cpp.obj
                                           0x8 (size before relaxing)
- .ARM.exidx.text._ZN10SerialPort4readEPci
+ .ARM.exidx.text._ZN10SerialPort4readEPhj
                 0x0000000008017388        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
- .ARM.exidx.text._ZN10SerialPort10async_readEPciSt8functionIFvjEE
+ .ARM.exidx.text._ZN10SerialPort10async_readEPhjSt8functionIFvjEE
                 0x0000000008017390        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
- .ARM.exidx.text._ZN10SerialPort5writeEPcii
+ .ARM.exidx.text._ZN10SerialPort5writeEPhji
                 0x0000000008017398        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  .ARM.exidx.text._ZN14CircularBufferIhLj1024EE20BufferEmptyExceptionD2Ev
                 0x00000000080173a0        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
- .ARM.exidx.text._ZN10SerialPort5writeEPci
+ .ARM.exidx.text._ZN10SerialPort5writeEPhj
                 0x00000000080173a8        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
- .ARM.exidx.text._ZN10SerialPort11async_writeEPciSt8functionIFvjEE
+ .ARM.exidx.text._ZN10SerialPort11async_writeEPhjSt8functionIFvjEE
                 0x00000000080173b0        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
- .ARM.exidx.text._ZN10SerialPort4readEPcii
+ .ARM.exidx.text._ZN10SerialPort4readEPhji
                 0x00000000080173b8        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
  .ARM.exidx.text._ZN10SerialPortC2EP20__UART_HandleTypeDef
                 0x00000000080173c0        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/serial_port.cpp.obj
@@ -7980,11 +7980,11 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
                 0x00000000080173f0        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
  .ARM.exidx.text._ZN20SimpleBinaryTransferD2Ev
                 0x00000000080173f8        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .ARM.exidx.text._ZN20SimpleBinaryTransfer11recv_binaryEPcji
+ .ARM.exidx.text._ZN20SimpleBinaryTransfer11recv_binaryEPhji
                 0x0000000008017400        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
  .ARM.exidx.text._ZN20SimpleBinaryTransfer16check_binary_lenEj
                 0x0000000008017408        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
- .ARM.exidx.text._ZN20SimpleBinaryTransfer11send_binaryEPcj
+ .ARM.exidx.text._ZN20SimpleBinaryTransfer11send_binaryEPhj
                 0x0000000008017410        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj
  .ARM.exidx.text._ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE0EED2Ev
                 0x0000000008017418        0x8 CMakeFiles/ReliableBinaryTransferDemo.elf.dir/rdk/core/transfer/simple_binary_transfer.cpp.obj

@@ -186,7 +186,7 @@ std::size_t SimpleBinaryTransfer::decode(uint8_t* buff, std::size_t buff_len, st
     if (pkg_len < 4 || pkg_len > 260) return 0;
 
     crc8_calculator->process_bytes((uint8_t*)recv_buff, pkg_len - 1);
-    char crc8 = crc8_calculator->checksum();
+    uint8_t crc8 = crc8_calculator->checksum();
 
     if (crc8 != recv_buff[pkg_len - 1]) {
         ++crc_error_cnt;

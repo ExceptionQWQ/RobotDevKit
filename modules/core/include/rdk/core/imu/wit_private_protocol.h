@@ -38,6 +38,10 @@ public:
     void set_timeout(int timeout);
     AngleInfo get_angle_info();
 
+    void acceleration_calibration();
+    void angle_reference();
+    void set_z_axis_to_zero();
+
 private:
     std::shared_ptr<IOStream> io_stream;
     std::thread read_sensor_th;
@@ -153,6 +157,14 @@ private:
         uint16_t reg4;
         uint8_t sum;
     };
+
+    struct WriteRegCommand
+    {
+        uint8_t head0 = 0xFF;
+        uint8_t head1 = 0xAA;
+        uint8_t addr;
+        int16_t data;
+    };
     #pragma pack(pop)
 
     enum class RecvDataType : uint8_t
@@ -183,5 +195,8 @@ private:
 
     uint8_t checksum(uint8_t* buff);
     void save_angle_info(uint8_t* buff);
+
+    void unlock();
+    void save();
 
 };

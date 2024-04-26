@@ -44,7 +44,7 @@ void test_thread()
         TestMsg* test_msg2 = (TestMsg*)recv_buff;
         std::cout << "id: " << test_msg.id << " id: " << test_msg2->id << " info: " << test_msg2->info << std::endl;
 
-        // std::this_thread::sleep_for(std::chrono::milliseconds(1));
+        // std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 }
 

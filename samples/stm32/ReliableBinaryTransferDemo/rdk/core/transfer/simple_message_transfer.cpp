@@ -176,7 +176,7 @@ std::size_t SimpleMessageTransfer::encode(const std::string& msg)
     send_buff[2] = (char)msg_len;
     memcpy(send_buff + 3, msg.data(), msg_len);
     std::size_t pkg_len = 3 + msg_len;
-    crc8_calculator->process_bytes((uint8_t*)send_buff, pkg_len);
+    crc8_calculator->process_bytes(send_buff, pkg_len);
     send_buff[pkg_len++] = crc8_calculator->checksum();
     return pkg_len;
 }
@@ -188,8 +188,8 @@ std::string SimpleMessageTransfer::decode(std::size_t pkg_len)
 {
     if (pkg_len < 4 || pkg_len > 260) return std::string();
 
-    crc8_calculator->process_bytes((uint8_t*)recv_buff, pkg_len - 1);
-    char crc8 = crc8_calculator->checksum();
+    crc8_calculator->process_bytes(recv_buff, pkg_len - 1);
+    uint8_t crc8 = crc8_calculator->checksum();
 
     if (crc8 != recv_buff[pkg_len - 1]) {
         ++crc_error_cnt;
@@ -198,5 +198,5 @@ std::string SimpleMessageTransfer::decode(std::size_t pkg_len)
 
     recv_buff[pkg_len - 1] = 0;
 
-    return std::string(recv_buff + 3, pkg_len - 4);
+    return std::string((char*)(recv_buff + 3), pkg_len - 4);
 }
