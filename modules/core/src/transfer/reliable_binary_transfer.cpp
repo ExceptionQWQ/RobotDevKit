@@ -199,18 +199,13 @@ std::size_t ReliableBinaryTransfer::recv_binary_once(uint8_t* buff, std::size_t 
     for (int try_cnt = 0; try_cnt < max_try_cnt; ++try_cnt) {
         std::size_t recv_len = 0;
         try {
-            recv_len = SimpleBinaryTransfer::recv_binary(control_block_recv_buff, 300, ack_timeout);
+            recv_len = SimpleBinaryTransfer::recv_binary(control_block_recv_ack_buff, 32, ack_timeout);
         } catch (const IOStream::TimeOutException& e) {
         
         }
         if (recv_len == 0) continue;
-        cb = (ControlBlock*)control_block_recv_buff;
-        // if (cb->cm == ControlCommand::ACK) {
-        //     printf("seq:%d %d\n", cb->seq, cb2->seq);
-        // } else {
-        //     printf("seq2:%d %d\n", cb->seq, cb2->seq);
-        // }
-        if (cb->seq == cb2->seq && cb->cm == ControlCommand::ACK) {
+        ControlBlock* cb3 = (ControlBlock*)control_block_recv_ack_buff;
+        if (cb2->seq == cb3->seq && cb3->cm == ControlCommand::ACK) {
             memcpy(buff, cb->data, cb->data_len);
             return cb->data_len;
         }

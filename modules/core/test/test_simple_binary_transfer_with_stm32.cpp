@@ -33,6 +33,8 @@ int main()
 
             transfer->send_binary((uint8_t*)&test_msg, sizeof(TestMsg));
 
+            std::cout << "id: " << test_msg.id << std::endl;
+
             uint8_t recv_buff[1024];
             std::size_t recv_len = transfer->recv_binary(recv_buff, 1024, 50);
             if (recv_len == 0) {

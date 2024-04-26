@@ -36,6 +36,7 @@ private:
 
     uint8_t control_block_send_buff[300];
     uint8_t control_block_recv_buff[300];
+    uint8_t control_block_recv_ack_buff[32];
 
     boost::asio::io_context ioc;
     std::shared_ptr<boost::asio::high_resolution_timer> timer;

@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mac/Desktop/机器人开发工具包/RobotDevKit/samples/stm32f1/ReliableBinaryTransferF1Demo/Core/Startup/startup_stm32f103c8tx.s
+
