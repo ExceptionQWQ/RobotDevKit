@@ -10,3 +10,8 @@ include_directories(${Boost_INCLUDE_DIRS})
 
 add_subdirectory(modules/core)
 
+
+
+
+set(CONFIG_FILE_PATH lib/cmake/${PROJECT_NAME})
+install(FILES cmake/${PROJECT_NAME}Config.cmake DESTINATION ${CONFIG_FILE_PATH})

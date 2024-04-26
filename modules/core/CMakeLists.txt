@@ -37,3 +37,7 @@ target_link_libraries(test_reliable_binary_transfer_with_stm32 rdk_core)
 add_executable(test_jy901b_imu test/test_jy901b_imu.cpp)
 target_include_directories(test_jy901b_imu PRIVATE include)
 target_link_libraries(test_jy901b_imu rdk_core)
+
+
+install(TARGETS rdk_core ARCHIVE DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY include/rdk DESTINATION include/${PROJECT_NAME})

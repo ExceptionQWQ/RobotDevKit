@@ -1,0 +1,1 @@
+/usr/bin/aarch64-linux-gnu-g++ CMakeFiles/main.dir/src/main.cpp.o -o main  /usr/aarch64-linux-gnu/lib/RobotDevKit/librdk_core.a 

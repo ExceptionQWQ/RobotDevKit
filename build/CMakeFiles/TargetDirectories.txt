@@ -1,5 +1,9 @@
 /home/work_dir/RobotDevKit/build/CMakeFiles/edit_cache.dir
 /home/work_dir/RobotDevKit/build/CMakeFiles/rebuild_cache.dir
+/home/work_dir/RobotDevKit/build/CMakeFiles/list_install_components.dir
+/home/work_dir/RobotDevKit/build/CMakeFiles/install.dir
+/home/work_dir/RobotDevKit/build/CMakeFiles/install/local.dir
+/home/work_dir/RobotDevKit/build/CMakeFiles/install/strip.dir
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/rdk_core.dir
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/test_serial_port.dir
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/test_simple_message_transfer.dir
@@ -11,3 +15,7 @@
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/test_jy901b_imu.dir
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/edit_cache.dir
 /home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/rebuild_cache.dir
+/home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/list_install_components.dir
+/home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/install.dir
+/home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/install/local.dir
+/home/work_dir/RobotDevKit/build/modules/core/CMakeFiles/install/strip.dir

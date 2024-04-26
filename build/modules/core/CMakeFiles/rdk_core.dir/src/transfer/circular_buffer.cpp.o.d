@@ -66,6 +66,7 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o: \
  /usr/aarch64-linux-gnu/include/bits/types/FILE.h \
  /usr/aarch64-linux-gnu/include/bits/types/locale_t.h \
  /usr/aarch64-linux-gnu/include/bits/types/__locale_t.h \
+ /usr/aarch64-linux-gnu/include/bits/wchar2.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/allocator.h \
  /usr/aarch64-linux-gnu/include/c++/11/aarch64-linux-gnu/bits/c++allocator.h \
  /usr/aarch64-linux-gnu/include/c++/11/ext/new_allocator.h \
@@ -102,6 +103,7 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o: \
  /usr/aarch64-linux-gnu/include/bits/types/__sigset_t.h \
  /usr/aarch64-linux-gnu/include/bits/types/struct_timeval.h \
  /usr/aarch64-linux-gnu/include/bits/types/struct_timespec.h \
+ /usr/aarch64-linux-gnu/include/bits/select2.h \
  /usr/aarch64-linux-gnu/include/bits/pthreadtypes.h \
  /usr/aarch64-linux-gnu/include/bits/thread-shared-types.h \
  /usr/aarch64-linux-gnu/include/bits/pthreadtypes-arch.h \
@@ -109,7 +111,9 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o: \
  /usr/aarch64-linux-gnu/include/bits/struct_mutex.h \
  /usr/aarch64-linux-gnu/include/bits/struct_rwlock.h \
  /usr/aarch64-linux-gnu/include/alloca.h \
+ /usr/aarch64-linux-gnu/include/bits/stdlib-bsearch.h \
  /usr/aarch64-linux-gnu/include/bits/stdlib-float.h \
+ /usr/aarch64-linux-gnu/include/bits/stdlib.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/std_abs.h \
  /usr/aarch64-linux-gnu/include/c++/11/bits/algorithmfwd.h \
  /usr/aarch64-linux-gnu/include/c++/11/initializer_list \
@@ -153,6 +157,8 @@ modules/core/CMakeFiles/rdk_core.dir/src/transfer/circular_buffer.cpp.o: \
  /usr/aarch64-linux-gnu/include/bits/types/struct_FILE.h \
  /usr/aarch64-linux-gnu/include/bits/types/cookie_io_functions_t.h \
  /usr/aarch64-linux-gnu/include/bits/stdio_lim.h \
+ /usr/aarch64-linux-gnu/include/bits/stdio.h \
+ /usr/aarch64-linux-gnu/include/bits/stdio2.h \
  /usr/aarch64-linux-gnu/include/c++/11/cerrno \
  /usr/aarch64-linux-gnu/include/errno.h \
  /usr/aarch64-linux-gnu/include/bits/errno.h \

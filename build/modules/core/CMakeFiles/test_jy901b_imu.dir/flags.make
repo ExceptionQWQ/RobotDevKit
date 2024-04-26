@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/work_dir/RobotDevKit/modules/core/include
 
-CXX_FLAGS =  -fdata-sections -Wa,--noexecstack -fsigned-char -Wno-psabi -std=gnu++20
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20
 
