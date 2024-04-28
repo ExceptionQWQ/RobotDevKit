@@ -54,5 +54,9 @@ add_executable(test_m3508_motor test/test_m3508_motor.cpp)
 target_include_directories(test_m3508_motor PRIVATE include)
 target_link_libraries(test_m3508_motor rdk_core)
 
+add_executable(test_damiao_controller test/test_damiao_controller.cpp)
+target_include_directories(test_damiao_controller PRIVATE include)
+target_link_libraries(test_damiao_controller rdk_core)
+
 install(TARGETS rdk_core ARCHIVE DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY include/rdk DESTINATION include/${PROJECT_NAME})

@@ -16,3 +16,4 @@
 #include "rdk/core/motor/dji/dji_motor.h"
 #include "rdk/core/motor/dji/m2006_motor.h"
 #include "rdk/core/motor/dji/m3508_motor.h"
+#include "rdk/core/motor/damiao/damiao_controller.h"
