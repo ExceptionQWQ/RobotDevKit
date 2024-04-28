@@ -45,7 +45,7 @@ public:
 private:
     CAN_HandleTypeDef* hcan;
     bool enabled = true;
-    C6xxControllerFeedback feedback[9];
+    C6xxControllerFeedback feedback[9] = {0};
     int16_t current_buff[9] = {0};
 
     void save_feedback(uint8_t* data, int motor_id);

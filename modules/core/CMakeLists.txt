@@ -38,6 +38,21 @@ add_executable(test_jy901b_imu test/test_jy901b_imu.cpp)
 target_include_directories(test_jy901b_imu PRIVATE include)
 target_link_libraries(test_jy901b_imu rdk_core)
 
+add_executable(test_serial_to_can test/test_serial_to_can.cpp)
+target_include_directories(test_serial_to_can PRIVATE include)
+target_link_libraries(test_serial_to_can rdk_core)
+
+add_executable(test_c6xx_controller test/test_c6xx_controller.cpp)
+target_include_directories(test_c6xx_controller PRIVATE include)
+target_link_libraries(test_c6xx_controller rdk_core)
+
+add_executable(test_dji_motor test/test_dji_motor.cpp)
+target_include_directories(test_dji_motor PRIVATE include)
+target_link_libraries(test_dji_motor rdk_core)
+
+add_executable(test_m3508_motor test/test_m3508_motor.cpp)
+target_include_directories(test_m3508_motor PRIVATE include)
+target_link_libraries(test_m3508_motor rdk_core)
 
 install(TARGETS rdk_core ARCHIVE DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY include/rdk DESTINATION include/${PROJECT_NAME})

@@ -11,11 +11,14 @@
 #include <functional>
 #include <boost/system/error_code.hpp>
 
-using ResultHandler = std::function<void(const boost::system::error_code& error, std::size_t)>;
 
 class IOStream
 {
 public:
+
+    using ResultHandler = std::function<void(const boost::system::error_code& error, std::size_t)>;
+
+
     IOStream();
     ~IOStream();
 

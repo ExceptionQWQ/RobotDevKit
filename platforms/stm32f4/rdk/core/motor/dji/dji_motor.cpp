@@ -80,7 +80,7 @@ void DjiMotor::speed_pos_mode_tick()
 
     speed_pid->set_input(rotor_rpm);
     speed_pid->set_target(pos_pid->get_output());
-    pos_pid->set_input(get_pos());
+    pos_pid->set_input(DjiMotor::get_pos());
     pos_pid->set_target(target_pos);
     pos_pid->tick();
 
@@ -131,8 +131,8 @@ void DjiMotor::set_target_rpm(double target_rpm)
  */
 void DjiMotor::set_target_pos(double target_pos)
 {
-    if (reverse) this->target_pos = target_pos;
-    else this->target_pos = -target_pos;
+    if (reverse) this->target_pos = -target_pos;
+    else this->target_pos = target_pos;
 }
 
 /*
