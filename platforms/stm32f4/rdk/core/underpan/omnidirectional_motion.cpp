@@ -2,6 +2,7 @@
  * @author BusyBox
  * @date 2024/4/27
  * @version 1.0
+ * @git https://github.com/ExceptionQWQ/RobotDevKit
  */
 
 #include "rdk/core/underpan/omnidirectional_motion.h"
@@ -82,14 +83,14 @@ void OmnidirectionalMotion::add_y_speed(double speed)
  */
 void OmnidirectionalMotion::add_z_speed(double speed)
 {
-    motor1_rpm += speed;
-    motor2_rpm += speed;
-    motor3_rpm += speed;
-    motor4_rpm += speed;
+    motor1_rpm += speed / sqrt2 * 30 / pi / wheel_radius;
+    motor2_rpm += speed / sqrt2 * 30 / pi / wheel_radius;
+    motor3_rpm += speed / sqrt2 * 30 / pi / wheel_radius;
+    motor4_rpm += speed / sqrt2 * 30 / pi / wheel_radius;
 }
 
 /*
- * @brief 将缓冲中的速度写入电机
+ * @brief 将缓冲区的速度写入电机
  */
 void OmnidirectionalMotion::commit()
 {
