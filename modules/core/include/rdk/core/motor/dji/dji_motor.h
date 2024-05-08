@@ -53,6 +53,7 @@ private:
     double target_pos;
     double rotor_rpm;
     double rotor_pos;
+    double last_rotor_pos = 0;
     double pos = 0;
 
     std::shared_ptr<PID> speed_pid;
