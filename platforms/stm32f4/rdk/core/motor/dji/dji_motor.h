@@ -1,7 +1,7 @@
 /*
  * @author BusyBox
  * @date 2024/4/27
- * @version 1.0
+ * @version 1.1
  * @git https://github.com/ExceptionQWQ/RobotDevKit
  */
 
@@ -54,6 +54,7 @@ private:
     double target_pos;
     double rotor_rpm;
     double rotor_pos;
+    double last_rotor_pos = 0;
     double pos = 0;
 
     std::shared_ptr<PID> speed_pid;

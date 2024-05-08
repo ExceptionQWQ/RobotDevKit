@@ -13,6 +13,7 @@ M3508Motor::M3508Motor(std::shared_ptr<C6xxController> c6xx_controller, int id, 
     if (mode == Mode::SPEED_POS) {
         DjiMotor::set_target_rpm(3000); //转速设置过大会丢步
         DjiMotor::set_pos_pid(0.12, 0, 0.12);
+
     }
     set_max_output_current(10);
 }

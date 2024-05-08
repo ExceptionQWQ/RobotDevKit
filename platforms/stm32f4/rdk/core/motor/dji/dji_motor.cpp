@@ -1,7 +1,7 @@
 /*
  * @author BusyBox
  * @date 2024/4/27
- * @version 1.0
+ * @version 1.1
  * @git https://github.com/ExceptionQWQ/RobotDevKit
  */
 
@@ -16,6 +16,8 @@ DjiMotor::DjiMotor(std::shared_ptr<C6xxController> c6xx_controller, int id, Mode
     pos_pid = std::make_shared<PID>(speed_pid);
     pos_pid->set_pid_type(PID::PIDType::Pos);
     set_max_output_current(10);
+
+    last_rotor_pos = get_rotor_pos();
 }
 
 DjiMotor::~DjiMotor()
@@ -46,7 +48,6 @@ double DjiMotor::get_rotor_pos()
  */
 void DjiMotor::calc_pos()
 {
-    static double last_rotor_pos = rotor_pos;
     double offset = rotor_pos - last_rotor_pos;
     if (offset < -4096) { //正转，零点在区间内
         pos += 8192 + offset;
