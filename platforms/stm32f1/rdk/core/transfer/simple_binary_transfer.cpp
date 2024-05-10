@@ -2,6 +2,7 @@
  * @author BusyBox
  * @date 2024/4/25
  * @version 1.0
+ * @git https://github.com/ExceptionQWQ/RobotDevKit
  */
 
 #include "rdk/core/transfer/simple_binary_transfer.h"

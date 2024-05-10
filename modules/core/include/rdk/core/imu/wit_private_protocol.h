@@ -3,6 +3,7 @@
  * @date 2024/4/26
  * @version 1.0
  * @details 维特智能WIT私有协议
+ * @git https://github.com/ExceptionQWQ/RobotDevKit
  */
 
 #pragma once

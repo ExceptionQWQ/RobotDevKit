@@ -2,6 +2,7 @@
  * @author BusyBox
  * @date 2024/4/29
  * @version 1.0
+ * @git https://github.com/ExceptionQWQ/RobotDevKit
  */
 
 #include "rdk/core/motor/damiao/damiao_controller.h"

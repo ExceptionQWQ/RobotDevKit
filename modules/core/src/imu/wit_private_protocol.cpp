@@ -2,6 +2,7 @@
  * @author BusyBox
  * @date 2024/4/26
  * @version 1.0
+ * @git https://github.com/ExceptionQWQ/RobotDevKit
  */
 
 #include "rdk/core/imu/wit_private_protocol.h"
