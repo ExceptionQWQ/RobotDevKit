@@ -142,6 +142,7 @@ void DjiMotor::set_target_pos(double target_pos)
  */
 double DjiMotor::get_rpm()
 {
+    if (reverse) return -rotor_rpm;
     return rotor_rpm;
 }
 
