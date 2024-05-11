@@ -75,8 +75,8 @@ void MecanumMotion::add_y_speed(double speed)
 {
     motor1_rpm += -speed / sqrt2 * 30 / pi / wheel_radius;
     motor2_rpm += speed / sqrt2 * 30 / pi / wheel_radius;
-    motor3_rpm += speed / sqrt2 * 30 / pi / wheel_radius;
-    motor4_rpm += -speed / sqrt2 * 30 / pi / wheel_radius;
+    motor3_rpm += -speed / sqrt2 * 30 / pi / wheel_radius;
+    motor4_rpm += speed / sqrt2 * 30 / pi / wheel_radius;
 }
 
 /*
@@ -87,8 +87,8 @@ void MecanumMotion::add_z_speed(double speed)
 {
     motor1_rpm += -speed;
     motor2_rpm += speed;
-    motor3_rpm += -speed;
-    motor4_rpm += speed;
+    motor3_rpm += speed;
+    motor4_rpm += -speed;
 }
 
 /*
