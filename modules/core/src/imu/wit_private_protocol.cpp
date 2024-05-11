@@ -35,11 +35,21 @@ uint32_t WitPrivateProcotol::get_time_stamp()
     return std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
 }
 
+/*
+ * @brief 设置超时时间
+ * @param timeout 超时时间（秒）
+ * @details 当传感器超过一定时间没有返回数据时会产生超时异常
+ */
 void WitPrivateProcotol::set_timeout(int timeout)
 {   
     this->timeout = timeout;
 }
 
+/*
+ * @brief 获取角度信息
+ * @return 角度信息，包含roll，pitch，yaw
+ * @attention 当传感器超过一定时间没有返回数据时会产生超时异常
+ */
 WitPrivateProcotol::AngleInfo WitPrivateProcotol::get_angle_info()
 {
     uint32_t time_stamp = get_time_stamp();

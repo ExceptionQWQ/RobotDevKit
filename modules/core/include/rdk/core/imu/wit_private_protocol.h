@@ -36,11 +36,30 @@ public:
         std::string error;
     };
 
+    /*
+     * @brief 设置超时时间
+     * @param timeout 超时时间（秒）
+     * @details 当传感器超过一定时间没有返回数据时会产生超时异常
+     */
     void set_timeout(int timeout);
+    /*
+     * @brief 获取角度信息
+     * @return 角度信息，包含roll，pitch，yaw
+     * @attention 当传感器超过一定时间没有返回数据时会产生超时异常
+     */
     AngleInfo get_angle_info();
 
+    /*
+     * @brief 加速度校准必须将模块正面放置去校准，如果模块反面放置校准会导致加速度异常，从而导致角度异常
+     */ 
     void acceleration_calibration();
+    /*
+     * @brief 角度参考是以传感器当前的实际位置，让xy轴的角度归零，做一个相对归零的操作
+     */
     void angle_reference();
+    /*
+     * @brief z轴归零需要在6轴算法的前提下，算法切换可以在上位机配置界面修改，9轴设备下的9轴算法是绝对角度，不能归零
+     */
     void set_z_axis_to_zero();
 
 private:

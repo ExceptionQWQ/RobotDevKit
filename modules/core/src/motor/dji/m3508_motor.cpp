@@ -61,6 +61,7 @@ double M3508Motor::get_pos()
 /*
  * @brief 设置电机最大输出电流
  * @param current 电流(A)
+ * @attention 电流设置过大可能会烧毁电机或者出现电机疯转停不下来的风险
  */
 void M3508Motor::set_max_output_current(double current)
 {

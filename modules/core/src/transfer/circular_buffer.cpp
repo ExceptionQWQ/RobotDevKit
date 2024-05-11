@@ -33,6 +33,7 @@ void CircularBuffer<T, buff_size>::push_back(const T& t)
 
 /*
  * @brief 弹出循环缓冲前面的元素，如果缓冲为空则会抛出BufferEmptyException异常
+ * @attention 如果缓冲为空，则会抛出BufferEmptyException异常
  */
 template<class T, std::size_t buff_size>
 T CircularBuffer<T, buff_size>::pop_front()

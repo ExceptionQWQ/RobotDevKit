@@ -34,11 +34,32 @@ public:
     DifferentialMotion(std::shared_ptr<Motor> motor1, std::shared_ptr<Motor> motor2);
     ~DifferentialMotion();
 
+    /*
+     * @brief 每隔1ms调用一次tick，会自动调用2个motor的tick函数
+     */
     void tick();
+    /*
+     * @brief 设置轮子半径
+     * @param wheel_radius 轮子半径(mm)
+     */
     void set_wheel_radius(double wheel_radius);
+    /*
+     * @brief 清除缓存区的速度
+     */
     void clear();
+    /*
+     * @brief 添加x轴速度
+     * @param speed (mm/s)
+     */
     void add_x_speed(double speed);
+    /*
+     * @brief 添加z轴速度
+     * @param speed
+     */
     void add_z_speed(double speed);
+    /*
+     * @brief 将缓冲区的速度写入电机
+     */
     void commit();
 private:
 

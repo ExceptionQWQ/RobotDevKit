@@ -153,7 +153,7 @@ void EncoderMotor::set_motor_pwm_output_callback(MotorPWMOutputCallback motor_pw
 }
 
 /*
- * @brief 增加编码器脉冲数
+ * @brief 每隔一定时间对增量式编码器采样，然后调用add_pulse传入电机速度增量
  */
 void EncoderMotor::add_pulse(int32_t pulse)
 {

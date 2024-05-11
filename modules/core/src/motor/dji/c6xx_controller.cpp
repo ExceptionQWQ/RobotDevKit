@@ -131,7 +131,7 @@ void C6xxController::flush()
 }
 
 /*
- * @brief 每隔1ms tick一次
+ * @brief 每隔1ms tick一次，会自动调用flush函数
  */
 void C6xxController::tick()
 {
@@ -139,7 +139,7 @@ void C6xxController::tick()
 }
 
 /*
- * @brief 电调使能
+ * @brief 控制器使能
  */
 void C6xxController::enable()
 {
@@ -147,7 +147,7 @@ void C6xxController::enable()
 }
 
 /*
- * @brief 电调失能
+ * @brief 控制器失能
  */
 void C6xxController::disable()
 {

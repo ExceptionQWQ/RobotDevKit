@@ -22,14 +22,41 @@ public:
     SimpleMessageTransfer(std::shared_ptr<IOStream> io_stream);
     ~SimpleMessageTransfer();
 
+    /*
+     * @brief 获取已发送的字节数
+     */
     std::size_t get_send_bytes();
+    /*
+     * @brief 获取接收到的字节数
+     */
     std::size_t get_recv_bytes();
+    /*
+     * @brief 清除已发送的字节数
+     */
     void clear_send_bytes();
+    /*
+     * @brief 清除接收到的字节数
+     */
     void clear_recv_bytes();
+    /*
+     * @brief 获取最大能够传输消息的长度
+     */
     std::size_t get_max_transfer_msg_size();
+    /*
+     * @brief 获取crc错误计数
+     */
     std::size_t get_crc_error_cnt();
 
+    /*
+     * @brief 发送消息
+     * @param msg 消息
+     */
     void send_message(const std::string& msg);
+    /*
+     * @brief 接收消息
+     * @param timeout 超时时间（毫秒）
+     * @return 消息
+     */
     std::string recv_message(int timeout = 3000);
 
 private:
@@ -56,9 +83,22 @@ private:
 
     RecvStatus recv_status = RecvStatus::RecvFirstFrameStart;
 
+    /*
+     * @brief 检查消息长度，不能超过最大能够发送的长度
+     */
     std::size_t check_message_len(const std::string& msg);
+    /*
+     * @brief 检查状态机接收状态
+     * @return true 已接收完一个数据包
+     */
     bool check_recv_status();
+    /*
+     * @brief 将消息编码成二进制数据包
+     */
     std::size_t encode(const std::string& msg);
+    /*
+     * @brief 将二进制数据包解码成消息
+     */
     std::string decode(std::size_t pkg_len);
     
 
