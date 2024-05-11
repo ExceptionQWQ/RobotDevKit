@@ -1,6 +1,6 @@
 /*
  * @author BusyBox
- * @date 2024/4/28
+ * @date 2024/5/11
  * @version 1.0
  * @git https://github.com/ExceptionQWQ/RobotDevKit
  */
@@ -8,8 +8,6 @@
 #pragma once
 
 #include <cstdint>
-#include <functional>
-#include <boost/system/error_code.hpp>
 
 class CanBus
 {
@@ -41,19 +39,11 @@ public:
         uint8_t d9; //扩展帧使用
     };
 
-    using ResultHandler = std::function<void(const boost::system::error_code& error, uint32_t id, CanBus::FrameData data)>;
+    using ResultHandler = void(uint32_t id, CanBus::FrameData data);
 
     CanBus(IDType id_type);
     ~CanBus();
 
-    virtual std::size_t async_write_frame(uint32_t id, FrameData data, ResultHandler result_handler) = 0;
-    virtual std::size_t async_read_frame(uint32_t* id, FrameData* data, ResultHandler result_handler) = 0;
-
-    virtual std::size_t write_frame(uint32_t id, FrameData data) = 0;
-    virtual std::size_t read_frame(uint32_t* id, FrameData* data) = 0;
-
-    virtual std::size_t write_frame(uint32_t id, FrameData data, int timeout) = 0;
-    virtual std::size_t read_frame(uint32_t* id, FrameData* data, int timeout) = 0;
 
 protected:
     IDType id_type;

@@ -23,14 +23,19 @@
 #include <cstdint>
 #include <memory>
 #include "rdk/core/transfer/can_bus.h"
-#include "rdk/core/transfer/serial_port.h"
 #include "rdk/core/transfer/simple_binary_transfer.h"
 
 class SerialToCan : public CanBus
 {
 public:
-    SerialToCan(std::shared_ptr<SerialPort> serial_port, IDType id_type);
+    SerialToCan(SimpleBinaryTransfer* transfer, IDType id_type);
     ~SerialToCan();
+
+    /*
+     * @brief 设置帧类型
+     * @param id_type 帧类型
+     */
+    void set_id_type(IDType id_type);
 
     /*
      * @brief 异步写入帧数据
@@ -38,27 +43,27 @@ public:
      * @param data 数据帧
      * @param result_handler 写入完成回调函数
      */
-    std::size_t async_write_frame(uint32_t id, FrameData data, ResultHandler result_handler) override;
+    std::size_t async_write_frame(uint32_t id, FrameData data, ResultHandler result_handler);
     /*
      * @brief 异步读取帧数据
      * @param id 帧id
      * @param data 数据帧
      * @param result_handler 读取完成回调函数
      */
-    std::size_t async_read_frame(uint32_t* id, FrameData* data, ResultHandler result_handler) override;
+    std::size_t async_read_frame(uint32_t* id, FrameData* data, ResultHandler result_handler);
 
     /*
      * @brief 写入帧数据
      * @param id 帧id
      * @param data 数据帧
      */
-    std::size_t write_frame(uint32_t id, FrameData data) override;
+    std::size_t write_frame(uint32_t id, FrameData data);
     /*
      * @brief 读取帧数据
      * @param id 帧id
      * @param data 数据帧
      */
-    std::size_t read_frame(uint32_t* id, FrameData* data) override;
+    std::size_t read_frame(uint32_t* id, FrameData* data);
 
     /*
      * @brief 写入帧数据
@@ -66,7 +71,7 @@ public:
      * @param data 数据帧
      * @param timeout 超时时间
      */
-    std::size_t write_frame(uint32_t id, FrameData data, int timeout) override;
+    std::size_t write_frame(uint32_t id, FrameData data, int timeout);
 
     /*
      * @brief 读取帧数据
@@ -74,7 +79,7 @@ public:
      * @param data 数据帧
      * @param timeout 超时时间
      */
-    std::size_t read_frame(uint32_t* id, FrameData* data, int timeout) override;
+    std::size_t read_frame(uint32_t* id, FrameData* data, int timeout);
 
 private:
 
@@ -87,10 +92,5 @@ private:
     };
     #pragma pack(pop)
 
-    std::shared_ptr<SerialPort> serial_port;
-    std::shared_ptr<SimpleBinaryTransfer> transfer;
-
-    boost::asio::io_context ioc;
-    std::shared_ptr<boost::asio::high_resolution_timer> timer;
-
+    SimpleBinaryTransfer* transfer;
 };

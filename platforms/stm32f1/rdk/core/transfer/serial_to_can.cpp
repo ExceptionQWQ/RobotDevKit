@@ -7,16 +7,24 @@
 
 #include "rdk/core/transfer/serial_to_can.h"
 
-SerialToCan::SerialToCan(std::shared_ptr<SerialPort> serial_port, IDType id_type):CanBus(id_type)
+SerialToCan::SerialToCan(SimpleBinaryTransfer* transfer, IDType id_type):CanBus(id_type)
 {
-    this->serial_port = serial_port;
-    timer = std::make_shared<boost::asio::high_resolution_timer>(ioc);
-    transfer = std::make_shared<SimpleBinaryTransfer>(serial_port);
+    this->transfer = transfer;
 }
 
 SerialToCan::~SerialToCan()
 {
 
+}
+
+
+/*
+ * @brief 设置帧类型
+ * @param id_type 帧类型
+ */
+void SerialToCan::set_id_type(IDType id_type)
+{
+    this->id_type = id_type;
 }
 
 /*
@@ -97,7 +105,7 @@ std::size_t SerialToCan::write_frame(uint32_t id, FrameData data, int timeout)
  */
 std::size_t SerialToCan::read_frame(uint32_t* id, FrameData* data, int timeout)
 {
-     uint8_t recv_buff[256];
+    uint8_t recv_buff[256];
 
     std::size_t recv_bytes = transfer->recv_binary(recv_buff, 256, timeout);
     if (recv_bytes) {

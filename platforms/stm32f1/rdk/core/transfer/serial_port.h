@@ -12,8 +12,6 @@
 #include "stm32f1xx_hal.h"
 
 
-using ResultHandler = void(*)(std::size_t);
-
 /*
  * @brief STM32串口库，请开启RX DMA
  */
@@ -23,6 +21,7 @@ public:
     SerialPort(UART_HandleTypeDef* huart, CircularBuffer* circular_buffer);
     ~SerialPort();
 
+    using ResultHandler = void(*)(std::size_t);
 
     /*
      * @brief 用户需要在外部编写以下4个中断函数，并调用

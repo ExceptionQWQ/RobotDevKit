@@ -12,7 +12,7 @@
 
 int main()
 {
-    auto serial = std::make_shared<SerialPort>("/dev/serial/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.1:1.0-port0", 115200);
+    auto serial = std::make_shared<SerialPort>("/dev/serial/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.1:1.0-port0", 921600);
     auto can = std::make_shared<SerialToCan>(serial, CanBus::IDType::STD);
     auto c6xx_controller = std::make_shared<C6xxController>(can);
     auto dji_motor = std::make_shared<DjiMotor>(c6xx_controller, 1, DjiMotor::Mode::SPEED_POS);
