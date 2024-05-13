@@ -50,10 +50,10 @@ private:
     Mode mode;
     bool reverse = false;
 
-    double target_rpm;
-    double target_pos;
-    double rotor_rpm;
-    double rotor_pos;
+    double target_rpm = 0;
+    double target_pos = 0;
+    double rotor_rpm = 0;
+    double rotor_pos = 0;
     double last_rotor_pos = 0;
     double pos = 0;
 
