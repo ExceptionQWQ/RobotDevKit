@@ -84,14 +84,12 @@ void SerialPort::async_read(uint8_t* buff, std::size_t size_to_read, ResultHandl
 
 std::size_t SerialPort::write(uint8_t* data, std::size_t len)
 {
-    write(data, len, 3000);
-    return len;
+    return write(data, len, 3000);
 }
 
 std::size_t SerialPort::read(uint8_t* buff, std::size_t size_to_read)
 {
-    read(buff, size_to_read, 3000);
-    return size_to_read;
+    return read(buff, size_to_read, 3000);
 }
 
 std::size_t SerialPort::write(uint8_t* data, std::size_t len, int timeout)
