@@ -61,6 +61,10 @@ if(BUILD_TEST)
     add_executable(test_hik_camera test/test_hik_camera.cpp)
     target_include_directories(test_hik_camera PRIVATE include)
     target_link_libraries(test_hik_camera rdk_core ${OpenCV_LIBRARIES})
+
+    add_executable(test_fashion_star_servo test/test_fashion_star_servo.cpp)
+    target_include_directories(test_fashion_star_servo PRIVATE include)
+    target_link_libraries(test_fashion_star_servo rdk_core -static)
 endif()
 
 

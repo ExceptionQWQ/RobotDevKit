@@ -18,3 +18,5 @@
 #include "rdk/core/motor/dji/m2006_motor.h"
 #include "rdk/core/motor/dji/m3508_motor.h"
 #include "rdk/core/motor/damiao/damiao_controller.h"
+#include "rdk/core/servo/fashion_star/fashion_star_protocol.h"
+
