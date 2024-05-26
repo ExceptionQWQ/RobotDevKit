@@ -14,7 +14,9 @@
 #include <chrono>
 #include <cmath>
 #include <string>
+#include <boost/endian.hpp>
 #include "rdk/core/transfer/io_stream.h"
+
 
 class FeetechProtocol
 {
@@ -225,4 +227,33 @@ public:
      * @details 把内存控制表里特定的数据进行复位（特定舵机型号采用）
      */
     bool reset(uint8_t id);
+
+    /*
+     * @brief 舵机扭矩开关
+     * @param id 舵机id
+     * @param value true 打开扭矩输出 false 关闭扭矩输出
+     */
+    bool torque_switch(uint8_t id, bool value = true);
+
+    /*
+     * @brief 读取舵机位置
+     * @param id 舵机id
+     * @param position 位置
+     */
+    bool read_position(uint8_t id, int16_t* position, bool endian_reverse = false);
+
+    /*
+     * @brief 写入舵机位置
+     * @param id 舵机id
+     * @param position 位置
+     */
+    bool write_position(uint8_t id, int16_t position, bool endian_reverse = false);
+
+    /*
+     * @brief 写入位置速度
+     * @param id 舵机id
+     * @param speed 步/s
+     */
+    bool write_position_speed(uint8_t id, int16_t position, uint16_t speed, bool endian_reverse = false);
+
 };

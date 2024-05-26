@@ -326,3 +326,54 @@ bool FeetechProtocol::reset(uint8_t id)
     }
     return false;
 }
+
+/*
+ * @brief 舵机扭矩开关
+ * @param id 舵机id
+ * @param value true 打开扭矩输出 false 关闭扭矩输出
+ */
+bool FeetechProtocol::torque_switch(uint8_t id, bool value)
+{
+    return write_data(id, static_cast<uint8_t>(MemoryTable::TorqueSwitch), reinterpret_cast<uint8_t*>(&value), 1);
+}
+
+/*
+ * @brief 读取舵机位置
+ * @param id 舵机id
+ * @param position 位置
+ */
+bool FeetechProtocol::read_position(uint8_t id, int16_t* position, bool endian_reverse)
+{
+    int16_t pos = 0;
+    bool ret = read_data(id, static_cast<uint8_t>(MemoryTable::CurrentPostion), reinterpret_cast<uint8_t*>(&pos), 2);
+    if (endian_reverse) pos = boost::endian::endian_reverse(pos);
+    *position = pos;
+    return ret;
+}
+
+/*
+ * @brief 写入舵机位置
+ * @param id 舵机id
+ * @param position 位置
+ */
+bool FeetechProtocol::write_position(uint8_t id, int16_t position, bool endian_reverse)
+{
+    if (endian_reverse) position = boost::endian::endian_reverse(position);
+    return write_data(id, static_cast<uint8_t>(MemoryTable::TargetPosition), reinterpret_cast<uint8_t*>(&position), 2);
+}
+
+/*
+ * @brief 写入位置速度
+ * @param id 舵机id
+ * @param speed 步/s
+ */
+bool FeetechProtocol::write_position_speed(uint8_t id, int16_t position, uint16_t speed, bool endian_reverse)
+{
+    if (endian_reverse) position = boost::endian::endian_reverse(position);
+    if (endian_reverse) speed = boost::endian::endian_reverse(speed);
+    uint8_t data[6];
+    *reinterpret_cast<int16_t*>(data + 0) = position;
+    *reinterpret_cast<uint16_t*>(data + 2) = 0;
+    *reinterpret_cast<uint16_t*>(data + 4) = speed;
+    return write_data(id, static_cast<uint8_t>(MemoryTable::TargetPosition), data, 6);
+}

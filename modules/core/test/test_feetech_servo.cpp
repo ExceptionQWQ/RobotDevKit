@@ -28,18 +28,9 @@ int main()
     // ping_all_servo(fee);
     std::cout << fee->ping(1, 10) << std::endl;
     for (int i = 0; i < 6; ++i) {
-        uint8_t data[6];
-        *reinterpret_cast<uint16_t*>(data + 0) = boost::endian::endian_reverse((uint16_t)100);
-        *reinterpret_cast<uint16_t*>(data + 2) = boost::endian::endian_reverse((uint16_t)0);
-        *reinterpret_cast<uint16_t*>(data + 4) = boost::endian::endian_reverse((uint16_t)3000);
-        std::cout << fee->reg_write(1, 0x2a, data, 6) << std::endl;
-        fee->action();
+        std::cout << fee->write_position_speed(1, 0, 10000, false) << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-        *reinterpret_cast<uint16_t*>(data + 0) = boost::endian::endian_reverse((uint16_t)4000);
-        *reinterpret_cast<uint16_t*>(data + 2) = boost::endian::endian_reverse((uint16_t)0);
-        *reinterpret_cast<uint16_t*>(data + 4) = boost::endian::endian_reverse((uint16_t)3000);
-        std::cout << fee->reg_write(1, 0x2a, data, 6) << std::endl;
-        fee->action();
+        std::cout << fee->write_position_speed(1, 4095, 10000, false) << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     }
     
