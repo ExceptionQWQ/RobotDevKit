@@ -22,3 +22,5 @@
 #include "rdk/core/servo/fashion_star/fashion_star_protocol.h"
 #include "rdk/core/servo/feetech/feetech_protocol.h"
 #include "rdk/core/servo/feetech/feetech_SMS.h"
+#include "rdk/core/servo/feetech/feetech_STS.h"
+#include "rdk/core/servo/feetech/feetech_SCS.h"
