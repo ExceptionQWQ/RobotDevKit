@@ -21,11 +21,8 @@ void ping_all_servo(std::shared_ptr<FeetechProtocol> fee)
     std::cout << "ping end" << std::endl;
 }
 
-int main()
+void test_write_position_speed(std::shared_ptr<FeetechProtocol> fee)
 {
-    std::shared_ptr<SerialPort> serial_port = std::make_shared<SerialPort>("/dev/serial/by-path/platform-3610000.xhci-usb-0:2.4:1.0-port0", 115200);
-    std::shared_ptr<FeetechProtocol> fee = std::make_shared<FeetechProtocol>(serial_port);
-    // ping_all_servo(fee);
     std::cout << fee->ping(1, 10) << std::endl;
     for (int i = 0; i < 6; ++i) {
         std::cout << fee->write_position_speed(1, 0, 10000, false) << std::endl;
@@ -33,6 +30,24 @@ int main()
         std::cout << fee->write_position_speed(1, 4095, 10000, false) << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     }
+}
+
+void test_sms(std::shared_ptr<FeetechProtocol> fee)
+{
+    std::shared_ptr<FeetechSMS> sms1 = std::make_shared<FeetechSMS>(fee, 1);
+    for (int i = 0; i < 6; ++i) {
+        sms1->write_position_speed(0, 10000);
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        sms1->write_position_speed(4095, 10000);
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    }
+}
+
+int main()
+{
+    std::shared_ptr<SerialPort> serial_port = std::make_shared<SerialPort>("/dev/serial/by-path/platform-3610000.xhci-usb-0:2.4:1.0-port0", 115200);
+    std::shared_ptr<FeetechProtocol> fee = std::make_shared<FeetechProtocol>(serial_port);
+    test_sms(fee);
     
     return 0;
 }

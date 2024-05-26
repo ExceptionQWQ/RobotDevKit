@@ -7,51 +7,50 @@
 
 #pragma once
 
-#include <cstdint>
+#include <memory>
+#include "rdk/core/servo/servo.h"
+#include "rdk/core/servo/feetech/feetech_protocol.h"
 
-class Servo
+class FeetechSMS : public Servo
 {
 public:
-    Servo(uint8_t id);
+    FeetechSMS(std::shared_ptr<FeetechProtocol> fee, uint8_t id);
+    ~FeetechSMS();
 
     /*
      * @brief 舵机扭矩开关
      * @param value true 打开扭矩输出 false 关闭扭矩输出
      */
-    virtual void torque_switch(bool value);
+    virtual void torque_switch(bool value) override;
 
     /*
      * @brief 直接读取舵机角度传感器的位置值
      * @details 对于使用12bit磁传感器的舵机，返回的值的范围为0-4095
      * @return position
      */
-    virtual int16_t read_position();
+    virtual int16_t read_position() override;
 
     /*
      * @brief 读取上一次写入的位置值
      * @details 对于使用12bit磁传感器的舵机，返回的值的范围为0-4095
      * @return position
      */
-    virtual int16_t read_position_cache();
+    virtual int16_t read_position_cache() override;
 
     /*
      * @brief 写入位置值
      * @param position
      */
-    virtual void write_position(int16_t position);
+    virtual void write_position(int16_t position) override;
 
     /*
      * @brief 写入位置和速度
      * @param position
      * @param speed 步/s
      */
-    virtual void write_position_speed(int16_t position, uint16_t speed);
+    virtual void write_position_speed(int16_t position, uint16_t speed) override;
 
-
-protected:
-    uint8_t id = 0;
-    int16_t position = 0;
 
 private:
-
+    std::shared_ptr<FeetechProtocol> fee;
 };
