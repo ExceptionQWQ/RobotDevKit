@@ -69,6 +69,10 @@ if(BUILD_TEST)
     add_executable(test_feetech_servo test/test_feetech_servo.cpp)
     target_include_directories(test_feetech_servo PRIVATE include)
     target_link_libraries(test_feetech_servo rdk_core -static)
+
+    add_executable(test_key_value_pair test/test_key_value_pair.cpp)
+    target_include_directories(test_key_value_pair PRIVATE include)
+    target_link_libraries(test_key_value_pair rdk_core -static)
 endif()
 
 
