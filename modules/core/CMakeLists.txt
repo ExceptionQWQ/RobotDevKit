@@ -73,6 +73,10 @@ if(BUILD_TEST)
     add_executable(test_key_value_pair test/test_key_value_pair.cpp)
     target_include_directories(test_key_value_pair PRIVATE include)
     target_link_libraries(test_key_value_pair rdk_core -static)
+
+    add_executable(test_ld_lidar test/test_ld_lidar.cpp)
+    target_include_directories(test_ld_lidar PRIVATE include)
+    target_link_libraries(test_ld_lidar rdk_core -static)
 endif()
 
 
