@@ -26,3 +26,4 @@
 #include "rdk/core/servo/feetech/feetech_SCS.h"
 #include "rdk/core/container/container.h"
 #include "rdk/core/lidar/ldrobot/ld_lidar.h"
+#include "rdk/core/visualization/point_cloud_view.h"

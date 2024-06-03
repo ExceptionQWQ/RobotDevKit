@@ -76,7 +76,11 @@ if(BUILD_TEST)
 
     add_executable(test_ld_lidar test/test_ld_lidar.cpp)
     target_include_directories(test_ld_lidar PRIVATE include)
-    target_link_libraries(test_ld_lidar rdk_core)
+    target_link_libraries(test_ld_lidar rdk_core ${OpenCV_LIBRARIES})
+    
+    add_executable(test_point_cloud_view test/test_point_cloud_view.cpp)
+    target_include_directories(test_point_cloud_view PRIVATE include)
+    target_link_libraries(test_point_cloud_view rdk_core ${OpenCV_LIBRARIES})
 endif()
 
 

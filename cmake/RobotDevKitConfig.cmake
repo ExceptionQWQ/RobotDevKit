@@ -12,5 +12,8 @@ find_library(RobotDevKit_LIBRARY rdk_core PATHS "${RobotDevKit_INSTALL_PREFIX}/l
 find_package(Boost REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
 
-set(RobotDevKit_INCLUDE_DIRS ${RobotDevKit_INSTALL_PREFIX}/include/RobotDevKit)
-set(RobotDevKit_LIBRARIES ${RobotDevKit_LIBRARY})
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+set(RobotDevKit_INCLUDE_DIRS ${RobotDevKit_INSTALL_PREFIX}/include/RobotDevKit ${Boost_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
+set(RobotDevKit_LIBRARIES ${RobotDevKit_LIBRARY} ${OpenCV_LIBRARIES})
