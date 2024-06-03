@@ -21,7 +21,7 @@ public:
      * @brief 串口创建时自动打开
      * @param serial_dev_path 串口地址
      * @param baud_rate 串口波特率
-     * @attention 串口地址建议使用/dev/serial/by-path/*，这个为固定地址
+     * @attention 串口地址建议使用/dev/serial/by-path，这个为固定地址
      */
     SerialPort(const std::string& serial_dev_path, int baud_rate);
     ~SerialPort();

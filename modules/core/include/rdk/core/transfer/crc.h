@@ -8,6 +8,7 @@
 #pragma once
 
 #include <cstdint>
+#include <cstddef>
 
 class Crc8Calculator
 {

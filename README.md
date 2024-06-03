@@ -13,32 +13,32 @@ platforms 在其他平台上的实现
 samples 例程
 
 # 安装方法
-1，在x86平台交叉编译arm32程序使用下面的指令安装
+1，目标平台为arm32
 ```bash
 cd build
 sudo apt-get install libboost-dev:arm
 sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
-cmake -D CMAKE_INSTALL_PREFIX=/usr/arm-linux-gnueabihf -D CMAKE_BUILD_TYPE=RELEASE ..
+cmake -D BUILD_ARM32=ON -D CMAKE_INSTALL_PREFIX=/usr/arm-linux-gnueabihf -D CMAKE_BUILD_TYPE=RELEASE ..
 make install
 ```
-2，在x86平台交叉编译arm64程序使用下面的指令安装
+2，目标平台为arm64
 ```bash
 cd build
 sudo apt-get install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 sudo apt-get install libboost-dev:arm64
-cmake -D CMAKE_INSTALL_PREFIX=/usr/aarch64-linux-gnu -D CMAKE_BUILD_TYPE=RELEASE ..
+cmake -D BUILD_ARM64=ON -D CMAKE_INSTALL_PREFIX=/usr/aarch64-linux-gnu -D CMAKE_BUILD_TYPE=RELEASE ..
 make install
 ```
-3，如果直接在arm平台上编译则使用下面的指令安装
+3，目标平台为x86
 ```bash
 cd build
 sudo apt-get install libboost-dev
-cmake -D CMAKE_INSTALL_PREFIX=/usr/local -D CMAKE_BUILD_TYPE=RELEASE ..
+cmake -D CMAKE_BUILD_TYPE=RELEASE ..
 make install
 ```
 
 # 使用方法
-1，在x86平台交叉编译arm32程序
+1，交叉编译arm32程序
 ```cmake
 cmake_minimum_required(VERSION 3.10)
 
@@ -55,7 +55,7 @@ add_executable(main src/main.cpp)
 target_link_libraries(main ${RobotDevKit_LIBRARIES})
 ```
 
-2，在x86平台交叉编译arm64程序
+2，交叉编译arm64程序
 ```cmake
 cmake_minimum_required(VERSION 3.10)
 
@@ -72,7 +72,7 @@ add_executable(main src/main.cpp)
 target_link_libraries(main ${RobotDevKit_LIBRARIES})
 ```
 
-3，直接在arm平台编译程序
+3，直接在本地平台编译程序
 ```cmake
 cmake_minimum_required(VERSION 3.10)
 

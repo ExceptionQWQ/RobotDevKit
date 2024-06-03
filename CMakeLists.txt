@@ -1,6 +1,17 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(CMAKE_TOOLCHAIN_FILE "cmake/aarch64-gnu.toolchain.cmake")
+option(BUILD_ARM64 "build arm64" OFF)
+option(BUILD_ARM32 "build arm32" OFF)
+option(BUILD_TEST "build test program" ON)
+
+if (BUILD_ARM64)
+    set(CMAKE_TOOLCHAIN_FILE "cmake/aarch64-gnu.toolchain.cmake")
+elseif (BUILD_ARM32)
+    set(CMAKE_TOOLCHAIN_FILE "cmake/arm-gnueabi.toolchain.cmake")
+else()
+
+endif()
+
 set(CMAKE_CXX_STANDARD 20)
 
 project(RobotDevKit VERSION 1.0)
@@ -10,9 +21,6 @@ include_directories(${Boost_INCLUDE_DIRS})
 
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
-
-
-option(BUILD_TEST "build test program" ON)
 
 add_subdirectory(modules/core)
 
