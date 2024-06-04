@@ -90,7 +90,7 @@ public:
     /*
      * @brief 每隔一段时间调用一次tick计算输出量，例如每隔1ms tick一次
      */ 
-    double tick();
+    virtual double tick();
     /*
      * @brief 设置积分误差范围
      * @param min

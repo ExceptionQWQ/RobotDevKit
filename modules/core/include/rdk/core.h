@@ -7,6 +7,8 @@
 
 #pragma once
 
+#include "rdk/core/control/pid.h"
+#include "rdk/core/control/ring_pid.h"
 #include "rdk/core/transfer/serial_port.h"
 #include "rdk/core/transfer/simple_message_transfer.h"
 #include "rdk/core/transfer/simple_binary_transfer.h"
