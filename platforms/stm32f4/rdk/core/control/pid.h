@@ -37,7 +37,7 @@ public:
     double set_target(double target);
     double get_target();
     double get_output();
-    double tick();
+    virtual double tick();
     std::pair<double, double> set_total_error_range(double min, double max);
     std::pair<double, double> set_total_error_range(const std::pair<double, double>& range);
     std::pair<double, double> get_total_error_range();
@@ -45,7 +45,7 @@ public:
     std::pair<double, double> set_output_range(const std::pair<double, double>& range);
     std::pair<double, double> get_output_range();
 
-private:
+protected:
     std::shared_ptr<PID> inner_pid;
     int tick_cnt = 0;
     PIDType pid_type = PIDType::Inc;
