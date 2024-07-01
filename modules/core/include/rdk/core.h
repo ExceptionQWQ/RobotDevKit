@@ -26,6 +26,7 @@
 #include "rdk/core/servo/feetech/feetech_SMS.h"
 #include "rdk/core/servo/feetech/feetech_STS.h"
 #include "rdk/core/servo/feetech/feetech_SCS.h"
+#include "rdk/core/servo/huaner/huaner_protocol.h"
 #include "rdk/core/container/container.h"
 #include "rdk/core/lidar/ldrobot/ld_lidar.h"
 #include "rdk/core/visualization/point_cloud_view.h"

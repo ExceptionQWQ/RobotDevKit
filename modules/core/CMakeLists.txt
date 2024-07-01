@@ -81,6 +81,10 @@ if(BUILD_TEST)
     add_executable(test_point_cloud_view test/test_point_cloud_view.cpp)
     target_include_directories(test_point_cloud_view PRIVATE include)
     target_link_libraries(test_point_cloud_view rdk_core ${OpenCV_LIBRARIES})
+
+    add_executable(test_huaner_servo test/test_huaner_servo.cpp)
+    target_include_directories(test_huaner_servo PRIVATE include)
+    target_link_libraries(test_huaner_servo rdk_core)
 endif()
 
 

@@ -128,7 +128,7 @@ public:
      */
     std::pair<double, double> get_output_range();
 
-private:
+protected:
     std::shared_ptr<PID> inner_pid;
     int tick_cnt = 0;
     PIDType pid_type = PIDType::Inc;
