@@ -94,17 +94,17 @@ private:
 
     struct RemoteData
     {
-        uint16_t channel_0;
-        uint16_t channel_1;
-        uint16_t channel_2;
-        uint16_t channel_3;
-        uint8_t s1;
-        uint8_t s2;
-        uint16_t mouse_x;
-        uint16_t mouse_y;
-        uint16_t mouse_z;
-        uint8_t mouse_left;
-        uint8_t mouse_right;
+        uint16_t channel_0 = 1024;
+        uint16_t channel_1 = 1024;
+        uint16_t channel_2 = 1024;
+        uint16_t channel_3 = 1024;
+        uint8_t s1 = 1;
+        uint8_t s2 = 1;
+        uint16_t mouse_x = 0;
+        uint16_t mouse_y = 0;
+        uint16_t mouse_z = 0;
+        uint8_t mouse_left = 0;
+        uint8_t mouse_right = 0;
     }remote_data;
 
 };
