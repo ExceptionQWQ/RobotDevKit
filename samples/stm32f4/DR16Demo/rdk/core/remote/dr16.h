@@ -66,9 +66,17 @@ public:
      */
     uint8_t get_s2();
 
+    /*
+     * @brief 通信是否活跃
+     * @retrun true 通信正常 false 通信断开
+     */
+    bool alive();
+
 
 private:
     std::shared_ptr<SerialPort> serialPort;
+    uint32_t timeout = 100; //通信超时时间
+    uint32_t alive_tick = 0;
 
 #pragma pack(push, 1)
     union DBUS_Data_Def

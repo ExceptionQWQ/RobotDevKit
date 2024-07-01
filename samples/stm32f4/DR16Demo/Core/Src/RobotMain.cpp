@@ -54,7 +54,7 @@ void RobotMain()
                  dr16->get_channel_2(), dr16->get_channel_3());
         serialPort->write(reinterpret_cast<uint8_t*>(buff), strlen(buff));
 
-        snprintf(buff, 128, "s1:%d s2:%d\r\n", dr16->get_s1(), dr16->get_s2());
+        snprintf(buff, 128, "s1:%d s2:%d alive:%d\r\n", dr16->get_s1(), dr16->get_s2(), dr16->alive());
         serialPort->write(reinterpret_cast<uint8_t*>(buff), strlen(buff));
 
         HAL_Delay(100);

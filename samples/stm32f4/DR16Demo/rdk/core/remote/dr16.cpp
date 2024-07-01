@@ -10,6 +10,7 @@
 DR16::DR16(std::shared_ptr<SerialPort> serialPort)
 {
     this->serialPort = serialPort;
+    alive_tick = HAL_GetTick();
 }
 
 DR16::~DR16()
@@ -95,3 +96,12 @@ uint8_t DR16::get_s2()
     return remote_data.s2;
 }
 
+/*
+ * @brief 通信是否活跃
+ * @retrun true 通信正常 false 通信断开
+ */
+bool DR16::alive()
+{
+    if (HAL_GetTick() - alive_tick < timeout) return true;
+    else return false;
+}
