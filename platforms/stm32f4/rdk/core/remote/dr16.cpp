@@ -27,6 +27,7 @@ void DR16::start()
     while (true) {
         std::size_t recv_bytes = serialPort->read(dbus_data.recv_buff, 64, 5); //遥控器每隔7ms发送18字节数据
         if (recv_bytes == 18) { //利用超时机制获取完整的18字节数据包
+            alive_tick = HAL_GetTick();
             remote_data.channel_0 = dbus_data.channel_0;
             remote_data.channel_1 = dbus_data.channel_1;
             remote_data.channel_2 = dbus_data.channel_2;
