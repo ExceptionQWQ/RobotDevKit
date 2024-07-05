@@ -78,7 +78,7 @@ void SerialPort::async_read(uint8_t* buff, std::size_t size_to_read, ResultHandl
  */
 std::size_t SerialPort::write(uint8_t* data, std::size_t len)
 {
-    return boost::asio::write(*serial, boost::asio::buffer(data, len), boost::asio::transfer_at_least(1));
+    return boost::asio::write(*serial, boost::asio::buffer(data, len), boost::asio::transfer_all());
 }
 
 /*

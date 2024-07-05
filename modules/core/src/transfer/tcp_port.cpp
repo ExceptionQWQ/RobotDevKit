@@ -97,7 +97,7 @@ void TCPPort::async_read(uint8_t* buff, std::size_t size_to_read, ResultHandler 
  */
 std::size_t TCPPort::write(uint8_t* data, std::size_t len)
 {
-    return boost::asio::write(*socket, boost::asio::buffer(data, len), boost::asio::transfer_at_least(1));
+    return boost::asio::write(*socket, boost::asio::buffer(data, len), boost::asio::transfer_all());
 }
 
 /*
@@ -155,29 +155,20 @@ std::size_t TCPPort::write(uint8_t* data, std::size_t len, int timeout)
  */
 std::size_t TCPPort::read(uint8_t* buff, std::size_t size_to_read, int timeout)
 {
-    std::optional<boost::system::error_code> timeout_result, read_result;
-    std::size_t read_bytes = 0;
+    std::size_t remain_size = size_to_read;
+    std::size_t read_size = 0;
 
-    timer->expires_from_now(std::chrono::milliseconds(timeout));
-    timer->async_wait(std::bind([](std::optional<boost::system::error_code>* timeout_result, const boost::system::error_code& error){
-        *timeout_result = error;
-    }, &timeout_result, std::placeholders::_1));
-    boost::asio::async_read(*socket, boost::asio::buffer(buff, size_to_read), boost::asio::transfer_at_least(1),
-        std::bind([](std::optional<boost::system::error_code>* read_result, std::size_t* read_bytes_out, const boost::system::error_code& error, std::size_t read_bytes){
-            *read_result = error;
-            *read_bytes_out = read_bytes;
-        }, &read_result, &read_bytes, std::placeholders::_1, std::placeholders::_2));
-
-    ioc->reset();
-    while (ioc->run_one()) {
-        if (timeout_result) {
-            socket->cancel();
-        } else if (read_result) {
-            timer->cancel();
+    int cnt = 0;
+    while (remain_size) {
+        if (!socket->available()) {
+            std::this_thread::sleep_for(std::chrono::milliseconds(1));
+            ++cnt;
+            if (cnt > timeout) return read_size;
+            continue;
         }
+        std::size_t read_bytes = read(buff + read_size, remain_size);
+        read_size += read_bytes;
+        remain_size -= read_bytes;
     }
-    if (timeout_result.value() != boost::asio::error::operation_aborted) {
-        throw IOStream::TimeOutException{"[SerialPort:read] timeout"};
-    }
-    return read_bytes;
+    return read_size;
 }
