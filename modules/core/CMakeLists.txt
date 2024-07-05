@@ -89,6 +89,15 @@ if(BUILD_TEST)
     add_executable(test_tcp_port test/test_tcp_port.cpp)
     target_include_directories(test_tcp_port PRIVATE include)
     target_link_libraries(test_tcp_port rdk_core)
+
+    add_executable(test_tcp_port_server test/test_tcp_port_server.cpp)
+    target_include_directories(test_tcp_port_server PRIVATE include)
+    target_link_libraries(test_tcp_port_server rdk_core)
+
+    add_executable(test_tcp_port_client test/test_tcp_port_client.cpp)
+    target_include_directories(test_tcp_port_client PRIVATE include)
+    target_link_libraries(test_tcp_port_client rdk_core)
+
 endif()
 
 
