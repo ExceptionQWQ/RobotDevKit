@@ -85,6 +85,10 @@ if(BUILD_TEST)
     add_executable(test_huaner_servo test/test_huaner_servo.cpp)
     target_include_directories(test_huaner_servo PRIVATE include)
     target_link_libraries(test_huaner_servo rdk_core)
+
+    add_executable(test_tcp_port test/test_tcp_port.cpp)
+    target_include_directories(test_tcp_port PRIVATE include)
+    target_link_libraries(test_tcp_port rdk_core)
 endif()
 
 

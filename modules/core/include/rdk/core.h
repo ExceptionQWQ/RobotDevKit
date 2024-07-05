@@ -14,6 +14,7 @@
 #include "rdk/core/transfer/simple_binary_transfer.h"
 #include "rdk/core/transfer/reliable_binary_transfer.h"
 #include "rdk/core/transfer/serial_to_can.h"
+#include "rdk/core/transfer/tcp_port.h"
 #include "rdk/core/motor/motor.h"
 #include "rdk/core/motor/dji/c6xx_controller.h"
 #include "rdk/core/motor/dji/dji_motor.h"
