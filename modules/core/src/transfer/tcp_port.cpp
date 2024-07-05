@@ -163,7 +163,7 @@ std::size_t TCPPort::read(uint8_t* buff, std::size_t size_to_read, int timeout)
         if (!socket->available()) {
             std::this_thread::sleep_for(std::chrono::milliseconds(1));
             ++cnt;
-            if (cnt > timeout) return read_size;
+            if (cnt > timeout) throw IOStream::TimeOutException{"[TCPPort::read] timeout"};
             continue;
         }
         std::size_t read_bytes = read(buff + read_size, remain_size);

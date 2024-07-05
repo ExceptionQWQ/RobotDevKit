@@ -114,6 +114,14 @@ if(BUILD_TEST)
     target_include_directories(test_tcp_server_simple_binary_transfer PRIVATE include)
     target_link_libraries(test_tcp_server_simple_binary_transfer rdk_core)
 
+    add_executable(test_tcp_client_binary_transfer test/test_tcp_client_binary_transfer.cpp)
+    target_include_directories(test_tcp_client_binary_transfer PRIVATE include)
+    target_link_libraries(test_tcp_client_binary_transfer rdk_core)
+
+    add_executable(test_tcp_server_binary_transfer test/test_tcp_server_binary_transfer.cpp)
+    target_include_directories(test_tcp_server_binary_transfer PRIVATE include)
+    target_link_libraries(test_tcp_server_binary_transfer rdk_core)
+
 endif()
 
 
